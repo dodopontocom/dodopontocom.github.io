@@ -1,0 +1,33 @@
+﻿
+.tab
+{
+    padding:2px 25px;
+    border:solid 1px black;
+    cursor:pointer;
+}
+
+.unselectedTab
+{
+    background-color:#eeeeee;
+}
+
+.selectedTab
+{
+    background-color:White;
+    border-bottom:solid 1px white;
+}
+
+.tabs
+{
+    position:relative;
+    top:3px;
+    left:15px;
+}
+
+
+.tabContent
+{
+    border:Solid 1px black;
+    background-color:White;
+    padding:10px;
+}

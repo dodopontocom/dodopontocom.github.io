@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin_Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Administração do Ecommerce</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+               
+        <asp:HyperLink
+            id="HyperLink1"
+            NavigateUrl="~/Default.aspx"
+            Runat="server">            
+         </asp:HyperLink>
+         
+          <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="" PostBackUrl="~/Default.aspx"  AlternateText="Ecommerce"/>
+
+        <asp:Menu
+            id="Menu1"
+            Orientation="Horizontal"
+            CssClass="tabs"
+            StaticMenuItemStyle-CssClass="tab"
+            StaticSelectedStyle-CssClass="selectedTab"
+            Runat="server" >            
+            <Items>
+                <asp:MenuItem NavigateUrl="~/Admin/Categorias/Default.aspx" Text="Categorias" Value="Categorias">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Admin/Produtos/Default.aspx" Text="Produtos" Value="Produtos"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Admin/Pedidos/Default.aspx" Text="Pedidos" Value="Pedidos">
+                </asp:MenuItem>
+            </Items>
+            <StaticMenuItemStyle CssClass="tab" />
+            <StaticSelectedStyle CssClass="selectedTab" />
+        </asp:Menu>
+        
+       
+        <div class="tabContents">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,316 @@
+﻿body {
+}
+
+html 
+{
+    background-color: #CCC;
+    font: 12px Arial;
+}
+
+.content 
+{
+    margin: auto;
+    border: 1px #000 solid;
+    width: 960px;
+    background-color: #FFF;
+}
+
+.cabecalho 
+{
+    border-bottom: 1px solid #FA7A0A;
+    padding: 5px;
+    background-color: #4372A8;
+}
+
+.login 
+{
+    position: absolute;
+    right: 300px;
+    top: 30px;
+    color: #fff;
+}
+
+.menuTopo 
+{
+    float: right;
+    height: 50px;
+    padding-right: 50px;
+}
+
+.colunaEsquerda 
+{
+    float: left;
+    width: 150px;
+    padding: 5px;
+    background-color: #9BBADE;
+}
+
+.principal 
+{
+    float: right;
+    width: 700px;
+}
+
+.rodape 
+{
+    clear: both;
+    border-top: 1px solid #FA7A0A;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+    background-color: #4372A8;
+    color: #fff;
+}
+
+.tabs
+{
+    position:relative;
+    top:1px;
+    left:10px;
+}
+.tab
+{
+    border:solid 1px black;
+    background-color:#eeeeee;
+    padding:2px 10px;
+}
+.selectedTab
+{
+    background-color:white;
+    border-bottom:solid 1px white;
+}
+.tabContents
+{
+    border:solid 1px black;
+    padding:10px;
+    background-color:white;
+}
+
+.paddedList li
+{
+    padding:10px;
+}
+
+
+.tabs
+{
+    position:relative;
+    top:1px;
+    left:10px;
+}
+.tab
+{
+    border:solid 1px black;
+    background-color:#eeeeee;
+    padding:2px 10px;
+}
+.selectedTab
+{
+    background-color:white;
+    border-bottom:solid 1px white;
+}
+.tabContents
+{
+    border:solid 1px black;
+    padding:10px;
+    background-color:white;
+}
+
+.grid th, .grid td
+{
+    padding:8px;
+    border-bottom:solid 1px black;
+}
+
+.floatPanel
+{
+    display:none;
+    position:absolute;
+    top:100px;
+    left:100px;
+    padding:10px;
+    border:solid 4px black;
+    background-color:white;
+}
+
+
+.webWindow
+{
+    width:400px;
+    border:Outset;
+    background-color:white;
+}
+.webWindowBody
+{
+    padding:10px;
+}
+.webWindowTitleBar
+{
+    font:14px Arial,Sans-Serif;
+    padding-left:10px;
+    background-color:#4372A8;
+    color:white;
+    cursor:move;
+}
+.webWindowTitleText
+{
+    float:left;
+}
+.webWindowClose
+{
+    background-color:Maroon;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* Menu */
+
+.Menu {
+	width: 150px;
+}
+.Menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;		
+}
+.Menu li
+{
+    border-bottom: 1px solid #fff;	
+	font-family: Arial;
+	font-weight: bold;
+	font-size:12px;	
+	text-align:left;
+			
+		      
+}
+
+.Menu li a  {
+	display: block;	
+	background-color: #9BBADE;
+	color: #555555;
+	text-decoration: none;
+	padding: 5px 5px 5px 0.5em;	
+	border-left: 3px solid #C5D2E0;	
+	
+}
+.Menu li a:hover {
+	background-color: #aec3d8;	
+	font-family: Arial;
+	font-size:12px;
+	color: #555555;
+	border-left: 3px solid #F58727;
+}
+
+.instrucoes
+{
+    padding:3px;
+    font-size:10px;
+}
+
+.leftForm
+{
+    float:left;
+    width:140px;
+    text-align:right;
+    margin-right:20px;
+    line-height:150%
+}
+
+.rightForm
+{
+    float:left;
+    width:175px;
+    line-height:150%   
+}
+
+.colForm
+{
+    float:left;
+    width:45%;
+}
+
+
+
+legend
+{
+    color:Navy;
+}
+
+.paddedList li
+{
+    padding:10px;
+}
+
+.scrollBox
+{
+    width:380px;
+    overflow:auto;
+}
+
+.produtosPrincipal
+{
+    border: 1px solid #E8E8E8;
+    -webkit-border-radius: 3px;
+    padding: 3px;
+    margin: 5px;
+    height: 150px;
+    width: 210px;
+    overflow: hidden;
+}
+.produtosPrincipal:hover
+{
+    border: 2px solid #F58727;
+    margin: 4px;    
+}
+
+.principalImagem
+{
+    display: block;
+    text-align: center;
+    margin: 8px;
+    height: 6em;
+}
+
+.principalNomeProduto
+{
+    display:block;
+    text-align:center;
+    color: #75716D;
+}
+
+.principalPreco
+{
+    display:block;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+    color: #FA7A0A;
+}
+
+.tituloCategoria
+{
+    font-size: 18px;
+    font-weight: bold;
+    color: #427099;
+    border-bottom: 1px dashed #E8E8E8;
+    display:block;
+    width: 650px;
+}
+
+.descricaoProduto
+{
+    display:block;
+    margin-left: 150px;
+    margin-top: 30px;
+    width: 500px;
+}
+
+.descricaoPrecoProduto
+{
+    color: #FA7A0A;
+    font-size: 20px;
+    margin-left: 300px;
+    margin-top: 50px;
+    font-weight: bold;
+    display: block;
+}

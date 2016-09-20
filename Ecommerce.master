@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Ecommerce.master.cs" Inherits="Ecommerce" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="content">
+
+        <div class="cabecalho">
+
+            <a href="Default.aspx">
+            <h1>Ecommerce</h1>
+            </a>
+        
+        </div>
+
+        <div class="login">
+
+            <asp:LoginView ID="LoginView1" runat="server">
+                <LoggedInTemplate>
+                    Bem Vindo, <asp:LoginName ID="LoginName1" runat="server" />
+                    <asp:LoginStatus ID="LoginStatus2" runat="server" />
+                </LoggedInTemplate>
+                <AnonymousTemplate>
+                    <a href="Login.aspx"><img src="Imagens/login.png" alt="Efetar Login ou se Cadastrar" /></a>
+                </AnonymousTemplate>
+            </asp:LoginView>
+        
+        </div>
+
+        <div class="menuTopo">
+
+            
+        
+            <asp:ImageButton ID="ibCarrinho" runat="server" AlternateText="Carrinho" 
+                CausesValidation="False" Height="32px" ImageUrl="~/Imagens/btnCarrinho.png" 
+                PostBackUrl="~/Carrinho.aspx" Width="32px" />
+
+            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticDisplayLevels="2">
+            </asp:Menu>
+
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            
+        
+        </div>
+
+        <div class="colunaEsquerda">
+
+            <asp:ContentPlaceHolder id="ContentEsquerda" runat="server">
+                
+                <div class="Menu">
+                                 
+                    <userControl:Menu runat="server" ID="Menu" />
+
+                </div>
+        
+            </asp:ContentPlaceHolder>
+        
+        </div>
+
+        <div class="principal">
+
+            <asp:ContentPlaceHolder id="ContentPrincipal" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        
+        </div>
+
+        <div class="rodape">
+
+            Copyright Tiago Vieira
+        
+        </div>
+                
+    </div>
+    </form>
+</body>
+</html>
