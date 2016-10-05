@@ -8,7 +8,10 @@ $(document).ready(function() {
 	$("#restaurantes").hide();
 
 });
-        
+    
+setInterval(function(){
+  $('.carousel').carousel('next');
+}, 1000);
 
 function showToast(){
 	//console.log('test');
