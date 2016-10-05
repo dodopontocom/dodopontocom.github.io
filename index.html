@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="icons/material.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/estilo.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <!--header tabs inicio-->
+    <div class=" z-depth-2 topo-fixo r">
+      <ul class="tabs red darken-1">
+
+
+
+          <li class="tab waves-effect waves-light">
+            <a class="white-text" href="#pedidos">
+              <font size="1.8em">pedidos</font>
+            </a>
+          </li>
+
+          <li class="tab waves-effect waves-light">
+            <a onclick="showCarousel()"class="white-text active" href="#home" >
+              <font size="1.8em">home</font>
+            </a>
+          </li>
+
+          <li class="tab waves-effect waves-light">
+            <a class="white-text" href="#login">
+              <font size="1.8em">cadastro / login</font>
+            </a>
+          </li>
+
+      </ul>
+    </div>
+    <!--header tabs fim -->
+
+    <!--Solicitar orcamento inicio -->
+    <div id="pedidos" class="section">
+        <form class="col s12" id="msgform">
+           <div class="section">
+             <h5 class="red-text text-accent-3 center-align">Monte Seu Prato</h5>
+           </div>
+           <div class="row">
+
+  <!-- Dropdown Trigger -->
+
+
+            <div class="input-field col s12">
+    <select>
+      <option value="" disabled selected>Tamanho!</option>
+      <option value="1">Mini</option>
+      <option value="2">Média</option>
+      <option value="3">Grande</option>
+    </select>
+    <label>Escolha o tamanho</label>
+  </div>
+
+            <div class="input-field col s12">
+    <select>
+      <option value="" disabled selected>Opção Principal</option>
+      <option value="1">Arroz & Feijão</option>
+      <option value="2">Spaghetti</option>
+      <option value="3">Lentilhas</option>
+    </select>
+    <label>Principal</label>
+  </div>
+
+  <div class="input-field col s12">
+    <select multiple>
+      <option value="" disabled selected>Opção Misturas</option>
+      <option value="1">Frango grelhado</option>
+      <option value="2">Carne de panela</option>
+      <option value="3">Bisteca de porco</option>
+      <option value="4">Bife acebolado</option>
+    </select>
+    <label>Misturas</label>
+  </div>
+
+    <div class="input-field col s12">
+    <select multiple>
+      <option value="" disabled selected>Opção Guarnições</option>
+      <option value="1">Batata frita</option>
+      <option value="2">Purê de mandioquinha</option>
+      <option value="3">Torresmo</option>
+      <option value="4">Batata dorê</option>
+    </select>
+    <label>Guarnições</label>
+  </div>
+    <div class="input-field col s12">
+    <select multiple>
+      <option value="" disabled selected>Opção Extras</option>
+      <option value="1">Salada</option>
+      <option value="2">Legumes cozidos</option>
+    </select>
+    <label>Extras</label>
+  </div>
+    
+    <div class="input-field col s12">
+    <select multiple>
+      <option value="" disabled selected>Opção Bebidas</option>
+      <option value="1">Coca-cola</option>
+      <option value="2">Guanará</option>
+      <option value="3">Sufresh Uva</option>
+      <option value="4">Fanta</option>
+    </select>
+    <label>Bebidas</label>
+  </div>
+  </div>
+
+          <div class="divider"></div>
+            <div class="section">
+            <h5 class="header red-text text-accent-3 center-align">Subtotal da sua Compra!</h5>
+          </div>
+
+          <!--tabela subtotal / preços-->
+  <div class ="section">
+    <table class responsive-table striped>
+        <thead>
+          <tr>
+              <th data-field="id">Marmita</th>
+              <th data-field="name">Bebidas</th>
+              <th data-field="price">Total</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Tradicional</td>
+            <td>-</td>
+            <td>R$14,90</td>
+          </tr>
+          <tr>
+            <td>Feijoada</td>
+            <td>Coca-cola</td>
+            <td>R$16,90</td>
+          </tr>
+
+        </tbody>
+      </table>
+  </div>  
+          <!--Botão Inicio -->
+          <div class="fixed-action-btn continuar">
+            <a onclick="showToast()" class="btn-floating waves-effect waves-light dark-green accent-2 select-produto">
+              <i class="material-icons">done</i>
+            </a>
+            <a onclick="showToast()" class="btn-floating waves-effect waves-light blue accent-2 select-produto">
+              <i class="material-icons">add</i>
+            </a>  
+            <a onclick="showToast()" class="btn-floating waves-effect waves-light red accent-2 select-produto">
+              <i class="material-icons">cancel</i>
+            </a>
+          </div> 
+
+          <!--Botão fim -->
+          </div>
+        </form>
+    </div>
+    <!--Solicitar orcamento fim -->
+
+    <!--Home Inicio -->
+    <div id="home" class="section">
+        
+
+
+        <div class="divider"></div>
+
+          <div id="idCarousel" class="carousel carousel-slider center" data-indicators="true">
+              <div class="carousel-item red white-text" href="#one!">
+                <h2>Bem Vindos ao PedeFácil</h2>
+
+                <p class="white-text">Nós encontramos um restaurante ideal para sua fome!</p>
+              </div>
+              <div class="carousel-item amber white-text" href="#two!">
+                <h2>Monte sua refeição</h2>
+                <p class="white-text">Monte sua refeição à sua escolha...</p>
+              </div>
+              <div class="carousel-item green white-text" href="#three!">
+                <h2>Compare os melhores preços</h2>
+                <p class="white-text">Compare unindo o melhor custo e benefício...</p>
+              </div>
+              <div class="carousel-item blue white-text" href="#four!">
+                <h2>Finalize e crie fidelidade com o PedeFácil</h2>
+                <p class="white-text">Comprando através do PedeFácil você sai ganhando</p>
+              </div>
+              <div class="carousel-fixed-item center">
+                <a class="btn waves-light waves-light darken-text-2" onclick="hideHome()">comece agora<i class="large material-icons">play_for_work</i></a>
+              </div>
+          </div>
+
+
+        <!-- main cards -->
+        <div id="idPesquisar" class="row" style="padding-top: 3%;">
+
+
+
+          <div class="divider"></div>
+            <div class="section">
+            <h5 class="header red-text text-accent-3 center-align">Comece Escolhendo a Localização</h5>
+          </div>
+
+  <div class="input-field col s12">      
+    <select>
+      <option value="" disabled selected>Escolha o Estado</option>
+      <option value="1">SP</option>
+      <option value="2">SC</option>
+      <option value="3">RJ</option>
+    </select>
+    <label>UF:</label>
+  </div>
+
+    <div class="input-field col s12">      
+    <select>
+      <option value="" disabled selected>Escolha a Cidade</option>
+      <option value="1">Sorocaba</option>
+      <option value="2">Salto</option>
+      <option value="3">Itu</option>
+    </select>
+    <label>Cidade:</label>
+  </div>
+
+
+
+
+  <div class="carousel-fixed-item center">
+    <a id="idVoltarCarousel" onclick="showCarousel()" class="btn-floating waves-effect waves-light red accent-2 select-produto">
+      <i class="material-icons">cancel</i>
+    </a>
+    <a class="btn waves-effect waves-light darken-text-2" onclick="showRest()">ENCONTRAR</a>
+  </div>
+
+
+
+
+        </div>
+
+            <div id="restaurantes" class="section">
+        <form class="col s12" id="msgform">
+           <div class="section">
+             <h5 class="red-text text-accent-3 center-align">Restaurantes Encontrados</h5>
+           </div>
+           <div class="row">
+   <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header waves-effect waves-dark"><i class="material-icons">place</i>Kaishi</div>
+      <div class="collapsible-body"><p>LOcalizado em Sorocaba... Uma breve descrição e possívelmente mostrar no mapa aqui o restaurante </p>
+        <a class="btn waves-effect waves-light darken-text-2" onclick="goPedidos()" >Encomendar</a></p>
+      </div>
+
+    </li>
+    <li>
+      <div class="collapsible-header waves-effect waves-dark"><i class="material-icons">place</i>BlackHawk</div>
+      <div class="collapsible-body"><p>Deliciosas... LOcalizado em Sorocaba... Uma breve descrição e possívelmente mostrar no mapa aqui o restaurante</p>
+      <a class="btn waves-effect waves-light darken-text-2" onclick="goPedidos()" >Encomendar</a></p>
+    </div>
+    </li>
+    <li>
+      <div class="collapsible-header waves-effect waves-dark"><i class="material-icons">place</i>Outro</div>
+      <div class="collapsible-body"><p>Mais próximo de você.. LOcalizado em Sorocaba... Uma breve descrição e possívelmente mostrar no mapa aqui o restaurante </p>
+        <a class="btn waves-effect waves-light darken-text-2" onclick="goPedidos()" >Encomendar</a></p>
+      </div>
+    </li>
+  </ul>
+</div>
+
+    </div>
+    <!--Home fim -->
+</div>
+    <!--Ajuda Inicio -->
+    <div id="login" class="section center" style="padding-top:5%">
+      <div class="collection">
+        <a class="collection-item waves-effect black-text" href="cadastro.html">Cadastro Cliente</a>
+        <a class="collection-item waves-effect black-text" href="login.html">Entrar</a>
+        <a class="collection-item waves-effect black-text">FACEBOOK</a>
+
+      </div>
+
+       <div class="row rodape-fixo z-depth-3 red darken-3">
+              <div class="col s12">
+                <p class="white-text center-align"><font size="1.8em">PedeFácil Refeições ©</font></p>
+              </div>
+        </div>
+    </div>
+
+    <!--Ajuda fim -->
+
+
+
+</body>
+</html>
