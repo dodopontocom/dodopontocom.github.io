@@ -11,7 +11,7 @@ $(document).ready(function() {
     
 setInterval(function(){
   $('.carousel').carousel('next');
-}, 1000);
+}, 6000);
 
 function showToast(){
 	//console.log('test');
