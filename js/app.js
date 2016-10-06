@@ -52,7 +52,7 @@ function showCarousel(){
 
 function hideHome(){
 
-	$("#idCarousel").fadeOut();
+	$("#idCarousel").slideup("slow");
 	$("#idPesquisar").fadeIn();
 	$("#restaurantes").fadeout();
 
