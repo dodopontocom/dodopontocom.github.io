@@ -34,7 +34,7 @@
             </button>
  
             <!-- Título Direita do menu-->
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#" onclick="reloadPagina(); return false;">
               <span class="glyphicon glyphicon-shopping-cart"> Pede Fácil</span></a>
  
         </div>
@@ -94,12 +94,12 @@
   
   <div>
 
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <div id="idCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#idCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#idCarousel" data-slide-to="1"></li>
+        <li data-target="#idCarousel" data-slide-to="2"></li>
       </ol>
 
       <!-- Wrapper for slides -->
@@ -128,43 +128,76 @@
       </div>
 
       <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+      <a class="left carousel-control" href="#idCarousel" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left"></span>
       </a>
-      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+      <a class="right carousel-control" href="#idCarousel" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right"></span>
       </a>
     </div>
 
   </div>
   <hr>
-<div class="form-group navbar-left" >
-  
-  <select class="form-control" id="selEstado" onchange="habilitaCidade()">
-    <option value="" disabled selected hidden>Escolha um estado...</option>
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
-    <option>4</option>
-  </select>
+  <div class="container">
+    <div class="form-group navbar-left" >
+      
+      <select class="form-control" id="selEstado" onchange="habilitaCidade()">
+        <option value="" disabled selected hidden>Escolha um estado...</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+<img id="img01" src="img/cima.PNG"></img>
+    </div>
 
-</div>
+
+    <div class="navbar-left">
+      
+      <select class="form-control hidden" id="selCidade" onchange="habilitaEncontrar()">
+        <option value="" disabled selected hidden>Escolha uma cidade...</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      
+    </select> 
+    <img id="img02" style="display:none" src="img/cima.PNG"></img>
+    </div>
+    <button type="button" class="btn btn-success hidden" id="btnEncontrar" onclick="paginaPedido()">Encontrar!</button>
+    <img id="img03" style="display:none" src="img/esquerda.PNG"></img>
+  </div>
 
 
-<div class="navbar-left">
-  
-  <select class="form-control hidden" id="selCidade" onchange="habilitaEncontrar()">
-    <option value="" disabled selected hidden>Escolha uma cidade...</option>
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
-    <option>4</option>
-  </select> 
+  <div id="idPedidos" class="container hidden">
 
-</div>
-<button type="button" class="btn btn-success hidden" id="btnEncontrar">Encontrar!</button>
+<!-- RESTAURANTES ENCONTRADOS -->
 
- 
+
+    <h2>Lista de restaurantes encontrados:</h2>
+
+                <div class="container">
+                  <h2>Collapsible List Group</h2>
+                  <div class="panel-group">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" href="#collapse1">Collapsible list group</a>
+                        </h4>
+                      </div>
+                      <div id="collapse1" class="panel-collapse collapse">
+                        <ul class="list-group">
+                          <li class="list-group-item">One</li>
+                          <li class="list-group-item">Two</li>
+                          <li class="list-group-item">Three</li>
+                        </ul>
+                        <div class="panel-footer">Footer</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+  </div>
 
 <!-- footer -->
 <div class="navbar-fixed-bottom">
