@@ -137,6 +137,34 @@
     </div>
 
   </div>
+  <hr>
+<div class="form-group navbar-left" >
+  
+  <select class="form-control" id="selEstado" onchange="habilitaCidade()">
+    <option value="" disabled selected hidden>Escolha um estado...</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+
+</div>
+
+
+<div class="navbar-left">
+  
+  <select class="form-control hidden" id="selCidade" onchange="habilitaEncontrar()">
+    <option value="" disabled selected hidden>Escolha uma cidade...</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select> 
+
+</div>
+<button type="button" class="btn btn-success hidden" id="btnEncontrar">Encontrar!</button>
+
+ 
 
 <!-- footer -->
 <div class="navbar-fixed-bottom">
