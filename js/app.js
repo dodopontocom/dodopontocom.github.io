@@ -24,9 +24,13 @@ function reloadPagina() {
 }
 
 
+function teste(){
+	var selectedItem = $("#selPrincipal option:selected").val();
+    $("#dodo").val(selectedItem);
+}
 
 $("#selPrincipal").change(function(){
-	var selected = $("#selPrincipal option:selected").val();
-    alert("You have selected the country - " + selected);
+	var selectedItem = $("#selPrincipal option:selected").val();
+    alert("You have selected the country - " + selectedItem);
 });
     
