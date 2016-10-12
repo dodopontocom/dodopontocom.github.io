@@ -22,3 +22,11 @@ function paginaPedido() {
 function reloadPagina() {
 	location.reload();
 }
+
+
+
+$("#selPrincipal").change(function(){
+	var selected = $("#selPrincipal option:selected").val();
+    alert("You have selected the country - " + selected);
+});
+    
