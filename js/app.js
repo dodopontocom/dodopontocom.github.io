@@ -23,6 +23,11 @@ function paginaPedido() {
 	$("#idCarousel").addClass('hidden');
 	$("#idPedidos").removeClass('hidden');
 	$("#img03").hide();
+
+
+	var restaurante = "Restaurante A Fome Ataca"
+    document.getElementById("idRestaurante").innerHTML = restaurante;
+	
 	
   }
 
