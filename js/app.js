@@ -32,17 +32,33 @@ function reloadPagina() {
 
 
 function pegaPrincipal(){
-	$("select.itensPrincipais").change(function(){
-	var itemSelecionado = $(".itensPrincipais option:selected").val();
+	$("select.itensPrincipal").change(function(){
+	var itemSelecionado = $(".itensPrincipal option:selected").val();
     document.getElementById("principalLinha").innerHTML = itemSelecionado;
 
 });
 }
 
 function pegaMistura(){
-	$("select.itensPrincipais").change(function(){
-	var itemSelecionado = $(".itensPrincipais option:selected").val();
-    document.getElementById("principalLinha").innerHTML = itemSelecionado;
+	$("select.itensMistura").change(function(){
+	var itemSelecionado = $(".itensMistura option:selected").val();
+    document.getElementById("misturaLinha").innerHTML = itemSelecionado;
+
+});
+}
+
+function pegaExtra(){
+	$("select.itensExtra").change(function(){
+	var itemSelecionado = $(".itensExtra option:selected").val();
+    document.getElementById("extraLinha").innerHTML = itemSelecionado;
+
+});
+}
+
+function pegaBebida(){
+	$("select.itensBebida").change(function(){
+	var itemSelecionado = $(".itensBebida option:selected").val();
+    document.getElementById("bebidaLinha").innerHTML = itemSelecionado;
 
 });
 }
