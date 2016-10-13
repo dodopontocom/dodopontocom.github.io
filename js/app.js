@@ -1,7 +1,52 @@
 $( document ).ready(function() {
 
+	var principal = "";
+	var mistura = "";
+	var guarnicao = "";
+	var extra = "";
+	var bebida = "";
+	var tamanho = "";
+	// criar as demais variavies...
 
-alert("as");
+	// change principal
+	$("select.itensPrincipal").change(function(){
+		principal = $(".itensPrincipal option:selected").val();
+	});
+
+	// change mistura
+	$("select.itensMistura").change(function(){
+		mistura = $(".itensMistura option:selected").val();
+	});
+
+		// change guarnição
+	$("select.itensGuarnicao").change(function(){
+		guarnicao = $(".itensGuarnicao option:selected").val();
+	});
+
+	// change extra
+	$("select.itensExtra").change(function(){
+		extra = $(".itensExtra option:selected").val();
+	});
+
+		// change bebida
+	$("select.itensBebida").change(function(){
+		bebida = $(".itensBebida option:selected").val();
+	});
+
+		// change tamanho
+	$("select.itensTamanho").change(function(){
+		tamanho = $(".itensTamanho option:selected").val();
+	});
+
+	// popula modal
+	$(".btn-confirma").click(function(){
+		$("#principalLinha").text(principal);
+		$("#misturaLinha").text(mistura);
+		$("#guarnicaoLinha").text(guarnicao);
+		$("#extraLinha").text(extra);
+		$("#bebidaLinha").text(bebida);
+		$("#tamanhoLinha").text(tamanho);
+	});
 
 });
 
@@ -25,32 +70,18 @@ function paginaPedido() {
 	$("#img03").hide();
 
 
-	var restaurante = "Restaurante A Fome Ataca"
+	var restaurante = "Restaurante A Fome Ataca";
     document.getElementById("idRestaurante").innerHTML = restaurante;
+    
+    var vendas = "36";
+    document.getElementById("idVendasRealizadas").innerHTML = vendas;
 	
-	
-  }
+}
 
 function reloadPagina() {
 	location.reload();
 }
 
-
-function pegaPrincipal(){
-	$("select.itensPrincipal").change(function(){
-	var itemSelecionado = $(".itensPrincipal option:selected").val();
-    document.getElementById("principalLinha").innerHTML = itemSelecionado;
-
-});
-}
-
-function pegaMistura(){
-	$("select.itensMistura").change(function(){
-	var itemSelecionado = $(".itensMistura option:selected").val();
-    document.getElementById("misturaLinha").innerHTML = itemSelecionado;
-
-});
-}
 
 function pegaExtra(){
 	$("select.itensExtra").change(function(){
@@ -60,29 +91,7 @@ function pegaExtra(){
 });
 }
 
-function pegaGuarnicao(){
-	$("select.itensGuarnicao").change(function(){
-	var itemSelecionado = $(".itensGuarnicao option:selected").val();
-    document.getElementById("guarnicaoLinha").innerHTML = itemSelecionado;
 
-});
-}
-
-function pegaBebida(){
-	$("select.itensBebida").change(function(){
-	var itemSelecionado = $(".itensBebida option:selected").val();
-    document.getElementById("bebidaLinha").innerHTML = itemSelecionado;
-
-});
-}
-
-function pegaTamanho(){
-	$("select.itensTamanho").change(function(){
-	var itemSelecionado = $(".itensTamanho option:selected").val();
-    document.getElementById("tamanhoLinha").innerHTML = itemSelecionado;
-
-});
-}
 function pegaPreco(){
 	$("select.itensPreco").change(function(){
 	var itemSelecionado = $(".itensPreco option:selected").val();
