@@ -63,6 +63,14 @@ function pegaBebida(){
 });
 }
 
+function pegaTamanho(){
+	$("select.itensTamanho").change(function(){
+	var itemSelecionado = $(".itensTamanho option:selected").val();
+    document.getElementById("tamanhoLinha").innerHTML = itemSelecionado;
+
+});
+}
+
 
 
 
