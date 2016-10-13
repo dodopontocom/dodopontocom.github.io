@@ -203,7 +203,7 @@
           <div class="container">Comece montando o seu Prato</div>
           <div class="container">
             <div class="list-group navbar-left" >
-              
+            
               <select class="form-control itensTamanho" id="selTamanho">
                 <option value="" disabled selected hidden>Tamanho...</option>
                 <option>Mini</option>
@@ -218,7 +218,7 @@
               </select>
             
             
-              <select class="form-control itensPrincipal" id="selPrincipal">
+              <select class="form-control itensPrincipal" id="selPrincipal" required>
                 <option value="" disabled selected hidden>Principal...</option>
                 <option>Arroz e feijão</option>
                 <option>Feijoada</option>
@@ -250,7 +250,7 @@
                 <option>Cenoura e beterraba ralados</option>
               </select>
 
-              <select class="form-control itensBebida" id="selBebida">
+              <select class="form-control itensBebida" id="selBebida" >
                 <option value="" disabled selected hidden>Bebidas...</option>
                 <option>Coca-cola</option>
                 <option>Guaraná</option>
@@ -259,7 +259,7 @@
               </select>
               <hr>
               <div class="btn-group" role="group" aria-label="...">
-                <button type="button" class="btn btn-success btn-confirma" data-toggle="modal" data-target="#pedidoModal">Confirme!</button>
+                <button type="submit" class="btn btn-success btn-confirma" data-toggle="modal" data-target="#pedidoModal">Confirme!</button>
                 <button type="button" class="btn btn-info">Adicione</button>
                 <button type="button" class="btn btn-warning">Recomeçar</button>
               </div>
