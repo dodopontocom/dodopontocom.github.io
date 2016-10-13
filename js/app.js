@@ -6,6 +6,7 @@ $( document ).ready(function() {
 	var extra = "";
 	var bebida = "";
 	var tamanho = "";
+	var preco = "";
 	// criar as demais variavies...
 
 	// change principal
@@ -36,6 +37,12 @@ $( document ).ready(function() {
 		// change tamanho
 	$("select.itensTamanho").change(function(){
 		tamanho = $(".itensTamanho option:selected").val();
+		
+	});
+
+	// change preço
+	$("select.itensPreco").change(function(){
+		preco = $(".itensPreco option:selected").val();
 	});
 
 	// popula modal
@@ -46,6 +53,7 @@ $( document ).ready(function() {
 		$("#extraLinha").text(extra);
 		$("#bebidaLinha").text(bebida);
 		$("#tamanhoLinha").text(tamanho);
+		$("#precoLinha").text(preco);
 	});
 
 });
@@ -80,18 +88,4 @@ function paginaPedido() {
 
 function reloadPagina() {
 	location.reload();
-}
-
-
-function pegaPreco(){
-	$("select.itensPreco").change(function(){
-	var itemSelecionado = $(".itensPreco option:selected").val();
-    document.getElementById("precoLinha").innerHTML = itemSelecionado;
-
-});
-}
-
-
-
-
-    
+}	 
