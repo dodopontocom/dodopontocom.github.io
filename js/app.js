@@ -1,8 +1,7 @@
-// A $( document ).ready() block.
 $( document ).ready(function() {
 
 
-
+alert("as");
 
 });
 
@@ -36,9 +35,9 @@ function pegaPrincipal(){
 	$("select.itensPrincipais").change(function(){
 	var itemSelecionado = $(".itensPrincipais option:selected").val();
     document.getElementById("principalLinha").innerHTML = itemSelecionado;
+
 });
 }
-
 
 
 
