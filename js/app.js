@@ -70,6 +70,13 @@ function pegaTamanho(){
 
 });
 }
+function pegaPreco(){
+	$("select.itensPreco").change(function(){
+	var itemSelecionado = $(".itensPreco option:selected").val();
+    document.getElementById("precoLinha").innerHTML = itemSelecionado;
+
+});
+}
 
 
 
