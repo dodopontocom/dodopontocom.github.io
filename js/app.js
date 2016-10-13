@@ -6,7 +6,7 @@ $( document ).ready(function() {
 	var extra = "";
 	var bebida = "";
 	var tamanho = "";
-	var preco = "";
+	var preco = $(".itensPreco option:selected").val();;
 	// criar as demais variavies...
 
 	// change principal
@@ -41,9 +41,9 @@ $( document ).ready(function() {
 	});
 
 	// change preço
-	$("select.itensPreco").change(function(){
+	/*$("select.itensPreco").change(function(){
 		preco = $(".itensPreco option:selected").val();
-	});
+	});*/
 
 	// popula modal
 	$(".btn-confirma").click(function(){
