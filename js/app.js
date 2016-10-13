@@ -73,22 +73,13 @@ function paginaPedido() {
 	var restaurante = "Restaurante A Fome Ataca";
     document.getElementById("idRestaurante").innerHTML = restaurante;
     
-    var vendas = "36";
-    document.getElementById("idVendasRealizadas").innerHTML = vendas;
+    //var vendas = "36";
+    //document.getElementById("idVendasRealizadas").innerHTML = vendas;
 	
 }
 
 function reloadPagina() {
 	location.reload();
-}
-
-
-function pegaExtra(){
-	$("select.itensExtra").change(function(){
-	var itemSelecionado = $(".itensExtra option:selected").val();
-    document.getElementById("extraLinha").innerHTML = itemSelecionado;
-
-});
 }
 
 
