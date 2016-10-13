@@ -1,3 +1,11 @@
+// A $( document ).ready() block.
+$( document ).ready(function() {
+
+
+
+
+});
+
 function habilitaCidade() {
 	$("#selCidade").removeClass('hidden');
 	$("#img01").hide();
@@ -24,13 +32,15 @@ function reloadPagina() {
 }
 
 
-function teste(){
-	var selectedItem = $("#selPrincipal option:selected").val();
-    $("#dodo").val(selectedItem);
+function pegaPrincipal(){
+	$("select.itensPrincipais").change(function(){
+	var itemSelecionado = $(".itensPrincipais option:selected").val();
+    document.getElementById("principalLinha").innerHTML = itemSelecionado;
+});
 }
 
-$("#selPrincipal").change(function(){
-	var selectedItem = $("#selPrincipal option:selected").val();
-    alert("You have selected the country - " + selectedItem);
-});
+
+
+
+
     
