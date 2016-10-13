@@ -37,7 +37,7 @@ $( document ).ready(function() {
 		// change tamanho
 	$("select.itensTamanho").change(function(){
 		tamanho = $(".itensTamanho option:selected").val();
-		
+
 	});
 
 	// change preço
@@ -89,3 +89,13 @@ function paginaPedido() {
 function reloadPagina() {
 	location.reload();
 }	 
+
+
+
+/*para cada opcao que vier do servidor faça isso
+{
+
+ var option = '<option> ' + valor + '</option>'; 
+ $("#minhaDiv").append(option);
+	
+} */
