@@ -39,6 +39,14 @@ function pegaPrincipal(){
 });
 }
 
+function pegaMistura(){
+	$("select.itensPrincipais").change(function(){
+	var itemSelecionado = $(".itensPrincipais option:selected").val();
+    document.getElementById("principalLinha").innerHTML = itemSelecionado;
+
+});
+}
+
 
 
 
