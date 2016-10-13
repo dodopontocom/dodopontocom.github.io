@@ -55,6 +55,14 @@ function pegaExtra(){
 });
 }
 
+function pegaGuarnicao(){
+	$("select.itensGuarnicao").change(function(){
+	var itemSelecionado = $(".itensGuarnicao option:selected").val();
+    document.getElementById("guarnicaoLinha").innerHTML = itemSelecionado;
+
+});
+}
+
 function pegaBebida(){
 	$("select.itensBebida").change(function(){
 	var itemSelecionado = $(".itensBebida option:selected").val();
