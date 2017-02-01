@@ -1,62 +1,43 @@
-/***************************************************************************************************************/
-/***************************************************************************************************************/
+/*
+	JavaScript For Responsive Bootstrap Carousel
 
-/* Template: Flat Stylish Responsive Portfolio Template
-/* Author: Sarfraz Shoukat, Muhammad Shahbaz Saleem
-/* URL: http://www.egrappler.com
-/* License: http://www.egrappler.com/license
+    Author: Razboynik
+    Author URI: http://filwebs.ru
+    Description: Bootstrap Carousel Effect Ken Burns
 
-/****************************************************************************************************************/
-		
-$(window).load(function(){
-	/* ---------------------------------------------------------------------- */
-	/*	Portfolio
-	/* ---------------------------------------------------------------------- */
+*/
 
-	// Needed variables
-	var $container = $('#portfolio-list');
-	var $filter = $('#portfolio-filter');
+$(function ($) {
 
-	// Run Isotope  
-	$container.isotope({
-		filter: '*',
-		layoutMode: 'fitRows',
-		animationEngine: 'jQuery',
-		animationOptions: {
-			duration: 750,
-			easing: 'linear'
-		}
-	});
+    /*-----------------------------------------------------------------*/
+    /* ANIMATE SLIDER CAPTION
+    /* Demo Scripts for Bootstrap Carousel and Animate.css article on SitePoint by Maria Antonietta Perna
+    /*-----------------------------------------------------------------*/
+    "use strict";
+    function doAnimations(elems) {
+        //Cache the animationend event in a variable
+        var animEndEv = 'webkitAnimationEnd animationend';
+        elems.each(function () {
+            var $this = $(this),
+                $animationType = $this.data('animation');
+            $this.addClass($animationType).one(animEndEv, function () {
+                $this.removeClass($animationType);
+            });
+        });
+    }
+    //Variables on page load
+    var $immortalCarousel = $('.animate_text'),
+        $firstAnimatingElems = $immortalCarousel.find('.item:first').find("[data-animation ^= 'animated']");
+    //Initialize carousel
+    $immortalCarousel.carousel();
+    //Animate captions in first slide on page load
+    doAnimations($firstAnimatingElems);
+    //Other slides to be animated on carousel slide event
+    $immortalCarousel.on('slide.bs.carousel', function (e) {
+        var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
+        doAnimations($animatingElems);
+    });
 
-	// Isotope Filter 
-	$filter.find('a').click(function () {
-		var selector = $(this).attr('data-filter');
-		$container.isotope({
-			filter: selector,
-			animationOptions: {
-				duration: 750,
-				easing: 'linear',
-				queue: false
-			}
-		});
-		return false;
-	});
 
-	// Copy categories to item classes
-	$filter.find('a').click(function () {
-		var currentOption = $(this).attr('data-filter');
-		$filter.find('a').removeClass('current');
-		$(this).addClass('current');
-	});
 
-	/* ---------------------------------------------------------------------- */
-	/*	Fancybox 
-	/* ---------------------------------------------------------------------- */
-	$container.find('.folio').fancybox({
-		'transitionIn': 'elastic',
-		'transitionOut': 'elastic',
-		'speedIn': 200,
-		'speedOut': 200,
-		'overlayOpacity': 0.6
-	});
-});
+})(jQuery);
