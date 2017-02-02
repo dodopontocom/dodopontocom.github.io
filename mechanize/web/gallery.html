@@ -35,15 +35,57 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 </head>
 <body>
-<div class="gallery-bottom">
+<!--header start here-->
+<div class="header">
+	<div class="container">
+	  <div class="header-main">
+	     <div class="logo">
+		   <h1><a href="index.html">Mechanize</a></h1>
+		 </div>
+		 <div class="top-nav">
+		 	 <span class="menu"> <img src="images/icon.png" alt=""></span>	
+		   	<nav class="cl-effect-13" id="cl-effect-13">
+					<ul class="res">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="shortcodes.html">Short Codes</a></li>
+						<li><a class="active" href="gallery.html">Gallery</a></li>
+						<li><a href="#contact" class="scroll">Contact</a></li>						
+					</ul>
+				</nav>
+				<!-- script-for-menu -->
+								 <script>
+								   $( "span.menu" ).click(function() {
+									 $( "ul.res" ).slideToggle( 300, function() {
+									 // Animation complete.
+									  });
+									 });
+								</script>
+				<!-- /script-for-menu -->
+
+		 </div>
+	     <div class="clearfix"> </div>
+	  </div>
+	</div>
+</div>
+<!--header end here-->
+<!--gallery start here-->
+<div class="gallery">
+	<div class="container">
+		<div class="gallery-main agileits">
+			<div class="gallery-top">
+				<h2>Gallery</h2>
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.</p>
+			</div>
+			<div class="gallery-bottom">
 				<div class="col-md-4 gallery-grid">
 					<div class="gallery-grid-effects">
 	                    <div id="nivo-lightbox-demo">      
-							<div class="ih-item square effect3 bottom_to_top"><a href="gallery.html"data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">
+							<div class="ih-item square effect3 bottom_to_top"><a href="images/g1.jpg"data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">
 		                      <div class="img"><img src="images/g1.jpg" alt="img"></div>
 		                      <div class="info">
-		                        <h3>Venda</h3>
-		                        <p>R$ 1.200.000,00</p>
+		                        <h3>Mechanize</h3>
+		                        <p>Description goes here</p>
 		                      </div></a>
 		                    </div>
 	                   </div>
@@ -152,5 +194,70 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	                   </div>
                    </div>
 				</div>
+				<div class="clearfix"> </div>
+			</div>			
+		</div>
+	</div>
+</div>
+<!--gallery end here-->
+<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+			<script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
+				<script type="text/javascript">
+				$(document).ready(function(){
+				    $('#nivo-lightbox-demo a').nivoLightbox({ effect: 'fade' });
+				});
+				</script>
+
+<!--get in touch start here-->
+<div class="touch-wthree" id="contact">
+	<div class="container">
+		<div class="touch-wthree-main w3ls">
+			<div class="touch-wthree-top">
+				 <h3>Touch With Us</h3>
+				 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+			</div>
+			<div class="touch-wthree-bottom">
+				<div class="col-md-5 touch-wthree-left">
+					<h4>Contact Address</h4>
+					<ul>
+				    	<li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"> </span>New York,Bronx,Morris Park</li>
+				    	<li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"> </span>5280 Wetzel Lane Grand Rapids</li>				    
+			        </ul>
+			        <h5>Hotline</h5>
+			        <ul>		    	
+				    	<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"> </span>+1265 985 479</li>
+				    	<li><span class="glyphicon glyphicon-phone" aria-hidden="true"> </span>+1284 485 978</li>			    	
+				    	
+			        </ul>
+			        <h6>Email</h6>
+			        <ul>
+			           <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span><a href="mailto:info@example.com">Lorem@example.com</a></li>
+			        </ul>
+				</div>
+				<div class="col-md-7 touch-wthree-right">
+					<form action="#" method="post">
+						<input type="text" placeholder="Your Name" name="Your Name" required="">
+						<input type="text" class="no-mar" placeholder="Phone" name="Phone">
+						<input type="text" placeholder="Mail" name="Mail">
+						<input type="text" class="no-mar" placeholder="Website" name="Website">						
+						<textarea name="Message" placeholder="Messages"></textarea>
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--get in touch end here-->
+<!--copy rights start here-->
+<div class="copy-right w3l">
+	<div class="container">
+		 <div class="copy-rights-main">		 	
+		 		  <p>© 2016 Mechanize. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>		 	
+    	 </div>
+    </div>
+</div>
+<!--copy right end here-->
 </body>
 </html>        
