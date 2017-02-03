@@ -3012,3 +3012,30 @@ a.pa_italic:focus {
 		font-size: 14px;
 	}
 }
+
+/*
+
+Rodolfo's adds from here below
+
+*/
+
+.image {
+	position: relative;
+	width: 100%;
+}
+
+.cima {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.refspan {
+	color: white;
+	font: bold 16px/20px Helvetica, Sans-Serif;
+	letter-spacing: -1px;
+	background: rgb(0,0,0);
+	background: rgba(0,0,0,0.7);
+	padding: 10px;
+}
