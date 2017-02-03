@@ -3039,3 +3039,10 @@ Rodolfo's adds from here below
 	background: rgba(0,0,0,0.7);
 	padding: 10px;
 }
+
+.local {
+	position: absolute;
+	top: 200px;
+	right: 0;
+	width: 100%;
+}
