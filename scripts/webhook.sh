@@ -1,14 +1,8 @@
 #!/bin/bash
 
-# try
-
-echo "atualizando repo site"
-cd ~/dodopontocom.github.io/
-git pull
-cd -
-cd ~/public_html/
+folder=~/public_html
+cd $folder
 git pull
 cd -
 
-echo "finish"
 #end
