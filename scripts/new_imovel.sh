@@ -1,3 +1,30 @@
+#!/bin/bash
+
+#create html for the new house
+
+#get some variables
+info=info.properties
+# ref: REF010
+# preco: 800.000,00
+# dormi: 1
+# banho: 1
+#titulo:
+# descri: Oportunidade de renda
+# contato: Alcides
+
+ref=$(cat ${info} | grep ref | cut -d':' -f2 )
+preco=$(cat ${info} | grep preco | cut -d':' -f2 )
+dormi=$(cat ${info} | grep dormi | cut -d':' -f2 )
+banho=$(cat ${info} | grep banho | cut -d':' -f2 )
+titulo=$(cat ${info} | grep titulo | cut -d':' -f2 )
+descri=$(cat ${info} | grep descri | cut -d':' -f2 )
+contato=$(cat ${info} | grep contato | cut -d':' -f2 )
+telefone=$(cat ${info} | grep telefone | cut -d':' -f2 )
+
+##############
+
+#start html
+cat << _EOF_
 <!--
 author: W3layouts
 author URL: http://w3layouts.com
@@ -7,6 +34,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
+<link href="http://construtoracarvalhopereira.com.br/images/REF001/*.jpg" rel="../images/REF001/*.jpg"/>
 <title>CONSTRUTORA CARVALHO PEREIRA</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -157,13 +185,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="w3_single_grid_left">
 					<div class="w3_single_grid_left_grid w3l_services_grid">
 						<ul>
-							<li><a class="bake">R$ 210.000,00 REF008</a></li>
-							<li class="square">150,50 m²</li>
-							<li class="bath">1</li>
-							<li class="bed">3</li>
+							<li><a class="bake">R$ ${preco} ${ref}</a></li>
+							<li class="square">${metro}</li>
+							<li class="bath">${banho}</li>
+							<li class="bed">${dormi}</li>
 							<li>
-								<i class="fa fa-whatsapp" aria-hidden="true"></i><a href="intent://send/15998183001#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end">
-								<span class="glyphicon glyphicon-user" aria-hidden="true"></span>Pedro Henrique </a>(15 998183001)</li>
+								<i class="fa fa-whatsapp" aria-hidden="true"></i><a href="intent://send/15998183001#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>${contato}</a>${telefone}</li>
 						</ul>
 
 						<!-- banner -->
@@ -175,78 +202,64 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 						                <!-- First-Slide -->
 						                <div class="item active">
-						                    <img src="../images/REF008/001.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/REF001/001.jpg" alt="" />
 						                </div>
 
 						                <!-- Second-Slide -->
 						                <div class="item">
-						                    <img src="../images/REF008/002.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/REF001/002.jpg" alt="" class="img-responsive" />
 						                </div>
 
 						                <!-- Third-Slide -->
 						                <div class="item">
-						                    <img src="../images/REF008/003.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/REF001/003.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <!-- Fourth-Slide -->
 						                <div class="item">
-						                    <img src="../images/REF008/004.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/REF001/004.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/REF008/005.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/REF001/005.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/REF008/006.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/REF001/006.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/REF008/007.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/REF001/007.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/REF008/008.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/REF001/008.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/REF008/009.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/REF001/009.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/REF008/010.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/REF001/010.jpg" alt="" class="img-responsive" />
 						                </div>
 
 						                <div class="item">
-						                    <img src="../images/REF008/011.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/REF001/011.jpg" alt="" class="img-responsive" />
 						                </div>
 
 						                <div class="item">
-						                    <img src="../images/REF008/012.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/REF001/012.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/REF008/013.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/REF001/013.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/REF008/014.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/REF001/014.jpg" alt="" class="img-responsive" />
 						                </div>
-
-						                <div class="item active">
-						                    <img src="../images/REF008/015.jpg" alt="" class="img-responsive" />
-						                </div>
-
-						                <!-- Second-Slide -->
-						                <div class="item">
-						                    <img src="../images/REF008/016.jpg" alt="" class="img-responsive" />
-						                </div>
-
-						                <!-- Third-Slide -->
-						                <div class="item">
-						                    <img src="../images/REF008/017.jpg" alt="" class="img-responsive" />
-						                </div>
-						               
+						                
 						            </div>
 									
 						            <!-- Left-Button -->
@@ -267,24 +280,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<!-- //banner -->
 
 
-						<h3>Casa térra em condomínio - Sorocaba / SP</h3>
-						<p>Localizada no loteamento Santa Marta (em frente ao Parque São Bento) avenida principal. 3 dormitórios, cozinha
-							estilo americana, área de serviço coberta, quintal nos fundos e garagem descoberta para 2 carros. Área construída 65,12 m².</p>
+						<h3>${titulo}</h3>
+						<p>${descri}</p>
 					</div>
 					<div class="w3_single_grid_left_grid1">
 						<div class="col-md-6 w3_single_grid_left_grid1_left">
 							<ul>
-								<li>Fase de acabamento</li>
-								<li>Aceita financiamento</li>
-								<li></li>
+								<li>KM 63,5 da Castelo Branco</li>
+								<li>Excelente localização</li>
+								<li>Valor condomínio R$ 510,00 mensais</li>
 								<li></li>
 								<li></li>
 							</ul>
 						</div>
 						<div class="col-md-6 w3_single_grid_left_grid1_left">
 							<ul>
-								<li><i class="fa fa-whatsapp" aria-hidden="true"></i><a href="intent://send/11995915356#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Alcides </a>(11 995915356)</li>
-
 								<li><i class="fa fa-whatsapp" aria-hidden="true"></i><a href="intent://send/15998183001#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Pedro Henrique </a>(15 998183001)</li>
 							</ul>
 						</div>
@@ -423,15 +433,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="col-md-2 agileinfo_footer_grid agileinfo_footer_grid1">
 					<ul>
-						<li><a href="index.html">Início</a></li>
-						<li><a href="#">Vendas</a></li>
-						<li><a href="#">Locação</a></li>
-						<li><a href="adm.html">Construção</a></li>
+						<li><a href="../index.html">Início</a></li>
+						<li><a href="vendas.html">Vendas</a></li>
+						<li><a href="locacao.html">Locação</a></li>
+						<li><a href="../adm.html">Construção</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 agileinfo_footer_grid">
 					<div class="agileinfo_footer_grid_left">
-						<a href="ref008.html"><img src="../images/REF008/014.jpg" alt=" " class="img-responsive" /></a>
+						<a href="ref001.html"><img src="../images/REF001/014.jpg" alt=" " class="img-responsive" /></a>
 					</div>
 					<div class="agileinfo_footer_grid_left">
 						<a href="ref002.html"><img src="../images/REF002/009.jpg" alt=" " class="img-responsive" /></a>
@@ -476,3 +486,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //here ends scrolling icon -->
 </body>
 </html>
+
+
+_EOF_
+
+
+
