@@ -18,8 +18,19 @@ dormi=$(cat ${info} | grep dormi | cut -d':' -f2 )
 banho=$(cat ${info} | grep banho | cut -d':' -f2 )
 titulo=$(cat ${info} | grep titulo | cut -d':' -f2 )
 descri=$(cat ${info} | grep descri | cut -d':' -f2 )
-contato=$(cat ${info} | grep contato | cut -d':' -f2 )
-telefone=$(cat ${info} | grep telefone | cut -d':' -f2 )
+contato1=$(cat ${info} | grep contato1 | cut -d':' -f2 )
+telefone1=$(cat ${info} | grep telefone1 | cut -d':' -f2 )
+item1=$(cat ${info} | grep item1 | cut -d':' -f2 )
+#destaque=$(cat ${info} | grep destaque | cut -d':' -f2 )
+
+contato2=$(cat ${info} | grep contato2 | cut -d':' -f2 )
+if [ -z ${contato2} ]; then
+	echo "sem contato 2"
+else
+	echo "erro..."
+fi	
+
+exit 0
 
 ##############
 
@@ -190,7 +201,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li class="bath">${banho}</li>
 							<li class="bed">${dormi}</li>
 							<li>
-								<i class="fa fa-whatsapp" aria-hidden="true"></i><a href="intent://send/15998183001#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>${contato}</a>${telefone}</li>
+								<i class="fa fa-whatsapp" aria-hidden="true"></i><a href="intent://send/15998183001#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>${contato1}</a>${telefone1}</li>
 						</ul>
 
 						<!-- banner -->
@@ -286,7 +297,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="w3_single_grid_left_grid1">
 						<div class="col-md-6 w3_single_grid_left_grid1_left">
 							<ul>
-								<li>KM 63,5 da Castelo Branco</li>
+								<li>${item1}</li>
 								<li>Excelente localização</li>
 								<li>Valor condomínio R$ 510,00 mensais</li>
 								<li></li>
