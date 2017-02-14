@@ -1,10 +1,3 @@
-Sobrado...100 metros
-3 dormitorios, sendo 1 suite
-Terreno 6x22
-
-residencial jardim das dálias
-preco: 290.00,00
-
 ref:
 eref:
 preco:

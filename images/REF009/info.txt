@@ -1,12 +1,19 @@
-b7s
-casa principal com 60 m
-1 dormitório sala banheiro
-
-4 casas pequenas de aluguel, renda mensal mínima de R$ 2.000,00
-
-terreno 2.000 m²
-
-preco 800.000,00
-Ótima oportunidade de renda
-
-Excelente oportunidade localizada na Avenida do Sol, Porta do Sol
+ref:ref009
+eref:b7s
+preco:800.000,00
+metro:2.000
+dormi:1
+banho:1
+titulo:Casa em condomínio - Porta do Sol
+descri:Área com 4 casas de aluguel, casa principal de 60 m² com 1 banheiro, 1 dormitório e sala. Renda mensal mínima de R$ 2.000,00.
+contato1: Alcides
+telefone1:11995915356
+contato2:
+telefone2:
+financiamento:
+item1:Excelente oportunidade de renda
+item2:Ótima localização no condomínio - Avenida do Sol
+item3:
+item4:
+item5:
+destaque:
