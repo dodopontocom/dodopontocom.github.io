@@ -1,2 +1,19 @@
-Casa Terrea  com sala,cozinha,banheiro ,02 suites,cozinha,churrasqueira pre moldada,piscina,casa com linda vista,pomar,
-campinho de futebol,valor 480.000,00 nao aceita financiamento
+ref: ref010
+eref:
+preco: 480.000,00
+metro:
+dormi:
+banho:
+titulo:Casa térra em condomínio - Porta do Sol
+descri:Casa Terrea  com sala, cozinha, banheiro , 2 suites, cozinha, churrasqueira pre moldada, piscina. Casa com linda vista, pomar, campinho de futebol
+contato1:Pedro Henrique
+telefone1:15998183001
+contato2:
+telefone2:
+financiamento:
+item1:
+item2:
+item3:
+item4:
+item5:
+destaque:

@@ -1,4 +1,5 @@
 ref:
+eref:
 preco:
 metro:
 dormi:
@@ -15,4 +16,8 @@ item2:
 item3:
 item4:
 item5:
+mconstru:
 destaque:
+locacao:
+captacao:
+prop:

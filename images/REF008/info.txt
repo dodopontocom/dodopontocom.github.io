@@ -1,2 +1,22 @@
 preco: 210.000,00
 jardim santa marta
+
+ref:
+eref:
+preco:
+metro:
+dormi:
+banho:
+titulo:
+descri:
+contato1:
+telefone1:
+contato2:
+telefone2:
+financiamento:
+item1:
+item2:
+item3:
+item4:
+item5:
+destaque:
