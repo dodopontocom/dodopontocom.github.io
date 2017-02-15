@@ -160,11 +160,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-8 agileits_mail_grid_left">
 					<form action="#" method="post">
 						<h4>Nome*</h4>
-						<input type="text" name="Name" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="required">
+						<input type="text" name="Name" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="required" oninvalid="this.setCustomValidity('Preencha seu nome')">
 						<h4>Telefone*</h4>
-						<input type="text" name="Telefone" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="required">
+						<input type="text" name="Telefone" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="required" oninvalid="this.setCustomValidity('Preencha seu telefone')">
 						<h4>Email*</h4>
-						<input type="email" name="Email" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="required">
+						<input type="email" name="Email" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="required" oninvalid="this.setCustomValidity('Preencha seu email corretamente')">
 						<h4>Mensagem*</h4>
 						<textarea name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Olá. Descreva seu imóvel, faixa de preço e a localização. Entramos em contato com você!';}" required="required">Olá. Descreva seu imóvel, faixa de preço e a localização. Entramos em contato com você!</textarea>
 						<input type="submit" value="Enviar">
