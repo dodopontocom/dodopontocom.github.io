@@ -1,0 +1,24 @@
+ref:ref011
+eref:
+preco:780.000,00
+metro:350
+dormi:3
+banho:3
+titulo:Casa Padrão
+descri:Casa com 3 dormitórios sendo 1 suíte, sala com lareira, cozinha banheiro e varanda. Área de lazer com salão de jogos, churrasqueira, piscina de alvenaria e piscina infantil, pomar e quadra.
+contato1:Pedro Henrique
+telefone1:15998183001
+contato2:
+telefone2:
+financiamento:
+item1:Casa de caseiro
+item2:Aceita permuta por apartamento em Alphaville
+item3:
+item4:
+item5:
+mconstru:
+destaque:
+locacao:
+captacao:
+prop:
+imagens:
