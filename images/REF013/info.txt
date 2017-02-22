@@ -4,3 +4,28 @@
 
 ACEITA PERMUTA                        
 [13:46, 22/2/2017] Pedro: Venda R$ 1.500.000,00
+
+ref:
+eref:
+preco:
+metro:
+dormi:
+banho:
+titulo:
+descri:
+contato1:
+telefone1:
+contato2:
+telefone2:
+financiamento:
+item1:
+item2:
+item3:
+item4:
+item5:
+mconstru:
+destaque:
+locacao:
+captacao:
+prop:
+imagens:

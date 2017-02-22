@@ -1,2 +1,24 @@
-[13:21, 22/2/2017] Pedro: Excelente casa de condominio, vista previlegiada, imovel composto por 03 dormitorios sendo 01 suite, sala 02 ambientes, cozinha, pomar, campo de futebol ( falta alambrado ), churrasqueira e piscina. AREA TOTAL 3900m² / AREA CONSTRUIDA 140m² ( aproximadamente ).                        
-[13:24, 22/2/2017] Pedro: Venda R$ 650.000,00
+ref:ref012
+eref:
+preco:650.000,00
+metro:3.900
+dormi:
+banho:
+titulo:Excelente Casa
+descri:Excelente casa de condominio, vista previlegiada, imovel composto por 03 dormitorios sendo 01 suite, sala 02 ambientes, cozinha, pomar, campo de futebol ( falta alambrado ), churrasqueira e piscina.
+contato1:
+telefone1:
+contato2:
+telefone2:
+financiamento:
+item1:AREA CONSTRUIDA 140 m² ( aproximadamente )
+item2:
+item3:
+item4:
+item5:
+mconstru:140
+destaque:
+locacao:
+captacao:
+prop:
+imagens:

@@ -2,3 +2,28 @@
 [16:36, 22/2/2017] Pedro: Terreno de 2800 m2                        
 [16:36, 22/2/2017] Pedro: 250 m de construção                        
 [16:37, 22/2/2017] Pedro: 850.000,00
+
+ref:
+eref:
+preco:
+metro:
+dormi:
+banho:
+titulo:
+descri:
+contato1:
+telefone1:
+contato2:
+telefone2:
+financiamento:
+item1:
+item2:
+item3:
+item4:
+item5:
+mconstru:
+destaque:
+locacao:
+captacao:
+prop:
+imagens:
