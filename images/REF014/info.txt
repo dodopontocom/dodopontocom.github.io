@@ -11,8 +11,8 @@ telefone1:
 contato2:
 telefone2:
 financiamento:
-item1:
-item2:
+item1:Linda vista
+item2:Aceita permita de terreno na praia
 item3:
 item4:
 item5:
