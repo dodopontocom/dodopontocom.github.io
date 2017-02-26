@@ -5,7 +5,9 @@ metro:350
 dormi:3
 banho:3
 titulo:Casa Padrão
-descri:Casa com 3 dormitórios sendo 1 suíte, sala com lareira, cozinha banheiro e varanda. Área de lazer com salão de jogos, churrasqueira, piscina de alvenaria e piscina infantil, pomar e quadra.
+descri:Chácara com casa sede e casa de hóspedes, localizada no Condomínio Porta do Sol. Imóvel com 350 m² de área construída, piscina, churrasqueira, salão de jogos e quadra poliesportiva.
+Casa sede com 3 dormitórios, sendo 1 suíte, sala com lareira. Casa de hóspedes com dormitório, sala, cozinha e banheiro. Lindo jardim e espaço para horta. 
+Condomínio com segurança 24 horas clube com academia, restaurante, campo de futebol, quadras de tênis e poliesportiva e salão de jogos. Fácil acesso pela rodovia Castelo Branco, próximo do Outlet Catarina.Casa com 3 dormitórios sendo 1 suíte, sala com lareira, cozinha banheiro e varanda. Área de lazer com salão de jogos, churrasqueira, piscina de alvenaria e piscina infantil, pomar e quadra.
 contato1:Pedro Henrique
 telefone1:15998183001
 contato2:

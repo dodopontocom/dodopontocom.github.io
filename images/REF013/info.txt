@@ -1,26 +1,19 @@
-[13:44, 22/2/2017] Pedro: Linda casa de condominio composta por 02 casas sede e hospede, piscina, campo de futebol e churrasqueira; terreno 7.580M²
-
-ÓTIMA LOCALIZAÇÃO ACEITA FINANCIAMENTO
-
-ACEITA PERMUTA                        
-[13:46, 22/2/2017] Pedro: Venda R$ 1.500.000,00
-
-ref:
+ref:ref013
 eref:
-preco:
-metro:
+preco:1.500.000,00
+metro:7.580
 dormi:
 banho:
-titulo:
-descri:
+titulo:Chácara em condomínio - Porta do Sol
+descri:Linda chácara em condomínio. Imóvel com casa sede e casa de hóspedes, piscina, campo de futebol e churrasqueira. Terreno com 7.580 m² de área
 contato1:
 telefone1:
 contato2:
 telefone2:
 financiamento:
-item1:
-item2:
-item3:
+item1:Aceita permuta
+item2:Aceita financiamento
+item3:Ótima localização
 item4:
 item5:
 mconstru:
