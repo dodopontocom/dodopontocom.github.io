@@ -1,11 +1,14 @@
-ref:
+ref:002
 eref:
-preco:
-metro:
-dormi:
-banho:
+preco:790.000,00
+metro:280
+dormi:4
+banho:4
 titulo:
-descri:
+descri:Bela chácara com casa, piscina, espaço gourmet e salão de jogos, localizada no Condomínio Porta do Sol. 
+Imóvel com 280 m² com 4 dormitórios, sendo 2 suítes com lindo jardim.
+Condomínio com segurança 24 horas, clube com academia, restaurante, quadras de tênis e poliesportiva, salão de jogos e campo de futebol. 
+Fácil acesso pela rodovia Castelo Branco, próximo ao Outlet Catarina.
 contato1:
 telefone1:
 contato2:
