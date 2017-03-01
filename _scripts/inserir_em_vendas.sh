@@ -3,11 +3,33 @@
 vendas=$(find . -iname vendas.html)
 inserir=$(cat $vendas | awk '/24062017i/{print NR}')
 #terminar=$(cat $vendas | awk '/24062017t/{print NR}')
-info=$(find . -iname info.txt)
+info=$(find ../images/REF002/ -iname info.txt)
+
 ref=$(cat $info | grep ref | cut -d':' -f2)
 eref=$(cat $info | grep eref | cut -d':' -f2)
 preco=$(cat $info | grep preco | cut -d':' -f2)
 metro=$(cat $info | grep metro | cut -d':' -f2)
+dormi=
+banho=
+titulo=
+descri=
+contato1=
+telefone1=
+contato2=
+telefone2=
+financiamento=
+item1=
+item2=
+item3=
+item4=
+item5=
+mconstru=
+destaque=
+locacao=
+captacao=
+prop=
+local=
+imagens=
 
 refnumber=$(cat $info | grep ref | cut -d':' -f2 | grep -o [0-9][0-9][0-9])
 
