@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#set -xv
+
 vendas=$(find . -iname vendas.html)
 inserir=$(cat $vendas | awk '/24062017i/{print NR}')
 #terminar=$(cat $vendas | awk '/24062017t/{print NR}')
@@ -33,7 +35,7 @@ sed -i "/24062017i/a \
 <!-- item imovel-->\n \
 <div class=\"w3l_services_grid\">\n \
 <ul>\n \
-<li class=\"square\">${metro} m²</li>\n \
+<li class=\"square\">$metro m²</li>\n \
 <li class=\"bath\">${banho}</li>\n \
 <li class=\"bed\">${dormi}</li>\n \
 </ul>\n \
