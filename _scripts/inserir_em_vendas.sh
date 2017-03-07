@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #set -xv
+export LANG=pt_BR
 
 timestamp=$(date -u "+%Y-%d-%m-%H-%MZ")
 
