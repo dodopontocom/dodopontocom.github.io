@@ -1,11 +1,14 @@
 #!/bin/bash
 
 #set -xv
-export LANG=pt_BR
+export LANG=pt_BR.UTF-8
 
 timestamp=$(date -u "+%Y-%d-%m-%H-%MZ")
 
-vendas=$(find . -iname vendas.html)
+vendas=$(find ../refs/ -iname vendas.html)
+vendasbkp=${timestamp}_vendas_bkp
+cp ${vendas} log/${vendasbkp}
+
 inserir=$(cat $vendas | awk '/24062017i/{print NR}')
 #terminar=$(cat $vendas | awk '/24062017t/{print NR}')
 info=$(find ../images/REF002/ -iname info.txt)
@@ -38,7 +41,7 @@ cat << _EOF_ > ${outputfile}
 					<!-- item imovel-->
 						<div class="w3l_services_grid">
 							<ul>
-								<li class="square">${metro} m²</li>
+								<li class="square">${metro} m2</li>
 								<li class="bath">${banho}</li>
 								<li class="bed">${dormi}</li>
 							</ul>
@@ -61,8 +64,10 @@ cat << _EOF_ > ${outputfile}
 					<!-- 24062017i -->
 _EOF_
 
-sed -i "/24062017i/r ${outputfile}" ${vendas}
+iconv -f latin1 ${outputfile} > ${outputfile}2
 
-sed -i "${inserir}d" $vendas
+sed -i "/24062017i/r ${outputfile}2" ${vendas}
+
+sed -i "${inserir}d" ${vendas}
 
 
