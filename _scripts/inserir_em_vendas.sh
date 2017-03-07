@@ -117,6 +117,5 @@ git commit -m "commite timestamp: ${timestamp}"
 git push -u origin master
 
 #
-#
 #script exit
 exit 0
