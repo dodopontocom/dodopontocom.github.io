@@ -12,7 +12,7 @@ telefone1:15 998183001
 contato2:
 telefone2:
 financiamento:
-item1:Kilómetro 63,5 da Castelo Branco
+item1:Quilômetro 63,5 da Castelo Branco
 item2:Excelente Localização
 item3:
 item4:
