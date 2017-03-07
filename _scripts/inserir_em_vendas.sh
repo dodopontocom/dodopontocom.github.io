@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #set -xv
-export LANG=pt_BR.UTF-8
+#export LANG=pt_BR.UTF-8
 
 timestamp=$(date -u "+%Y-%d-%m-%H-%MZ")
 
@@ -64,9 +64,9 @@ cat << _EOF_ > ${outputfile}
 					<!-- 24062017i -->
 _EOF_
 
-iconv -f latin1 ${outputfile} > ${outputfile}2
+#iconv -f latin1 ${outputfile} > ${outputfile}2
 
-sed -i "/24062017i/r ${outputfile}2" ${vendas}
+sed -i "/24062017i/r ${outputfile}" ${vendas}
 
 sed -i "${inserir}d" ${vendas}
 
