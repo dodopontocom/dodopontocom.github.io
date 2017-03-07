@@ -5,6 +5,45 @@
 
 timestamp=$(date -u "+%Y-%d-%m-%H-%MZ")
 
+#atualizando repo
+echo "atualizando repositório..."
+git pull
+if [ "$?" -eq 0 ];then
+	echo "repo atualizado com sucesso... continuando"
+	echo "..."
+	sleep 2
+else
+	echo "algo deu errado, cancelando..."
+	sleep 1
+	exit -1
+fi
+
+#validando argumentos
+if [[ "$#" -eq 0 || "$#" -gt 1 ]]; then
+	echo "precisa de 1 e somente 1 argumento!"
+	exit -1
+fi
+echo "argumento is $1"
+
+imovel=$1
+
+#validando imovel
+find ../refs/ -name "*${imovel}.html" | egrep '.*'
+if [ "$?" -eq 0 ]; then
+	echo "imovel referente ja foi adicionado... cancelando operação..."
+	echo "..."
+	sleep 2
+	exit -1
+else
+	echo "criandos as pastas para a ref${imovel}..."
+	mkdir ../images/REF${imovel}/
+fi
+
+
+
+
+exit -1
+
 vendas=$(find ../refs/ -iname vendas.html)
 vendasbkp=${timestamp}_vendas_bkp
 cp ${vendas} log/${vendasbkp}
@@ -70,4 +109,9 @@ sed -i "/24062017i/r ${outputfile}" ${vendas}
 
 sed -i "${inserir}d" ${vendas}
 
+#enviando modificações
+git add --all
 
+git commit -m "commite timestamp: ${timestamp}"
+
+git push -u origin master
