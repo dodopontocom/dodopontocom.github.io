@@ -43,14 +43,20 @@ echo "${imovel}"
 if [ -d ${thisscript}/../images/REF${imovel}/ ]; then
 	echo "pasta encontrada"
 else
-	echo "a pasta do novo imóvel ainda não existe, saindo..."
-	exit 0
+	echo "a pasta do novo imóvel ainda não existe, cancelando operação..."
+	exit -1
 fi
 if [ -f ${thisscript}/../images/REF${imovel}/info.txt ]; then
 	echo "arquivo encontrado"
 else
-	echo "arquivo info.txt do novo imóvel ainda não existe, saindo..."
-	exit 0
+	echo "arquivo info.txt do novo imóvel ainda não existe, cancelando operação..."
+	exit -1
+fi
+
+info=$(find ${thisscript}/../images/REF${imovel}/ -iname info.txt)
+if [ -z $(cat ${info} | grep -a ^ref | cut -d':' -f2) ]; then
+	echo "arquivo info.txt encontrado, porém incompleto... cancelando operação..."
+	exit -1
 fi
 
 ###########################
