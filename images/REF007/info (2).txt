@@ -1,0 +1,26 @@
+﻿Sobrado...100 metros
+3 dormitorios, sendo 1 suite
+Terreno 6x22
+
+residencial jardim das dálias
+preco: 290.00,00
+
+ref:
+eref:
+preco:
+metro:
+dormi:
+banho:
+titulo:
+descri:
+contato1:
+telefone1:
+contato2:
+telefone2:
+financiamento:
+item1:
+item2:
+item3:
+item4:
+item5:
+destaque:

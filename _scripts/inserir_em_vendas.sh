@@ -2,16 +2,73 @@
 
 #set -xv
 #export LANG=pt_BR.UTF-8
+#export LANG=pt_BR.ISO_8859-1
+#echo $LANG
 
+# touch a.txt
+# iconv -f binary -t ISO8859-1 a.txt
+# file -bi a.txt
+# exit -1
+
+thisscript="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+echo "script: ${thisscript}"
 timestamp=$(date -u "+%Y-%d-%m-%H-%MZ")
 
-vendas=$(find ../refs/ -iname vendas.html)
-vendasbkp=${timestamp}_vendas_bkp
-cp ${vendas} log/${vendasbkp}
+#validando argumentos
+if [[ "$#" -eq 0 || "$#" -gt 1 ]]; then
+	echo "precisa de 1 e somente 1 argumento!"
+	exit -1
+fi
+echo "argumento is $1"
 
-inserir=$(cat $vendas | awk '/24062017i/{print NR}')
+imovel=$1
+
+#atualizando repo
+echo "atualizando repositório..."
+git pull
+if [ "$?" -eq 0 ];then
+	echo "repo atualizado com sucesso... continuando"
+	echo "..."
+	sleep 2
+else
+	echo "algo deu errado, cancelando..."
+	sleep 1
+	exit -1
+fi
+
+#validando imovel
+find ${thisscript}/../refs/ -name "*${imovel}.html" | egrep '.*'
+if [ "$?" -eq 0 ]; then
+	echo "imovel referente ja foi adicionado... cancelando operação..."
+	echo "..."
+	sleep 2
+	exit -1
+else
+	echo "criandos as pastas para a ref${imovel}..."
+	[ -d ${thisscript}/../images/REF${imovel}/ ] || mkdir ${thisscript}/../images/REF${imovel}/ && echo " ... criado"
+fi
+
+#########exit -1
+
+vendas=$(find ${thisscript}/../refs/ -iname vendas.html)
+vendasbkp=${timestamp}_vendas_bkp
+cp ${vendas} ${thisscript}/log/${vendasbkp}
+
+inserir=$(cat ${vendas} | awk '/24062017i/{print NR}')
 #terminar=$(cat $vendas | awk '/24062017t/{print NR}')
-info=$(find ../images/REF002/ -iname info.txt)
+
+
+find ${thisscript}/../images/REF${imovel}/ -iname info.txt | egrep '.*'
+if [ "$?" -eq 0 ]; then
+	echo "info.txt encontrado..."
+	info=$(find ${thisscript}/../images/REF${imovel}/ -iname info.txt)
+	sleep 2
+	
+else
+	echo "info.txt para ref${imovel} ainda não foi criado... cancelando"
+	echo "..."
+	exit -1
+fi
 
 ref=$(cat $info | grep -a ^ref | cut -d':' -f2)
 eref=$(cat $info | grep -a ^eref | cut -d':' -f2)
@@ -34,8 +91,8 @@ prop=$(cat $info | grep -a ^prop | cut -d':' -f2)
 local=$(cat $info | grep -a ^local | cut -d':' -f2)
 imagens=$(cat $info | grep -a ^imagens | cut -d':' -f2)
 
-refnumber=$(cat $info | grep ref | cut -d':' -f2 | grep -o [0-9][0-9][0-9])
-outputfile=log/${timestamp}-${ref}.txt
+refnumber=$(cat $info | grep ^ref | cut -d':' -f2 | grep -o [0-9][0-9][0-9])
+outputfile=${thisscript}/log/${timestamp}-${ref}.txt
 
 cat << _EOF_ > ${outputfile}
 					<!-- item imovel-->
@@ -65,9 +122,23 @@ cat << _EOF_ > ${outputfile}
 _EOF_
 
 #iconv -f latin1 ${outputfile} > ${outputfile}2
-
+#sed -i "/24062017i/r ${outputfile}2" ${vendas}
 sed -i "/24062017i/r ${outputfile}" ${vendas}
 
 sed -i "${inserir}d" ${vendas}
 
+#enviando modificações
+#	git add --all
 
+#git commit -m "commite timestamp: ${timestamp}"
+
+#git push -u origin shell
+
+#git checkout master
+
+#git merge shell
+
+####
+##
+#script exit
+exit 0
