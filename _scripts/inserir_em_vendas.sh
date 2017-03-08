@@ -53,12 +53,6 @@ else
 	exit -1
 fi
 
-info=$(find ${thisscript}/../images/REF${imovel}/ -iname info.txt)
-if [ -z $(cat ${info} | grep -a ^ref | cut -d':' -f2) ]; then
-	echo "arquivo info.txt encontrado, porém incompleto... cancelando operação..."
-	exit -1
-fi
-
 ###########################
 #validando imovel ------- esse egrep faz com que o find retorne nonzero em casa de não encontrar
 echo "procurando se imovel ja nao foi adicionado..."
@@ -75,6 +69,11 @@ fi
 #fi
 ########################
 
+info=$(find ${thisscript}/../images/REF${imovel}/ -iname info.txt)
+if [ -z $(cat ${info} | grep -a ^ref | cut -d':' -f2) ]; then
+	echo "arquivo info.txt encontrado, porém incompleto... cancelando operação..."
+	exit -1
+fi
 
 #atualizando repo
 echo "atualizando repositório..."
