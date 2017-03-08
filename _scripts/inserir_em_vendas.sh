@@ -57,6 +57,7 @@ cp ${vendas} ${thisscript}/log/${vendasbkp}
 inserir=$(cat ${vendas} | awk '/24062017i/{print NR}')
 #terminar=$(cat $vendas | awk '/24062017t/{print NR}')
 
+
 find ${thisscript}/../images/REF${imovel}/ -iname info.txt | egrep '.*'
 if [ "$?" -eq 0 ]; then
 	echo "info.txt encontrado..."
