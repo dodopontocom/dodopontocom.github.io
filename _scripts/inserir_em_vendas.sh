@@ -21,7 +21,60 @@ if [[ "$#" -eq 0 || "$#" -gt 1 ]]; then
 fi
 echo "argumento is $1"
 
+count=$(cat ${thisscript}/log/counter.log | tail -1)
+#funcao para verificar se há novas pastas de fotos e o arquivo info.
+verificar () {
+	echo "atualmente temos ${count} pastas dos ímóveis";
+	i=$(ls -lrt ${thisscript}/../images/REF*/ | grep images/REF | wc -l);
+	if [ ${i} -gt ${count} ]; then
+		echo "novas pastas foram adicionadas desde a última visita";
+		count=${i} ; echo "número de pastas agora: ${count}";
+		echo "${count}" >> ${thisscript}/log/counter.log
+	else 
+		echo "mais nenhuma pasta foi adicionada até o momento";
+	fi
+}
+
+verificar
+
 imovel=$1
+echo "${imovel}"
+
+if [ -d ${thisscript}/../images/REF${imovel}/ ]; then
+	echo "pasta encontrada"
+else
+	echo "a pasta do novo imóvel ainda não existe, cancelando operação..."
+	exit -1
+fi
+if [ -f ${thisscript}/../images/REF${imovel}/info.txt ]; then
+	echo "arquivo encontrado"
+else
+	echo "arquivo info.txt do novo imóvel ainda não existe, cancelando operação..."
+	exit -1
+fi
+
+info=$(find ${thisscript}/../images/REF${imovel}/ -iname info.txt)
+if [ -z $(cat ${info} | grep -a ^ref | cut -d':' -f2) ]; then
+	echo "arquivo info.txt encontrado, porém incompleto... cancelando operação..."
+	exit -1
+fi
+
+###########################
+#validando imovel ------- esse egrep faz com que o find retorne nonzero em casa de não encontrar
+echo "procurando se imovel ja nao foi adicionado..."
+find ${thisscript}/../refs/ -name "*${imovel}.html" | egrep '.*'
+if [ "$?" -eq 0 ]; then
+	echo "imovel referente ja foi adicionado... cancelando operação..."
+	echo "..."
+	sleep 2
+	exit -1
+fi
+# else
+#	echo "criandos as pastas para a ref${imovel}..."
+#	[ -d ${thisscript}/../images/REF${imovel}/ ] || mkdir ${thisscript}/../images/REF${imovel}/ && echo " ... criado"
+#fi
+########################
+
 
 #atualizando repo
 echo "atualizando repositório..."
@@ -35,20 +88,8 @@ else
 	sleep 1
 	exit -1
 fi
-
-#validando imovel
-find ${thisscript}/../refs/ -name "*${imovel}.html" | egrep '.*'
-if [ "$?" -eq 0 ]; then
-	echo "imovel referente ja foi adicionado... cancelando operação..."
-	echo "..."
-	sleep 2
-	exit -1
-else
-	echo "criandos as pastas para a ref${imovel}..."
-	[ -d ${thisscript}/../images/REF${imovel}/ ] || mkdir ${thisscript}/../images/REF${imovel}/ && echo " ... criado"
-fi
-
-#########exit -1
+###############################
+###########################
 
 vendas=$(find ${thisscript}/../refs/ -iname vendas.html)
 vendasbkp=${timestamp}_vendas_bkp
