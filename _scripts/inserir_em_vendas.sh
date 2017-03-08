@@ -110,11 +110,15 @@ sed -i "/24062017i/r ${outputfile}" ${vendas}
 sed -i "${inserir}d" ${vendas}
 
 #enviando modificações
-git add --all
+#git add --all
 
-git commit -m "commite timestamp: ${timestamp}"
+#git commit -m "commite timestamp: ${timestamp}"
 
-git push -u origin master
+#git push -u origin shell
+
+#git checkout master
+
+#git merge shell
 
 ####
 ##
