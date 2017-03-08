@@ -1,0 +1,24 @@
+﻿ref:ref014
+eref:
+preco:850.000,00
+metro:250
+dormi:4
+banho:4
+titulo:Casa Térrea com Varanda - Mairinque SP
+descri:Casa Térrea com Varanda com vista linda. 4 dormitórios sendo 2 suítes, sala, cozinha, banheiro social, edícula com churrasqueira, fogão a lenha, forno, quartinho de dispensa, piscina,terreno todo gramado, aceita permuta de terreno na praia e/ou São Paulo.
+contato1:
+telefone1:
+contato2:
+telefone2:
+financiamento:
+item1:Linda vista
+item2:Aceita permita de terreno na praia
+item3:
+item4:
+item5:
+mconstru:2.800
+destaque:
+locacao:
+captacao:
+prop:
+imagens:
