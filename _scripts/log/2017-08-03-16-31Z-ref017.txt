@@ -1,0 +1,24 @@
+					<!-- item imovel-->
+						<div class="w3l_services_grid">
+							<ul>
+								<li class="square"> m2</li>
+								<li class="bath"></li>
+								<li class="bed"></li>
+							</ul>
+							<div class="hover15 column">
+							<div>
+							<a href="ref017.html">
+								<figure>
+									<img src="../images/REF017/001.jpg" alt="" class="img-responsive" />
+									<h5 class="cima"><span class="refspan">REF017</span></h5>
+									<h5 class="local"><span class="refspan"></span></h5>
+								</figure>
+							</a>
+							</div>
+							</div>
+							<h4><a href="ref017.html">R$ </a></h4>
+							<p>Bela chácara com casa, piscina, espaço gourmet e salão de jogos, localizada no Condomínio Porta do Sol. Imóvel com 280 m² com<a class="bake" href="ref017.html">Detalhes...</a></p>
+						</div>
+						<p class="dolor"></p>
+					<!-- item imovel-->
+					<!-- 24062017i -->
