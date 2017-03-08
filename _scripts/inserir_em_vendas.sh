@@ -50,7 +50,7 @@ cp ${vendas} log/${vendasbkp}
 
 inserir=$(cat $vendas | awk '/24062017i/{print NR}')
 #terminar=$(cat $vendas | awk '/24062017t/{print NR}')
-info=$(find ../images/REF002/ -iname info.txt)
+info=$(find ../images/REF${imovel}/ -iname info.txt)
 
 ref=$(cat $info | grep -a ^ref | cut -d':' -f2)
 eref=$(cat $info | grep -a ^eref | cut -d':' -f2)
@@ -110,7 +110,7 @@ sed -i "/24062017i/r ${outputfile}" ${vendas}
 sed -i "${inserir}d" ${vendas}
 
 #enviando modificações
-#git add --all
+#	git add --all
 
 #git commit -m "commite timestamp: ${timestamp}"
 
