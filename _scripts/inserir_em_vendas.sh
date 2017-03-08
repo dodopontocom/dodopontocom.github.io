@@ -45,7 +45,7 @@ if [ "$?" -eq 0 ]; then
 	exit -1
 else
 	echo "criandos as pastas para a ref${imovel}..."
-	mkdir ${thisscript}/../images/REF${imovel}/
+	[ -d ${thisscript}/../images/REF${imovel}/ ] || mkdir ${thisscript}/../images/REF${imovel}/ && echo " ... criado"
 fi
 
 #########exit -1
