@@ -148,7 +148,7 @@ cat << _EOF_ > ${outputfile}
 								<figure>
 									<img src="../images/REF${refnumber}/001.jpg" alt="" class="img-responsive" />
 									<h5 class="cima"><span class="refspan">REF${refnumber}</span></h5>
-									<h5 class="local"><span class="refspan">${titulo}</span></h5>
+									<h5 class="local"><span class="refspan">${local}</span></h5>
 								</figure>
 							</a>
 							</div>
