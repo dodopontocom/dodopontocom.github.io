@@ -1,19 +1,29 @@
-ref:
+﻿
+ref:ref005
 eref:
-preco:
-metro:
-dormi:
-banho:
-titulo:
-descri:
-contato1:
-telefone1:
+preco:175.000,00
+metro:1.000
+dormi:1
+banho:1
+titulo:Chácara - Porto Feliz / SP
+descri:Oportunidade! Chácara semi-acabada no km 99 da rodovia Castelo Branco. 130 m² de área construída, com dormitório e banheiro social.
+contato1:Alcides
+telefone1:11995915356
 contato2:
 telefone2:
 financiamento:
-item1:
-item2:
+mconstru:130
+item1:R$ 175.000,00
+item2:Excelente Localização
 item3:
 item4:
 item5:
+item6:
 destaque:
+locacao:
+captacao:
+prop:
+local:Porto Feliz / SP
+imagens:
+
+
