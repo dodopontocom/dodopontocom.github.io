@@ -72,7 +72,11 @@ fi
 ########################
 
 info=$(find ${thisscript}/../images/REF${imovel}/ -iname info.txt)
-if [ -z $(cat ${info} | grep -a ^ref | cut -d':' -f2) ]; then
+echo "${info}"
+ref=$(cat ${info} | grep -a ^ref | cut -d':' -f2)
+echo "${ref}"
+
+if [ -z ${ref} ]; then
 	echo "arquivo info.txt encontrado, porém incompleto... cancelando operação..."
 	exit -1
 fi
