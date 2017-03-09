@@ -55,14 +55,16 @@ fi
 
 ###########################
 #validando imovel ------- esse egrep faz com que o find retorne nonzero em casa de não encontrar
-echo "procurando se imovel ja nao foi adicionado..."
-find ${thisscript}/../refs/ -name "*${imovel}.html" | egrep '.*'
-if [ "$?" -eq 0 ]; then
-	echo "imovel referente ja foi adicionado... cancelando operação..."
-	echo "..."
-	sleep 2
-	exit -1
-fi
+
+# echo "procurando se imovel ja nao foi adicionado..."
+# find ${thisscript}/../refs/ -name "*${imovel}.html" | egrep '.*'
+# if [ "$?" -eq 0 ]; then
+# 	echo "imovel referente ja foi adicionado... cancelando operação..."
+# 	echo "..."
+# 	sleep 2
+# 	exit -1
+# fi
+
 # else
 #	echo "criandos as pastas para a ref${imovel}..."
 #	[ -d ${thisscript}/../images/REF${imovel}/ ] || mkdir ${thisscript}/../images/REF${imovel}/ && echo " ... criado"
