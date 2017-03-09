@@ -1,19 +1,29 @@
-ref:
+﻿
+ref:ref004
 eref:
-preco:
-metro:
-dormi:
-banho:
-titulo:
-descri:
-contato1:
-telefone1:
+preco:1.580.000,00
+metro:200
+dormi:3
+banho:3
+titulo:Casa Nova Em Condomínio Residencial - Mairinque/SP
+descri:Chácara com amplo espaço para carros, pomar, horta, galinheiro, lindo jardim e área de lazer completa. Rico projeto arquitetônico. Ótimo preço.
+contato1:Pedro Henrique
+telefone1:15998183001
 contato2:
 telefone2:
 financiamento:
-item1:
-item2:
-item3:
+mconstru:
+item1:KM 63,5 Da Castelo Branco
+item2:Excelente Localização
+item3:Valor Condomínio R$ 510,00 Mensais
 item4:
 item5:
+item6:
 destaque:
+locacao:
+captacao:
+prop:
+local:Porta do Sol - Mairinque/SP
+imagens:
+
+
