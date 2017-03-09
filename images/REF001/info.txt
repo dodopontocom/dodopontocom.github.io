@@ -1,24 +1,29 @@
-ref:
+﻿
+ref:ref001
 eref:
-preco:
-metro:
-dormi:
-banho:
-titulo:
-descri:
-contato1:
-telefone1:
+preco:1.200.000,00
+metro:1.500
+dormi:4
+banho:4
+titulo:Casa nova em condomínio residencial - Mairinque/SP
+descri:Casa nova, com 4 dormitórios, sendo 1 suíte comum e 1 suíte com hidromassagem. Sala, cozinha americana, lavabo, churrasqueira, salão de festas e piscina
+contato1:Pedro Henrique
+telefone1:15998183001
 contato2:
 telefone2:
 financiamento:
-item1:
-item2:
-item3:
+mconstru:
+item1:KM 63,5 da Castelo Branco
+item2:Excelente localização
+item3:Valor condomínio R$ 510,00 mensais
 item4:
 item5:
-mconstru:
+item6:
 destaque:
 locacao:
 captacao:
 prop:
+local:Porta do Sol - Mairinque/SP
 imagens:
+
+

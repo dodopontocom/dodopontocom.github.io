@@ -1,22 +1,26 @@
+Ôªø
 ref:ref003
 eref:
-preco:
-metro:
-dormi:
-banho:
-titulo:
-descri:
-contato1:
-telefone1:
+preco:790.000,00
+metro:2.500
+dormi:4
+banho:4
+titulo:Ch√°cara Em Condom√≠nio Residencial - Mairinque/SP
+descri:Linda ch√°cara com 320 m¬≤ de √°rea constru√≠da, localizada no Condom√≠nio Porta do Sol com 4 dormit√≥rios, sendo uma 1 su√≠te. Casa com lareira, jardim, pomar, espa√ßo gourmet, piscina e sal√£o de jogos. Condom√≠nio com vigil√¢ncia 24 horas, clube com academia, campo de futebol, quadras de t√™nis e poliesportiva. F√°cil acesso pela rodovia Castelo Branco (pr√≥ximo ao Catarina Outlet). Im√≥vel mobiliado.
+contato1:Pedro Henrique
+telefone1:15998183001
 contato2:
 telefone2:
 financiamento:
-item1:
-item2:
-item3:
+item1:KM 63,5 Da Castelo Branco
+item2:Excelente Localiza√ß√£o
+item3:Valor Condom√≠nio R$ 510,00 Mensais
 item4:
 item5:
 destaque:
-Linda ch·cara com 320 m≤ de ·rea construÌda, localizada no CondomÌnio Porta do Sol com 4 dormitÛrios, sendo uma 1 suÌte. Casa com lareira, jardim, pomar, espaÁo gourmet, piscina e sal„o de jogos.
-CondomÌnio com vigil‚ncia 24 horas, clube com academia, campo de futebol, quadras de tÍnis e poliesportiva. F·cil acesso pela rodovia Castelo Branco (prÛximo ao Catarina Outlet).
-ImÛvel mobiliado. 
+mconstru:320
+locacao:
+captacao:
+prop:
+local:Porta do Sol - Mairinque/SP
+imagens:
