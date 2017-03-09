@@ -3,7 +3,7 @@
 #create html for the new house
 
 #get some variables
-info=info.properties
+#info=info.properties
 # ref: REF010
 # preco: 800.000,00
 # dormi: 1
@@ -12,30 +12,38 @@ info=info.properties
 # descri: Oportunidade de renda
 # contato: Alcides
 
-ref=$(cat ${info} | grep ref | cut -d':' -f2 )
-preco=$(cat ${info} | grep preco | cut -d':' -f2 )
-dormi=$(cat ${info} | grep dormi | cut -d':' -f2 )
-banho=$(cat ${info} | grep banho | cut -d':' -f2 )
-titulo=$(cat ${info} | grep titulo | cut -d':' -f2 )
-descri=$(cat ${info} | grep descri | cut -d':' -f2 )
-contato1=$(cat ${info} | grep contato1 | cut -d':' -f2 )
-telefone1=$(cat ${info} | grep telefone1 | cut -d':' -f2 )
-item1=$(cat ${info} | grep item1 | cut -d':' -f2 )
-#destaque=$(cat ${info} | grep destaque | cut -d':' -f2 )
+timestamp=$(date -u "+%Y-%d-%m-%H-%MZ")
+imovel=$1
+thisscript="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+info=$(find ${thisscript}/../images/REF${imovel}/ -iname info.txt)
+new_imovel=${thisscript}/../refs/ref${imovel}.html
+imovel_bkp=${timestamp}_${new_imovel}_bkp
 
-contato2=$(cat ${info} | grep contato2 | cut -d':' -f2 )
-if [ -z ${contato2} ]; then
-	echo "sem contato 2"
-else
-	echo "erro..."
-fi	
-
-exit 0
+ref=$(cat $info | grep -a ^ref | cut -d':' -f2)
+eref=$(cat $info | grep -a ^eref | cut -d':' -f2)
+preco=$(cat $info | grep -a ^preco | cut -d':' -f2)
+metro=$(cat $info | grep -a ^metro | cut -d':' -f2)
+dormi=$(cat $info | grep -a ^dormi | cut -d':' -f2)
+banho=$(cat $info | grep -a ^banho | cut -d':' -f2)
+titulo=$(cat $info | grep -a ^titulo | cut -d':' -f2)
+descri=$(cat $info | grep -a ^descri | cut -d':' -f2)
+contato1=$(cat $info | grep -a ^contato1 | cut -d':' -f2)
+telefone1=$(cat $info | grep -a ^telefone1 | cut -d':' -f2)
+contato2=$(cat $info | grep -a ^contato2 | cut -d':' -f2)
+telefone2=$(cat $info | grep -a ^telefone2 | cut -d':' -f2)
+financiamento=$(cat $info | grep -a ^financiamento | cut -d':' -f2)
+mconstru=$(cat $info | grep -a ^mconstru | cut -d':' -f2)
+destaque=$(cat $info | grep -a ^destaque | cut -d':' -f2)
+locacao=$(cat $info | grep -a ^locacao | cut -d':' -f2)
+captacao=$(cat $info | grep -a ^captacao | cut -d':' -f2)
+prop=$(cat $info | grep -a ^prop | cut -d':' -f2)
+local=$(cat $info | grep -a ^local | cut -d':' -f2)
+imagens=$(cat $info | grep -a ^imagens | cut -d':' -f2)
 
 ##############
 
 #start html
-cat << _EOF_
+cat << _EOF_ > ${new_imovel}
 <!--
 author: W3layouts
 author URL: http://w3layouts.com
@@ -201,7 +209,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li class="bath">${banho}</li>
 							<li class="bed">${dormi}</li>
 							<li>
-								<i class="fa fa-whatsapp" aria-hidden="true"></i><a href="intent://send/15998183001#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>${contato1}</a>${telefone1}</li>
+								<i class="fa fa-whatsapp" aria-hidden="true"></i><a href="intent://send/${telefone1}#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>${contato1}</a>${telefone1}</li>
 						</ul>
 
 						<!-- banner -->
@@ -298,15 +306,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-md-6 w3_single_grid_left_grid1_left">
 							<ul>
 								<li>${item1}</li>
-								<li>Excelente localização</li>
-								<li>Valor condomínio R$ 510,00 mensais</li>
-								<li></li>
-								<li></li>
+								<li>${item2}</li>
+								<li>${item3}</li>
+								<li>${item4}</li>
+								<li>${item5}</li>
 							</ul>
 						</div>
 						<div class="col-md-6 w3_single_grid_left_grid1_left">
 							<ul>
-								<li><i class="fa fa-whatsapp" aria-hidden="true"></i><a href="intent://send/15998183001#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Pedro Henrique </a>(15 998183001)</li>
+								<li><i class="fa fa-whatsapp" aria-hidden="true"></i><a href="intent://send/${telefone1}#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> ${contato1} </a>(${telefone1})</li>
 							</ul>
 						</div>
 						<div class="clearfix"> </div>
@@ -498,8 +506,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </body>
 </html>
 
-
 _EOF_
 
+####
+cp ${new_imovel} ${thisscript}/log/${imovel_bkp}
 
 
