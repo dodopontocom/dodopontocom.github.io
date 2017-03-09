@@ -1,26 +1,29 @@
-Sobrado...100 metros
-3 dormitorios, sendo 1 suite
-Terreno 6x22
-
-residencial jardim das d�lias
-preco: 290.00,00
-
-ref:
+﻿
+ref:ref007
 eref:
-preco:
-metro:
-dormi:
-banho:
-titulo:
-descri:
-contato1:
-telefone1:
-contato2:
-telefone2:
-financiamento:
-item1:
-item2:
-item3:
-item4:
+preco:290.000,00
+metro:132
+dormi:3
+banho:2
+titulo:Sobrado Em Condomínio - Sorocaba / SP
+descri:Sobrado com 3 dormitórios sendo 1 suíte. 132 m² de terreno e garagem descoberta para dois carros. O Condomínio oferece salão de festas, quiosquer com churrasqueiras, quadra poli-esportiva e playground.
+contato1:Pedro Henrique
+telefone1:15998183001
+contato2:Alcides
+telefone2:11995915356
+financiamento:sim
+mconstru:132
+item1:Residencial Com Portaria 24 Horas
+item2:Localizado Na Zona Norte De Sorocaba
+item3:Em Fase De Acabamento
+item4:Aceita Financiamento
 item5:
+item6:
 destaque:
+locacao:
+captacao:
+prop:
+local:Sorocaba / SP
+imagens:
+
+
