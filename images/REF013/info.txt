@@ -1,24 +1,27 @@
+Ôªø
 ref:ref013
 eref:
 preco:1.500.000,00
-metro:7.580
+metro:1.580
 dormi:
 banho:
-titulo:Ch·cara em condomÌnio - Porta do Sol
-descri:Linda ch·cara em condomÌnio. ImÛvel com casa sede e casa de hÛspedes, piscina, campo de futebol e churrasqueira. Terreno com 7.580 m≤ de ·rea
-contato1:
-telefone1:
+titulo:Ch√°cara em condom√≠nio - Porta do Sol
+descri:Linda ch√°cara em condom√≠nio. Im√≥vel com casa sede e casa de h√≥spedes, piscina, campo de futebol e churrasqueira. Terreno com 1.580 m¬≤ de √°rea
+contato1:Pedro Henrique
+telefone1:15998183001
 contato2:
 telefone2:
 financiamento:
+mconstru:
 item1:Aceita permuta
 item2:Aceita financiamento
-item3:”tima localizaÁ„o
+item3:√ìtima localiza√ß√£o
 item4:
 item5:
-mconstru:
+item6:
 destaque:
 locacao:
 captacao:
 prop:
+local:Porta do Sol - Mairinque/SP
 imagens:

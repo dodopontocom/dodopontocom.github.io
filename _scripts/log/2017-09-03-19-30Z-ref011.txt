@@ -1,0 +1,24 @@
+					<!-- item imovel-->
+						<div class="w3l_services_grid">
+							<ul>
+								<li class="square">350 m2</li>
+								<li class="bath">3</li>
+								<li class="bed">3</li>
+							</ul>
+							<div class="hover15 column">
+							<div>
+							<a href="ref011.html">
+								<figure>
+									<img src="../images/REF011/001.jpg" alt="" class="img-responsive" />
+									<h5 class="cima"><span class="refspan">REF011</span></h5>
+									<h5 class="local"><span class="refspan">Porta do Sol - Mairinque/SP</span></h5>
+								</figure>
+							</a>
+							</div>
+							</div>
+							<h4><a href="ref011.html">R$ 780.000,00</a></h4>
+							<p>Chácara com casa sede e casa de hóspedes, localizada no Condomínio Porta do Sol. Imóvel com 350 m² de área construída, piscina, churrasqueira, salão de jogos e quadra poliesportiva. Casa sede com 3 dormitórios, sendo 1 suíte, sala com lareira. Casa de hóspedes com dormitório, sala, cozinha e banheiro. Lindo jardim e espaço para horta. Condomínio com segurança 24 horas clube com academia, restaurante, campo de futebol, quadras de tênis e poliesportiva e salão de jogos. Fácil acesso pela rodovia Castelo Branco, próximo do Outlet Catarina.Casa com 3 dormitórios sendo 1 suíte, sala com lareira, cozinha banheiro e varanda. Área de lazer com salão de jogos, churrasqueira, piscina de alvenaria e piscina infantil, pomar e quadra.<a class="bake" href="ref011.html">Detalhes...</a></p>
+						</div>
+						<p class="dolor"></p>
+					<!-- item imovel-->
+					<!-- 24062017i -->
