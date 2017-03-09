@@ -1,22 +1,29 @@
-preco: 210.000,00
-jardim santa marta
-
-ref:
+﻿
+ref:ref008
 eref:
-preco:
-metro:
-dormi:
-banho:
-titulo:
-descri:
-contato1:
-telefone1:
-contato2:
-telefone2:
+preco:210.000,00
+metro:150,50
+dormi:3
+banho:1
+titulo:Casa Térra Em Condomínio - Sorocaba / SP
+descri:Localizada no loteamento Santa Marta (em frente ao Parque São Bento) avenida principal. 3 dormitórios, cozinha estilo americana, área de serviço coberta, quintal nos fundos e garagem descoberta para 2 carros. Área construída 65,12 m².
+contato1:Pedro Henrique
+telefone1:15998183001
+contato2:Alcides
+telefone2:11995915356
 financiamento:
-item1:
-item2:
+mconstru:65,12
+item1:Fase De Acabamento
+item2:Aceita Financiamento
 item3:
 item4:
 item5:
+item6:
 destaque:
+locacao:
+captacao:
+prop:
+local:Sorocaba / SP
+imagens:
+
+

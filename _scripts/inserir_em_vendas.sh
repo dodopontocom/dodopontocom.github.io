@@ -14,6 +14,8 @@ thisscript="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 echo "script: ${thisscript}"
 timestamp=$(date -u "+%Y-%d-%m-%H-%MZ")
 
+vendas=$(find ${thisscript}/../refs/ -iname vendas.html)
+
 #validando argumentos
 if [[ "$#" -eq 0 || "$#" -gt 1 ]]; then
 	echo "precisa de 1 e somente 1 argumento!"
@@ -39,6 +41,11 @@ verificar
 
 imovel=$1
 echo "${imovel}"
+
+#verificar se refXXX ja nao está adicionada em vendas.html
+#cat ${vendas} | grep REF${imovel}
+
+########
 
 if [ -d ${thisscript}/../images/REF${imovel}/ ]; then
 	echo "pasta encontrada"
@@ -96,7 +103,7 @@ fi
 ###############################
 ###########################
 
-vendas=$(find ${thisscript}/../refs/ -iname vendas.html)
+#vendas=$(find ${thisscript}/../refs/ -iname vendas.html)
 vendasbkp=${timestamp}_vendas_bkp
 cp ${vendas} ${thisscript}/log/${vendasbkp}
 
