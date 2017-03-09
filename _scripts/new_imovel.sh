@@ -219,62 +219,46 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 						                <!-- First-Slide -->
 						                <div class="item active">
-						                    <img src="../images/REF001/001.jpg" alt="" />
+						                    <img src="../images/${refupper}/001.jpg" alt="" />
 						                </div>
 
 						                <!-- Second-Slide -->
 						                <div class="item">
-						                    <img src="../images/REF001/002.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/002.jpg" alt="" class="img-responsive" />
 						                </div>
 
 						                <!-- Third-Slide -->
 						                <div class="item">
-						                    <img src="../images/REF001/003.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/003.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <!-- Fourth-Slide -->
 						                <div class="item">
-						                    <img src="../images/REF001/004.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/004.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/REF001/005.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/005.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/REF001/006.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/006.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/REF001/007.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/007.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/REF001/008.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/008.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/REF001/009.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/009.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/REF001/010.jpg" alt="" class="img-responsive" />
-						                </div>
-
-						                <div class="item">
-						                    <img src="../images/REF001/011.jpg" alt="" class="img-responsive" />
-						                </div>
-
-						                <div class="item">
-						                    <img src="../images/REF001/012.jpg" alt="" class="img-responsive" />
-						                </div>
-						                
-						                <div class="item">
-						                    <img src="../images/REF001/013.jpg" alt="" class="img-responsive" />
-						                </div>
-						                
-						                <div class="item">
-						                    <img src="../images/REF001/014.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/010.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						            </div>
