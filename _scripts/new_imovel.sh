@@ -2,24 +2,21 @@
 
 #create html for the new house
 
-#get some variables
-#info=info.properties
-# ref: REF010
-# preco: 800.000,00
-# dormi: 1
-# banho: 1
-#titulo:
-# descri: Oportunidade de renda
-# contato: Alcides
+#validando argumentos
+if [[ "$#" -eq 0 || "$#" -gt 1 ]]; then
+	echo "precisa de 1 e somente 1 argumento!"
+	exit -1
+fi
 
 timestamp=$(date -u "+%Y-%d-%m-%H-%MZ")
 imovel=$1
 thisscript="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 info=$(find ${thisscript}/../images/REF${imovel}/ -iname info.txt)
 new_imovel=${thisscript}/../refs/ref${imovel}.html
-imovel_bkp=${timestamp}_${new_imovel}_bkp
+imovel_bkp=${timestamp}_ref${imovel}_bkp
 
 ref=$(cat $info | grep -a ^ref | cut -d':' -f2)
+refupper=${ref^^}
 eref=$(cat $info | grep -a ^eref | cut -d':' -f2)
 preco=$(cat $info | grep -a ^preco | cut -d':' -f2)
 metro=$(cat $info | grep -a ^metro | cut -d':' -f2)
@@ -43,8 +40,9 @@ imagens=$(cat $info | grep -a ^imagens | cut -d':' -f2)
 ##############
 
 #start html
+
 cat << _EOF_ > ${new_imovel}
-<!--
+	<!--
 author: W3layouts
 author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
@@ -80,9 +78,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript" src="../js/easing.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
+		\$(".scroll").click(function(event){		
 			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			\$('html,body').animate({scrollTop:\$(this.hash).offset().top},1000);
 		});
 	});
 </script>
@@ -204,12 +202,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="w3_single_grid_left">
 					<div class="w3_single_grid_left_grid w3l_services_grid">
 						<ul>
-							<li><a class="bake">R$ ${preco} ${ref}</a></li>
+							<li><a class="bake">R$ ${preco} ${refupper}</a></li>
 							<li class="square">${metro}</li>
 							<li class="bath">${banho}</li>
 							<li class="bed">${dormi}</li>
 							<li>
-								<i class="fa fa-whatsapp" aria-hidden="true"></i><a href="intent://send/${telefone1}#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>${contato1}</a>${telefone1}</li>
+								<i class="fa fa-whatsapp" aria-hidden="true"></i><a href="intent://send/${telefone1}#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>${contato1} </a>${telefone1}</li>
 						</ul>
 
 						<!-- banner -->
@@ -488,7 +486,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //for bootstrap working -->
 <!-- here stars scrolling icon -->
 	<script type="text/javascript">
-		$(document).ready(function() {
+		\$(document).ready(function() {
 			/*
 				var defaults = {
 				containerID: 'toTop', // fading element id
@@ -509,6 +507,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 _EOF_
 
 ####
-cp ${new_imovel} ${thisscript}/log/${imovel_bkp}
+cp -v ${new_imovel} ${thisscript}/log/${imovel_bkp}
 
 
