@@ -1,26 +1,28 @@
+ï»¿
 ref:ref002
 eref:
 preco:790.000,00
 metro:3.000
 dormi:4
 banho:4
-titulo:Casa em condomínio residencial - Mairinque / SP
-descri:Bela chácara com casa, piscina, espaço gourmet e salão de jogos, localizada no Condomínio Porta do Sol. 
-Imóvel com 280 m² com 4 dormitórios, sendo 2 suítes com lindo jardim. Condomínio com segurança 24 horas, clube com academia, restaurante, quadras de tênis e poliesportiva, salão de jogos e campo de futebol. Fácil acesso pela rodovia Castelo Branco, próximo ao Outlet Catarina.
+titulo:Casa em condomÃ­nio residencial - Mairinque / SP
+descri:Bela chÃ¡cara com casa, piscina, espaÃ§o gourmet e salÃ£o de jogos, localizada no CondomÃ­nio Porta do Sol. 
+ImÃ³vel com 280 mÂ² com 4 dormitÃ³rios, sendo 2 suÃ­tes com lindo jardim. CondomÃ­nio com seguranÃ§a 24 horas, clube com academia, restaurante, quadras de tÃªnis e poliesportiva, salÃ£o de jogos e campo de futebol. FÃ¡cil acesso pela rodovia Castelo Branco, prÃ³ximo ao Outlet Catarina.
 contato1:Pedro Henrique
-telefone1:15 998183001
+telefone1:15998183001
 contato2:
 telefone2:
 financiamento:
-item1:Quilômetro 63,5 da Castelo Branco
-item2:Excelente Localização
+item1:QuilÃ´metro 63,5 da Castelo Branco
+item2:Excelente LocalizaÃ§Ã£o
 item3:
 item4:
 item5:
+item6:
 destaque:
 mconstru:280
 locacao:
 captacao:
 prop:
-local:
+local:Porta do Sol - Mairinque/SP
 imagens:

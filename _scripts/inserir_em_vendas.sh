@@ -55,14 +55,16 @@ fi
 
 ###########################
 #validando imovel ------- esse egrep faz com que o find retorne nonzero em casa de não encontrar
-echo "procurando se imovel ja nao foi adicionado..."
-find ${thisscript}/../refs/ -name "*${imovel}.html" | egrep '.*'
-if [ "$?" -eq 0 ]; then
-	echo "imovel referente ja foi adicionado... cancelando operação..."
-	echo "..."
-	sleep 2
-	exit -1
-fi
+
+# echo "procurando se imovel ja nao foi adicionado..."
+# find ${thisscript}/../refs/ -name "*${imovel}.html" | egrep '.*'
+# if [ "$?" -eq 0 ]; then
+# 	echo "imovel referente ja foi adicionado... cancelando operação..."
+# 	echo "..."
+# 	sleep 2
+# 	exit -1
+# fi
+
 # else
 #	echo "criandos as pastas para a ref${imovel}..."
 #	[ -d ${thisscript}/../images/REF${imovel}/ ] || mkdir ${thisscript}/../images/REF${imovel}/ && echo " ... criado"
@@ -70,7 +72,11 @@ fi
 ########################
 
 info=$(find ${thisscript}/../images/REF${imovel}/ -iname info.txt)
-if [ -z $(cat ${info} | grep -a ^ref | cut -d':' -f2) ]; then
+echo "${info}"
+ref=$(cat ${info} | grep -a ^ref | cut -d':' -f2)
+echo "${ref}"
+
+if [ -z ${ref} ]; then
 	echo "arquivo info.txt encontrado, porém incompleto... cancelando operação..."
 	exit -1
 fi
@@ -148,7 +154,7 @@ cat << _EOF_ > ${outputfile}
 								<figure>
 									<img src="../images/REF${refnumber}/001.jpg" alt="" class="img-responsive" />
 									<h5 class="cima"><span class="refspan">REF${refnumber}</span></h5>
-									<h5 class="local"><span class="refspan">${titulo}</span></h5>
+									<h5 class="local"><span class="refspan">${local}</span></h5>
 								</figure>
 							</a>
 							</div>

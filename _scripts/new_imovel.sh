@@ -30,6 +30,12 @@ contato2=$(cat $info | grep -a ^contato2 | cut -d':' -f2)
 telefone2=$(cat $info | grep -a ^telefone2 | cut -d':' -f2)
 financiamento=$(cat $info | grep -a ^financiamento | cut -d':' -f2)
 mconstru=$(cat $info | grep -a ^mconstru | cut -d':' -f2)
+item1=$(cat $info | grep -a ^item1 | cut -d':' -f2)
+item2=$(cat $info | grep -a ^item2 | cut -d':' -f2)
+item3=$(cat $info | grep -a ^item3 | cut -d':' -f2)
+item4=$(cat $info | grep -a ^item4 | cut -d':' -f2)
+item5=$(cat $info | grep -a ^item5 | cut -d':' -f2)
+item6=$(cat $info | grep -a ^item6 | cut -d':' -f2)
 destaque=$(cat $info | grep -a ^destaque | cut -d':' -f2)
 locacao=$(cat $info | grep -a ^locacao | cut -d':' -f2)
 captacao=$(cat $info | grep -a ^captacao | cut -d':' -f2)
@@ -219,62 +225,46 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 						                <!-- First-Slide -->
 						                <div class="item active">
-						                    <img src="../images/REF001/001.jpg" alt="" />
+						                    <img src="../images/${refupper}/001.jpg" alt="" />
 						                </div>
 
 						                <!-- Second-Slide -->
 						                <div class="item">
-						                    <img src="../images/REF001/002.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/002.jpg" alt="" class="img-responsive" />
 						                </div>
 
 						                <!-- Third-Slide -->
 						                <div class="item">
-						                    <img src="../images/REF001/003.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/003.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <!-- Fourth-Slide -->
 						                <div class="item">
-						                    <img src="../images/REF001/004.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/004.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/REF001/005.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/005.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/REF001/006.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/006.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/REF001/007.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/007.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/REF001/008.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/008.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/REF001/009.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/009.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/REF001/010.jpg" alt="" class="img-responsive" />
-						                </div>
-
-						                <div class="item">
-						                    <img src="../images/REF001/011.jpg" alt="" class="img-responsive" />
-						                </div>
-
-						                <div class="item">
-						                    <img src="../images/REF001/012.jpg" alt="" class="img-responsive" />
-						                </div>
-						                
-						                <div class="item">
-						                    <img src="../images/REF001/013.jpg" alt="" class="img-responsive" />
-						                </div>
-						                
-						                <div class="item">
-						                    <img src="../images/REF001/014.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/010.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						            </div>
@@ -307,12 +297,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li>${item2}</li>
 								<li>${item3}</li>
 								<li>${item4}</li>
-								<li>${item5}</li>
 							</ul>
 						</div>
 						<div class="col-md-6 w3_single_grid_left_grid1_left">
 							<ul>
 								<li><i class="fa fa-whatsapp" aria-hidden="true"></i><a href="intent://send/${telefone1}#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> ${contato1} </a>(${telefone1})</li>
+								<li>${item5}</li>
+								<li>${item6}</li>
 							</ul>
 						</div>
 						<div class="clearfix"> </div>
