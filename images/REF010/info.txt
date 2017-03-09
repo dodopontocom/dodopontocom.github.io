@@ -1,19 +1,27 @@
-ref: ref010
+﻿
+ref:ref010
 eref:
-preco: 480.000,00
-metro:
-dormi:
-banho:
-titulo:Casa t�rra em condom�nio - Porta do Sol
-descri:Casa Terrea  com sala, cozinha, banheiro , 2 suites, cozinha, churrasqueira pre moldada, piscina. Casa com linda vista, pomar, campinho de futebol
+preco:480.000,00
+metro:2.000
+dormi:2
+banho:3
+titulo:Casa Térra Em Condomínio - Porta Do Sol
+descri:Casa Térrea com sala, cozinha, banheiro , 2 suítes, cozinha, churrasqueira pre moldada, piscina. Casa com linda vista, pomar, campinho de futebol
 contato1:Pedro Henrique
 telefone1:15998183001
 contato2:
 telefone2:
 financiamento:
-item1:
+mconstru:70
+item1:70 m² De Área Construída
 item2:
 item3:
 item4:
 item5:
+item6:
 destaque:
+locacao:
+captacao:
+prop:
+local:Porta do Sol - Mairinque/SP
+imagens:

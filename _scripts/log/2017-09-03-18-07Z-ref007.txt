@@ -1,0 +1,24 @@
+					<!-- item imovel-->
+						<div class="w3l_services_grid">
+							<ul>
+								<li class="square">132 m2</li>
+								<li class="bath">2</li>
+								<li class="bed">3</li>
+							</ul>
+							<div class="hover15 column">
+							<div>
+							<a href="ref007.html">
+								<figure>
+									<img src="../images/REF007/001.jpg" alt="" class="img-responsive" />
+									<h5 class="cima"><span class="refspan">REF007</span></h5>
+									<h5 class="local"><span class="refspan">Sorocaba / SP</span></h5>
+								</figure>
+							</a>
+							</div>
+							</div>
+							<h4><a href="ref007.html">R$ 290.000,00</a></h4>
+							<p>Sobrado com 3 dormitórios sendo 1 suíte. 132 m² de terreno e garagem descoberta para dois carros. O Condomínio oferece salão de festas, quiosquer com churrasqueiras, quadra poli-esportiva e playground.<a class="bake" href="ref007.html">Detalhes...</a></p>
+						</div>
+						<p class="dolor"></p>
+					<!-- item imovel-->
+					<!-- 24062017i -->

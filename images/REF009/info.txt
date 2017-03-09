@@ -1,19 +1,27 @@
+Ôªø
 ref:ref009
 eref:b7s
 preco:800.000,00
 metro:2.000
 dormi:1
 banho:1
-titulo:Casa em condomÌnio - Porta do Sol
-descri:¡rea com 4 casas de aluguel, casa principal de 60 m≤ com 1 banheiro, 1 dormitÛrio e sala. Renda mensal mÌnima de R$ 2.000,00.
-contato1: Alcides
+titulo:Casas Em Condom√≠nio - Porta Do Sol
+descri:√Årea com 4 casas de aluguel, casa principal de 60 m¬≤ com 1 banheiro, 1 dormit√≥rio e sala. Renda mensal m√≠nima de R$ 2.000,00.
+contato1:Alcides
 telefone1:11995915356
 contato2:
 telefone2:
 financiamento:
+mconstru:60
 item1:Excelente oportunidade de renda
-item2:”tima localizaÁ„o no condomÌnio - Avenida do Sol
+item2:√ìtima localiza√ß√£o no condom√≠nio - Avenida do Sol
 item3:
 item4:
 item5:
+item6:
 destaque:
+locacao:
+captacao:
+prop:
+local:Porta do Sol - Mairinque/SP
+imagens:
