@@ -1,0 +1,24 @@
+					<!-- item imovel-->
+						<div class="w3l_services_grid">
+							<ul>
+								<li class="square">1.580 m2</li>
+								<li class="bath"></li>
+								<li class="bed"></li>
+							</ul>
+							<div class="hover15 column">
+							<div>
+							<a href="ref013.html">
+								<figure>
+									<img src="../images/REF013/001.jpg" alt="" class="img-responsive" />
+									<h5 class="cima"><span class="refspan">REF013</span></h5>
+									<h5 class="local"><span class="refspan">Porta do Sol - Mairinque/SP</span></h5>
+								</figure>
+							</a>
+							</div>
+							</div>
+							<h4><a href="ref013.html">R$ 1.500.000,00</a></h4>
+							<p>Linda chácara em condomínio. Imóvel com casa sede e casa de hóspedes, piscina, campo de futebol e churrasqueira. Terreno com 1.580 m² de área<a class="bake" href="ref013.html">Detalhes...</a></p>
+						</div>
+						<p class="dolor"></p>
+					<!-- item imovel-->
+					<!-- 24062017i -->

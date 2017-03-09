@@ -1,26 +1,27 @@
+ï»¿
 ref:ref011
 eref:
 preco:780.000,00
 metro:350
 dormi:3
 banho:3
-titulo:Casa Padrão
-descri:Chácara com casa sede e casa de hóspedes, localizada no Condomínio Porta do Sol. Imóvel com 350 m² de área construída, piscina, churrasqueira, salão de jogos e quadra poliesportiva.
-Casa sede com 3 dormitórios, sendo 1 suíte, sala com lareira. Casa de hóspedes com dormitório, sala, cozinha e banheiro. Lindo jardim e espaço para horta. 
-Condomínio com segurança 24 horas clube com academia, restaurante, campo de futebol, quadras de tênis e poliesportiva e salão de jogos. Fácil acesso pela rodovia Castelo Branco, próximo do Outlet Catarina.Casa com 3 dormitórios sendo 1 suíte, sala com lareira, cozinha banheiro e varanda. Área de lazer com salão de jogos, churrasqueira, piscina de alvenaria e piscina infantil, pomar e quadra.
+titulo:Casa PadrÃ£o - Porta do Sol - Mairinque / SP
+descri:ChÃ¡cara com casa sede e casa de hÃ³spedes, localizada no CondomÃ­nio Porta do Sol. ImÃ³vel com 350 mÂ² de Ã¡rea construÃ­da, piscina, churrasqueira, salÃ£o de jogos e quadra poliesportiva. Casa sede com 3 dormitÃ³rios, sendo 1 suÃ­te, sala com lareira. Casa de hÃ³spedes com dormitÃ³rio, sala, cozinha e banheiro. Lindo jardim e espaÃ§o para horta. CondomÃ­nio com seguranÃ§a 24 horas clube com academia, restaurante, campo de futebol, quadras de tÃªnis e poliesportiva e salÃ£o de jogos. FÃ¡cil acesso pela rodovia Castelo Branco, prÃ³ximo do Outlet Catarina.Casa com 3 dormitÃ³rios sendo 1 suÃ­te, sala com lareira, cozinha banheiro e varanda. Ãrea de lazer com salÃ£o de jogos, churrasqueira, piscina de alvenaria e piscina infantil, pomar e quadra.
 contato1:Pedro Henrique
 telefone1:15998183001
 contato2:
 telefone2:
 financiamento:
+mconstru:
 item1:Casa de caseiro
 item2:Aceita permuta por apartamento em Alphaville
 item3:
 item4:
 item5:
-mconstru:
+item6
 destaque:
 locacao:
 captacao:
 prop:
+local:Porta do Sol - Mairinque/SP
 imagens:

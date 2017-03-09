@@ -1,0 +1,24 @@
+					<!-- item imovel-->
+						<div class="w3l_services_grid">
+							<ul>
+								<li class="square">4.200 m2</li>
+								<li class="bath">1</li>
+								<li class="bed">2</li>
+							</ul>
+							<div class="hover15 column">
+							<div>
+							<a href="ref016.html">
+								<figure>
+									<img src="../images/REF016/001.jpg" alt="" class="img-responsive" />
+									<h5 class="cima"><span class="refspan">REF016</span></h5>
+									<h5 class="local"><span class="refspan">Porta do Sol - Mairinque/SP</span></h5>
+								</figure>
+							</a>
+							</div>
+							</div>
+							<h4><a href="ref016.html">R$ 318.000,00</a></h4>
+							<p>Ótimo terreno com pequena casa no Condomínio Porta do Sol, 60 m² de construção, incluindo 2 quartos, sala e banheiro. Excelente oportunidade para formação de chácara. O proprietário do imóvel poderá desfrutar de área de lazer completa no Clube de Campo do condomínio, com academia, playground, piscina, quadras de tênis e poliesportiva, campo de futebol e salão de jogos. Terreno com 4200 m² e ótima localização (Rodovia Castelo Branco, próximo ao Outlet Catarina).<a class="bake" href="ref016.html">Detalhes...</a></p>
+						</div>
+						<p class="dolor"></p>
+					<!-- item imovel-->
+					<!-- 24062017i -->

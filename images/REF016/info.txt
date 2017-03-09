@@ -1,7 +1,4 @@
-﻿Ótimo terreno com pequena casa no Condomínio Porta do Sol, 60 m² de construção, incluindo 2 quartos, sala e banheiro. Excelente oportunidade para formação de chácara.
-O proprietário do imóvel poderá desfrutar de área de lazer completa no Clube de Campo do condomínio, com academia, playground, piscina, quadras de tênis e poliesportiva, campo de futebol e salão de jogos.
-Terreno com 4200 m² e ótima localização (Rodovia Castelo Branco, próximo ao Outlet Catarina).
-
+﻿
 ref:ref016
 eref:
 preco:318.000,00
@@ -10,19 +7,21 @@ dormi:2
 banho:1
 titulo:Chácara com 2 Quartos - Porta do Sol
 descri:Ótimo terreno com pequena casa no Condomínio Porta do Sol, 60 m² de construção, incluindo 2 quartos, sala e banheiro. Excelente oportunidade para formação de chácara. O proprietário do imóvel poderá desfrutar de área de lazer completa no Clube de Campo do condomínio, com academia, playground, piscina, quadras de tênis e poliesportiva, campo de futebol e salão de jogos. Terreno com 4200 m² e ótima localização (Rodovia Castelo Branco, próximo ao Outlet Catarina).
-contato1:
-telefone1:
+contato1:Pedro Henrique
+telefone1:15998183001
 contato2:
 telefone2:
 financiamento:
-item1:
-item2:
+mconstru:60
+item1:Oportunidade Para Formação De Chácara
+item2:Área Total De 4.200 m²
 item3:
 item4:
 item5:
-mconstru:60
-destaque:sim
+item6:
+destaque:
 locacao:
 captacao:
 prop:
-imagens:9
+local:Porta do Sol - Mairinque/SP
+imagens:
