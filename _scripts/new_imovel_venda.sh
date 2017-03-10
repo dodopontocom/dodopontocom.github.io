@@ -43,6 +43,12 @@ prop=$(cat $info | grep -a ^prop | cut -d':' -f2)
 local=$(cat $info | grep -a ^local | cut -d':' -f2)
 imagens=$(cat $info | grep -a ^imagens | cut -d':' -f2)
 
+if [ -z ${locacao} ]; then
+	detalheslocacao="ALUGUEL R\$ ${locacao}"
+else
+	detalheslocacao=
+fi
+
 ##############
 
 #start html
