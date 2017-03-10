@@ -144,6 +144,12 @@ prop=$(cat $info | grep -a ^prop | cut -d':' -f2)
 local=$(cat $info | grep -a ^local | cut -d':' -f2)
 imagens=$(cat $info | grep -a ^imagens | cut -d':' -f2)
 
+if [ -z ${locacao} ]; then
+	detalheslocacao="valor aluguel: ${locacao}"
+else
+	detalheslocacao=
+fi
+
 refnumber=$(cat $info | grep ^ref | cut -d':' -f2 | grep -o [0-9][0-9][0-9])
 outputfile=${thisscript}/log/${timestamp}-${ref}.txt
 

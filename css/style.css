@@ -3040,6 +3040,22 @@ Rodolfo's adds from here below
 	padding: 10px;
 }
 
+.locspan {
+	color: white;
+	font: bold 16px/20px Helvetica, Sans-Serif;
+	letter-spacing: -1px;
+	background: rgb(255, 153, 0);
+	background: rgba(0,0,0,0.7);
+	padding: 10px;
+}
+
+.parlocar {
+	position: absolute;
+	top: 50px;
+	right: 0;
+	width: 100%;
+}
+
 .local {
 	position: absolute;
 	top: 100px;
