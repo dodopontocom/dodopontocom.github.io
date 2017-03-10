@@ -2,11 +2,11 @@
 ref:ref013
 eref:
 preco:1.500.000,00
-metro:1.580
+metro:7.580
 dormi:
 banho:
 titulo:Chácara em condomínio - Porta do Sol
-descri:Linda chácara em condomínio. Imóvel com casa sede e casa de hóspedes, piscina, campo de futebol e churrasqueira. Terreno com 1.580 m² de área
+descri:Linda chácara em condomínio. Imóvel com casa sede e casa de hóspedes, piscina, campo de futebol e churrasqueira. Terreno com 7.580 m² de área
 contato1:Pedro Henrique
 telefone1:15998183001
 contato2:
