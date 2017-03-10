@@ -17,6 +17,7 @@ item2:Excelente Localização
 item3:Valor Condomínio R$ 510,00 Mensais
 item4:
 item5:
+item6:
 destaque:
 mconstru:320
 locacao:
