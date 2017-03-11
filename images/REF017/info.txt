@@ -1,0 +1,29 @@
+﻿
+ref:ref017
+eref:
+preco:365.000,00
+metro:182
+dormi:
+banho:
+titulo:Ponto Comercial - Sorocaba
+descri:Terreno com 182 m², construção de 2 pavimentos contendo 13 salas comerciais, totalizando 338 m² de área construída. Localizado na zona Norte de Sorocaba, próximo da Avenida Ipanema.
+contato1:Alcides
+telefone1:11995915356
+contato2:
+telefone2:
+financiamento:
+mconstru:338
+item1:Excelente ponto comercial
+item2:
+item3:
+item4:
+item5:
+item6:
+destaque:
+locacao:
+captacao:
+prop:Ataíde
+local:Sorocaba / SP
+imagens:
+
+
