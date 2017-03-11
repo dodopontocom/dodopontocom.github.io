@@ -63,7 +63,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<link href="http://construtoracarvalhopereira.com.br/images/REF001/*.jpg" rel="../images/REF001/*.jpg"/>
+<link href="http://construtoracarvalhopereira.com.br/images/${refupper}/*.jpg" rel="../images/${refupper}/*.jpg"/>
 <title>CONSTRUTORA CARVALHO PEREIRA</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
