@@ -1,0 +1,28 @@
+﻿
+ref:ref018
+eref:
+preco:530.000,00
+metro:800
+dormi:3
+banho:2
+titulo:Chácara em Condomínio - Mairinque / SP
+descri:Linda chácara com 3 dormitórios (uma suíte), área de lazer com piscina, área gourmet, campo de futebol, espaço para horta.
+contato1:Pedro Henrique
+telefone1:15998183001
+contato2:
+telefone2:
+financiamento:
+mconstru:250
+item1:Piscina com iluminação
+item2:Fino acabamento
+item3:
+item4:
+item5:
+item6:
+destaque:
+locacao:
+captacao:
+prop:
+local:Condomínio Recanto do Sol - Mairinque/SP
+imagens:
+                                  
