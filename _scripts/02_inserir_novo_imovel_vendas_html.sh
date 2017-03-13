@@ -10,6 +10,8 @@
 # file -bi a.txt
 # exit -1
 
+echo "script: $0"
+
 thisscript="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 echo "script: ${thisscript}"
 timestamp=$(date -u "+%Y-%d-%m-%H-%MZ")

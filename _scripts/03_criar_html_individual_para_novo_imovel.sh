@@ -2,6 +2,8 @@
 
 #create html for the new house
 
+echo "script: $0"
+
 #validando argumentos
 if [[ "$#" -eq 0 || "$#" -gt 1 ]]; then
 	echo "precisa de 1 e somente 1 argumento!"
