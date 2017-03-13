@@ -233,42 +233,42 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 						                <!-- First-Slide -->
 						                <div class="item active">
-						                    <img src="../images/${refupper}/01.jpg" alt="" />
+						                    <img src="../images/${refupper}/1.jpg" alt="" />
 						                </div>
 
 						                <!-- Second-Slide -->
 						                <div class="item">
-						                    <img src="../images/${refupper}/02.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/2.jpg" alt="" class="img-responsive" />
 						                </div>
 
 						                <!-- Third-Slide -->
 						                <div class="item">
-						                    <img src="../images/${refupper}/03.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/3.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <!-- Fourth-Slide -->
 						                <div class="item">
-						                    <img src="../images/${refupper}/04.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/4.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/${refupper}/05.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/5.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/${refupper}/06.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/6.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/${refupper}/07.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/7.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/${refupper}/08.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/8.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/${refupper}/09.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/9.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
