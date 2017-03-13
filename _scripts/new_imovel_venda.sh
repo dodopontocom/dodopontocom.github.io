@@ -13,7 +13,7 @@ imovel=$1
 thisscript="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 info=$(find ${thisscript}/../images/REF${imovel}/ -iname info.txt)
 new_imovel=${thisscript}/../refs/ref${imovel}.html
-imovel_bkp=${timestamp}_ref${imovel}_individul_bkp
+imovel_bkp=${timestamp}_ref${imovel}_individual_bkp
 
 ref=$(cat $info | grep -a ^ref | cut -d':' -f2)
 refupper=${ref^^}
