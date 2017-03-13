@@ -21,7 +21,7 @@ count=1
 
 find ${thisscript}/../images/REF${imovel}/ \( -iname "*.jpeg" -or -iname "*.jpg" \) | while read -r FILE
 do
-	mv -v "$FILE" 0${count}.jpg
+	mv -v "$FILE" ${thisscript}/../images/REF${imovel}/${count}.jpg
 	count=$((count+1))
 done
 
