@@ -11,8 +11,11 @@ if (isset($_POST['submit'])) {
         /*echo $_FILES['file']['type'];
         */
         
-		$target_path = $target_path . md5(uniqid()) . "." . $ext[count($ext) - 1];//set the target path with a new name of image
-        $j = $j + 1;//increment the number of uploaded images according to the files in array       
+		/*$target_path = $target_path . md5(uniqid()) . "." . $ext[count($ext) - 1];//set the target path with a new name of image
+        */
+        
+        $j = $j + 1;//increment the number of uploaded images according to the files in array
+
       
 	  if (($_FILES["file"]["size"][$i] < 100000000000000) //Approx. 100000000000kb files can be uploaded.
                 && in_array($file_extension, $validextensions)) {
