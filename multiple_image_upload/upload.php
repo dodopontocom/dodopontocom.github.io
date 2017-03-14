@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
 		$target_path = $target_path . md5(uniqid()) . "." . $ext[count($ext) - 1];//set the target path with a new name of image
         $j = $j + 1;//increment the number of uploaded images according to the files in array       
       
-	  if (($_FILES["file"]["size"][$i] < 1000000000) //Approx. 1000000kb files can be uploaded.
+	  if (($_FILES["file"]["size"][$i] < 100000000000000) //Approx. 100000000000kb files can be uploaded.
                 && in_array($file_extension, $validextensions)) {
             if (move_uploaded_file($_FILES['file']['tmp_name'][$i], $target_path)) {//if file moved to uploads folder
                 echo $j. ').<span id="noerror">Image uploaded successfully!.</span><br/><br/>';
