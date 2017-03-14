@@ -2,6 +2,8 @@
 
 IFS=$(echo -e "\t\n")
 
+echo "script: $0"
+
 count=1
 
 find . -iname "*.jpg" | while read -r i
@@ -23,3 +25,4 @@ done
 
 
 #reset
+exit 0

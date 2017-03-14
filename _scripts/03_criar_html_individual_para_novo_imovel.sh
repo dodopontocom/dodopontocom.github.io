@@ -2,6 +2,8 @@
 
 #create html for the new house
 
+echo "script: $0"
+
 #validando argumentos
 if [[ "$#" -eq 0 || "$#" -gt 1 ]]; then
 	echo "precisa de 1 e somente 1 argumento!"
@@ -13,7 +15,7 @@ imovel=$1
 thisscript="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 info=$(find ${thisscript}/../images/REF${imovel}/ -iname info.txt)
 new_imovel=${thisscript}/../refs/ref${imovel}.html
-imovel_bkp=${timestamp}_ref${imovel}_individul_bkp
+imovel_bkp=${timestamp}_ref${imovel}_individual_bkp
 
 ref=$(cat $info | grep -a ^ref | cut -d':' -f2)
 refupper=${ref^^}
@@ -231,46 +233,46 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 						                <!-- First-Slide -->
 						                <div class="item active">
-						                    <img src="../images/${refupper}/001.jpg" alt="" />
+						                    <img src="../images/${refupper}/1.jpg" alt="" />
 						                </div>
 
 						                <!-- Second-Slide -->
 						                <div class="item">
-						                    <img src="../images/${refupper}/002.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/2.jpg" alt="" class="img-responsive" />
 						                </div>
 
 						                <!-- Third-Slide -->
 						                <div class="item">
-						                    <img src="../images/${refupper}/003.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/3.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <!-- Fourth-Slide -->
 						                <div class="item">
-						                    <img src="../images/${refupper}/004.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/4.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/${refupper}/005.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/5.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/${refupper}/006.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/6.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/${refupper}/007.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/7.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/${refupper}/008.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/8.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/${refupper}/009.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/9.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						                <div class="item">
-						                    <img src="../images/${refupper}/010.jpg" alt="" class="img-responsive" />
+						                    <img src="../images/${refupper}/10.jpg" alt="" class="img-responsive" />
 						                </div>
 						                
 						            </div>
@@ -308,6 +310,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-md-6 w3_single_grid_left_grid1_left">
 							<ul>
 								<li><i class="fa fa-whatsapp" aria-hidden="true"></i><a href="intent://send/${telefone1}#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> ${contato1} </a>(${telefone1})</li>
+								<li><i class="fa fa-whatsapp" aria-hidden="true"></i><a href="intent://send/${telefone2}#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> ${contato2} </a>(${telefone2})</li>
 								<li>${item5}</li>
 								<li>${item6}</li>
 							</ul>
@@ -505,5 +508,7 @@ _EOF_
 
 ####
 cp -v ${new_imovel} ${thisscript}/log/${imovel_bkp}
+
+exit 0
 
 
