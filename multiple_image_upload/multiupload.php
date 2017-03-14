@@ -22,7 +22,7 @@
                     <hr/>
                     <div id="filediv"><input name="file[]" type="file" multiple="multiple" id="file"/></div><br/>
            
-                    <input type="button" id="add_more" class="upload" value="Adicione mais"/>
+                    <!-- <input type="button" id="add_more" class="upload" value="Adicione mais"/> -->
                     <input type="submit" value="Submeter!!!" name="submit" id="upload" class="upload"/>
                 </form>
                 <br/>
