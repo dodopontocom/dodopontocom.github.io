@@ -43,7 +43,7 @@ if (isset($_FILES[arquivo])) {
  
 	if (is_file($_FILES[arquivo][tmp_name])) {
 		$arquivo = $_FILES[arquivo][tmp_name];
-		$caminho="../../";
+		$caminho="./upload";
 		$caminho=$caminho.$_FILES[arquivo][name];
  
 		/* Defina aqui o tipo de arquivo suportado */
