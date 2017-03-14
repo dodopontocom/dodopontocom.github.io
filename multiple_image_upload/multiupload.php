@@ -27,7 +27,7 @@
                 </form>
                 <br/>
                 <br/>
-
+<!-- 
                 <p><b>Informações do imóvel</b></p>
                 <p class="text-right">número referência: <input name="ref" type="text"></p>
                 <p class="text-right">número alternativo de referência: <input name="eref" type="text"></p>
@@ -53,7 +53,7 @@
                 <p class="text-right">se for para locação qual o valor: (deixar em branco caso não seja para alugar)<input name="locacao" type="text"></p>
                 <p class="text-right">contato do captador do imóvel: <input name="captacao" type="text"></p>
                 <p class="text-right">nome do proprietário: <input name="prop" type="text"></p>
-                <p class="text-right">bairro/condomínio - cidade/ESTADO: <input name="local" type="text"></p>
+                <p class="text-right">bairro/condomínio - cidade/ESTADO: <input name="local" type="text"></p> -->
                 <hr></hr>
 
 
