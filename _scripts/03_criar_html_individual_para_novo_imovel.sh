@@ -310,6 +310,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-md-6 w3_single_grid_left_grid1_left">
 							<ul>
 								<li><i class="fa fa-whatsapp" aria-hidden="true"></i><a href="intent://send/${telefone1}#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> ${contato1} </a>(${telefone1})</li>
+								<li><i class="fa fa-whatsapp" aria-hidden="true"></i><a href="intent://send/${telefone2}#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> ${contato2} </a>(${telefone2})</li>
 								<li>${item5}</li>
 								<li>${item6}</li>
 							</ul>
@@ -507,5 +508,7 @@ _EOF_
 
 ####
 cp -v ${new_imovel} ${thisscript}/log/${imovel_bkp}
+
+exit 0
 
 

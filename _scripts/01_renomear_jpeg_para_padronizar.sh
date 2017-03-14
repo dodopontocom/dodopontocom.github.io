@@ -28,3 +28,5 @@ done
 
 
 reset
+
+exit 0

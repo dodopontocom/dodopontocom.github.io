@@ -13,9 +13,9 @@
 echo "script: $0"
 
 thisscript="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-echo "script: ${thisscript}"
 timestamp=$(date -u "+%Y-%d-%m-%H-%MZ")
 
+#encontrar o arquivo vendas.html
 vendas=$(find ${thisscript}/../refs/ -iname vendas.html)
 
 #validando argumentos
@@ -42,7 +42,6 @@ verificar () {
 verificar
 
 imovel=$1
-echo "${imovel}"
 
 #verificar se refXXX ja nao está adicionada em vendas.html
 #cat ${vendas} | grep REF${imovel}
@@ -90,6 +89,8 @@ if [ -z ${ref} ]; then
 	exit -1
 fi
 
+echo "vamos adicionar o novo imóvel: referência ${imovel}"
+echo "========="
 #atualizando repo
 echo "atualizando repositório..."
 git pull
@@ -109,8 +110,8 @@ fi
 vendasbkp=${timestamp}_vendas_bkp
 cp ${vendas} ${thisscript}/log/${vendasbkp}
 
+#aqui pegamos a linha onde está o padrao que vamos usar para saber aonde colocar o novo imóvel em vendas.html
 inserir=$(cat ${vendas} | awk '/24062017i/{print NR}')
-#terminar=$(cat $vendas | awk '/24062017t/{print NR}')
 
 
 find ${thisscript}/../images/REF${imovel}/ -iname info.txt | egrep '.*'
@@ -126,25 +127,12 @@ else
 fi
 
 ref=$(cat $info | grep -a ^ref | cut -d':' -f2)
-eref=$(cat $info | grep -a ^eref | cut -d':' -f2)
+
 preco=$(cat $info | grep -a ^preco | cut -d':' -f2)
 metro=$(cat $info | grep -a ^metro | cut -d':' -f2)
 dormi=$(cat $info | grep -a ^dormi | cut -d':' -f2)
 banho=$(cat $info | grep -a ^banho | cut -d':' -f2)
-titulo=$(cat $info | grep -a ^titulo | cut -d':' -f2)
-descri=$(cat $info | grep -a ^descri | cut -d':' -f2)
-contato1=$(cat $info | grep -a ^contato1 | cut -d':' -f2)
-telefone1=$(cat $info | grep -a ^telefone1 | cut -d':' -f2)
-contato2=$(cat $info | grep -a ^contato2 | cut -d':' -f2)
-telefone2=$(cat $info | grep -a ^telefone2 | cut -d':' -f2)
-financiamento=$(cat $info | grep -a ^financiamento | cut -d':' -f2)
-mconstru=$(cat $info | grep -a ^mconstru | cut -d':' -f2)
-destaque=$(cat $info | grep -a ^destaque | cut -d':' -f2)
-locacao=$(cat $info | grep -a ^locacao | cut -d':' -f2)
-captacao=$(cat $info | grep -a ^captacao | cut -d':' -f2)
-prop=$(cat $info | grep -a ^prop | cut -d':' -f2)
 local=$(cat $info | grep -a ^local | cut -d':' -f2)
-imagens=$(cat $info | grep -a ^imagens | cut -d':' -f2)
 
 if [ -z ${locacao} ]; then
 	detalheslocacao="valor aluguel: ${locacao}"
@@ -159,7 +147,7 @@ cat << _EOF_ > ${outputfile}
 					<!-- item imovel-->
 						<div class="w3l_services_grid">
 							<ul>
-								<li class="square">${metro} m2</li>
+								<li class="square">${metro} m²</li>
 								<li class="bath">${banho}</li>
 								<li class="bed">${dormi}</li>
 							</ul>
