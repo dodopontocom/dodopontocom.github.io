@@ -20,7 +20,7 @@
                 <form enctype="multipart/form-data" action="" method="post">
                     Upload de arquivos apenas nesses formatos jpeg,jpg,png,txt
                     <hr/>
-                    <div id="filediv"><input name="files[]" type="file" multiple="multiple" id="file"/></div><br/>
+                    <div id="filediv"><input name="file[]" type="file" multiple="multiple" id="file"/></div><br/>
            
                     <input type="button" id="add_more" class="upload" value="Adicione mais"/>
                     <input type="submit" value="Submeter!!!" name="submit" id="upload" class="upload"/>

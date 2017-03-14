@@ -3,10 +3,10 @@ if (isset($_POST['submit'])) {
     $j = 0; //Variable for indexing uploaded image 
     
 	$target_path = "uploads/"; //Declaring Path for uploaded images
-    for ($i = 0; $i < count($_FILES['files']['name']); $i++) {//loop to get individual element from the array
+    for ($i = 0; $i < count($_FILES['file']['name']); $i++) {//loop to get individual element from the array
 
         $validextensions = array("txt", "jpeg", "jpg", "png");  //Extensions which are allowed
-        $ext = explode('.', basename($_FILES['files']['name'][$i]));//explode file name from dot(.) 
+        $ext = explode('.', basename($_FILES['file']['name'][$i]));//explode file name from dot(.) 
         $file_extension = end($ext); //store extensions in the variable
         /*echo $_FILES['file']['type'];
         */
@@ -17,9 +17,9 @@ if (isset($_POST['submit'])) {
         $j = $j + 1;//increment the number of uploaded images according to the files in array
 
       
-	  if (($_FILES["files"]["size"][$i] < 100000000000000) //Approx. 100000000000kb files can be uploaded.
+	  if (($_FILES["file"]["size"][$i] < 100000000000000) //Approx. 100000000000kb files can be uploaded.
                 && in_array($file_extension, $validextensions)) {
-            if (move_uploaded_file($_FILES['files']['tmp_name'][$i], $target_path)) {//if file moved to uploads folder
+            if (move_uploaded_file($_FILES['file']['tmp_name'][$i], $target_path)) {//if file moved to uploads folder
                 echo $j. ').<span id="noerror">Image uploaded successfully!.</span><br/><br/>';
             } else {//if file was not moved.
                 echo $j. ').<span id="error">please try again!.</span><br/><br/>';
