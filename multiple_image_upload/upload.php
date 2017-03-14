@@ -16,7 +16,7 @@ if (isset($_POST['submit'])) {
         $j = $j + 1;//increment the number of uploaded images according to the files in array
 
       
-	  if (($_FILES["file"]["size"][$i] < 10000) //Approx. 10000kb files can be uploaded.
+	  if (($_FILES["file"]["size"][$i] < 10000000) //Approx. 10000kb files can be uploaded.
                 && in_array($file_extension, $validextensions)) {
             if (move_uploaded_file($_FILES['file']['tmp_name'][$i], $target_path)) {//if file moved to uploads folder
                 echo $j. ').<span id="noerror">Image uploaded successfully!.</span><br/><br/>';
