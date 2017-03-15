@@ -44,7 +44,7 @@ $('body').on('change', '#file', function(){
         }
 
         var codigo = document.getElementById("codigod");
-        if (codigo == "redemptionsong")
+        if (codigo.value == "redemptionsong")
         {
             alert("Código do desenvolvedor válido");
         else
