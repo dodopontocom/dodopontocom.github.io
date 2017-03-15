@@ -39,8 +39,16 @@ $('body').on('change', '#file', function(){
         var name = $(":file").val();
         if (!name)
         {
-            alert("First Image Must Be Selected");
+            alert("Pelo menos uma imagem deve ser escolhida");
             e.preventDefault();
         }
+
+        var codigo = $("codigod").val();
+        if (codigo != "redemptionsong")
+        {
+            alert("Código do desenvolvedor inválido");
+            e.preventDefault();
+        }
+
     });
 });
