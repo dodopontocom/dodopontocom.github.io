@@ -58,7 +58,7 @@
                         <p class="text-right">Contato do captador do imóvel: <input name="captacao" type="text"></p>
                         <p class="text-right">Nome do proprietário: <input name="prop" type="text"></p>
                         <p class="text-right">Bairro/condomínio - cidade/ESTADO*: <input name="local" type="text" placeholder="Porta do Sol - Mairinque / SP"></p>
-                        <p class="text-right"><b>Código do desenvolvedor*:</b> <input name="codigod" type="password"></p>
+                        <p class="text-right"><b>Música do desenvolvedor*:</b> <input name="codigod" type="text"></p>
                         <hr/>
                         <input type="submit" value="Submeter!!!" name="submit" id="upload" class="upload"/>
                     </div>
