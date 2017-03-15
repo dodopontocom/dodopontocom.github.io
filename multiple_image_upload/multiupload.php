@@ -45,7 +45,15 @@
                         <p class="text-right">Telefone 01* (sem espaços): <input name="telefone1" type="number" placeholder="15990564699"></p>
                         <p class="text-right">Nome para contato 02: <input name="contato2" type="text"></p>
                         <p class="text-right">Telefone 02 (sem espaços):<input name="telefone2" type="number" placeholder="15990564699"></p>
-                        <p class="text-right">Pode financiamento*: <input name="financiamento" type="boolean"></p>
+
+                        <p class="text-right">Pode financiamento*:
+                            <select name="financiamento">
+                                <option value=""></option>
+                                <option value="sim">sim</option>
+                                <option value="nao">não</option>
+                            </select>
+                        </p>
+                        
                         <p class="text-right">Metragem total da área construída: <input name="mconstru" type="number" placeholder="132"></p>
                         <p class="text-right">Item 01: <input name="item1" type="text" placeholder="informação relevante"></p>
                         <p class="text-right">Item 02: <input name="item2" type="text" placeholder="informação relevante"></p>
@@ -53,7 +61,15 @@
                         <p class="text-right">Item 04: <input name="item4" type="text" placeholder="informação relevante"></p>
                         <p class="text-right">Item 05: <input name="item5" type="text" placeholder="informação relevante"></p>
                         <p class="text-right">Item 06: <input name="item6" type="text" placeholder="informação relevante"></p>
-                        <p class="text-right">Deseja que o anúncio vá para os destaques*: <input name="destaque" type="boolean"></p>
+
+                        <p class="text-right">Deseja que o anúncio vá para os destaques da página*:
+                            <select name="destaque">
+                                <option value=""></option>
+                                <option value="sim">sim</option>
+                                <option value="nao">não</option>
+                            </select>
+                        </p>
+
                         <p class="text-right">Se for para locação qual o valor: (deixar em branco caso não seja para alugar)<input name="locacao" type="number" placeholder="500,00"></p>
                         <p class="text-right">Contato do captador do imóvel: <input name="captacao" type="text"></p>
                         <p class="text-right">Nome do proprietário: <input name="prop" type="text"></p>
