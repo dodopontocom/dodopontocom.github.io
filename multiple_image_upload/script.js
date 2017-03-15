@@ -43,14 +43,5 @@ $('body').on('change', '#file', function(){
             e.preventDefault();
         }
 
-        var codigo = $("codigod").val();
-        if (codigo == "redemptionsong")
-        {
-            alert("Código do desenvolvedor válido");
-        else
-            alert("Código do desenvolvedor inválido");
-            e.preventDefault();
-        }
-
     });
 });
