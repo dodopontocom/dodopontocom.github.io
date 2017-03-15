@@ -43,5 +43,14 @@ $('body').on('change', '#file', function(){
             e.preventDefault();
         }
 
+        if($('#codigod').val() == "redemptionsong")
+        {
+            alert("Música correta!");
+        }else {
+            alert("Música inválida");
+            e.preventDefault();
+        }
+
     });
+    
 });

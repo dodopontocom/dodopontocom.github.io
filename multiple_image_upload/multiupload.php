@@ -72,7 +72,7 @@
             </div>
            
 		   <!-- Right side div -->
-           <div id="formget"><a href=http://www.construtoracarvalhopereira.com.br><img src="../images/logo.png" alt="Nosso Site"/></a>
+           <div id="formget"><a href=http://www.construtoracarvalhopereira.com.br><img src="../images/logo_menor.png" alt="Nosso Site"/></a>
             </div>
         </div>
     </body>
