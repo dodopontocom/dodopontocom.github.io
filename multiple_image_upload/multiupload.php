@@ -35,7 +35,7 @@
                     <div class="container-fluid">
                         <h2>Informações (obrigatório *)</h2>
 
-                        <p class="text-right">Preço*: <input name="preco" type="number" placeholder="1.500.000,00"></p>
+                        <p class="text-right">Preço*: <input name="preco" type="number" required="true" placeholder="1.500.000,00"></p>
                         <p class="text-right">Metragem total: <input name="metro" type="number" placeholder="1.450"></p>
                         <p class="text-right">Número de dormitórios*: <input name="dormi" type="number"></p>
                         <p class="text-right">Número de banheiros*: <input name="banho" type="number"></p>
