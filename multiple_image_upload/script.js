@@ -43,8 +43,8 @@ $('body').on('change', '#file', function(){
             e.preventDefault();
         }
 
-        var codigo = document.getElementById("codigod");
-        if (codigo.value == "redemptionsong")
+        var codigo = $("codigod").value;
+        if (codigo == "redemptionsong")
         {
             alert("Código do desenvolvedor válido");
         else
