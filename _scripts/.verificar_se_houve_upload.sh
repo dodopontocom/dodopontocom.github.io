@@ -28,7 +28,7 @@ if [ -d ${novofullpath} ]; then
 	exit 0
 else
 	mkdir ${novofullpath}
-	if [ "$?" -eq "0" ]; then
+	if [ "$?" -eq 0 ]; then
 		echo "${novo} foi criado em ${novofullpath}"
 	else
 		echo "algo deu errado... saindo"
