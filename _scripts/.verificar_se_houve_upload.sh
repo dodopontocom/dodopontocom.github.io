@@ -2,15 +2,18 @@
 
 IFS=$(echo -e "\t\n")
 
+timestamp=$(date -u "+%Y-%d-%m-%H-%M")
+
+echo "======${timestamp}========"
+
 cd ${HOME}/dodopontocom.github.io
 git pull
 cd -
 
-timestamp=$(date -u "+%Y-%d-%m-%H-%M")
+
 uploadfolder=${HOME}/public_html/multiple_image_upload/uploads
 bkpfolder=${HOME}/uploads_site
 newfolder=${bkpfolder}/pasta-${timestamp}
-
 
 #verifica se ha novos uploads na pasta ${uploadfolder}
 if [ $(ls -1A ${uploadfolder} | wc -l) -gt 0 ]; then
