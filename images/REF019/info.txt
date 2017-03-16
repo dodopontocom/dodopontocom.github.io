@@ -1,0 +1,24 @@
+
+preco:1100000
+metro:5500
+dormi:5
+banho:3
+titulo:Chácara em Condomínio - Mairinque / SP
+descri:Linda chácara de 5.500 m² com 1 casa de 5 dormitórios, sala ampla, cozinha, lavabo, área de serviço, varanda. Área de Lazer com salão de festas, churrasqueira, piscina, pomar formado e riacho.
+contato1:Pedro Henrique
+telefone1:15998183001
+contato2:
+telefone2:
+financiamento:nao
+mconstru:
+item1:Casa de hóspede composta de 1 dormitório, sala, cozinha, banheiro, área de serviço
+item2:Garagem para 5 carros
+item3:Ótima localização e ótima vista
+item4:
+item5:
+item6:
+destaque:nao
+locacao:5000
+captacao:
+prop:
+local:Porta do Sol - Mairinque/SP
