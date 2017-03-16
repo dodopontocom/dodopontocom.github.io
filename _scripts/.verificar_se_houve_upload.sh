@@ -24,10 +24,10 @@ novo=REF0${sum}
 novolower=ref0${sum}
 novofullpath=${HOME}/dodopontocom.github.io/images/${novo}
 repo=${HOME}/dodopontocom.github.io
-echo "${timestamp - }caminho do novo anuncio: $novofullpath"
+echo "${timestamp} - caminho do novo anuncio: $novofullpath"
 
 if [ -d ${novofullpath} ]; then
-	echo "${timestamp - }novo anuncio ja foi adicionado..."
+	echo "${timestamp} - novo anuncio ja foi adicionado..."
 	exit 0
 else
 	mkdir ${novofullpath}
