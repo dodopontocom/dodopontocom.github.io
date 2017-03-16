@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
 
     
 
-    fwrite($infotxt, $_GET["preco"]);
+    fwrite($infotxt, $_POST["preco"]);
 
     fclose($infotxt);
 }
