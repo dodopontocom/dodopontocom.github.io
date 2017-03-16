@@ -27,5 +27,15 @@ if (isset($_POST['submit'])) {
             echo $j. ').<span id="error">***Invalid file Size or Type***</span><br/><br/>';
         }
     }
+
+    echo $_GET["preco"];
+
+    $infotxt = fopen("uploads/newinfo.txt", w) or die("não conseguiu criar arquivo!");
+
+    
+
+    fwrite($infotxt, $_GET["preco"]);
+
+    fclose($infotxt);
 }
 ?>
