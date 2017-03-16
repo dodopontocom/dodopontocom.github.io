@@ -38,6 +38,11 @@ if (isset($_POST['submit'])) {
     $metro = $_POST['metro'];
     fwrite($infotxt, "\n" . $metro);
 
+
+
+
+
+    fwrite($infotxt, "\n");
     fclose($infotxt);
 }
 ?>
