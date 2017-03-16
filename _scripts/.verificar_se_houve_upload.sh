@@ -52,7 +52,7 @@ count=1
 
 find ${novofullpath} \( -iname "*.jpeg" -or -iname "*.jpg" \) | while read -r FILE
 do
-	mv -v "$FILE" ${novofullpath}${count}.jpg
+	mv -v "$FILE" ${novofullpath}/${count}.jpg
 	count=$((count+1))
 done
 
