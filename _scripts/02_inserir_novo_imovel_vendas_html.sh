@@ -132,6 +132,7 @@ preco=$(cat $info | grep -a ^preco | cut -d':' -f2)
 metro=$(cat $info | grep -a ^metro | cut -d':' -f2)
 dormi=$(cat $info | grep -a ^dormi | cut -d':' -f2)
 banho=$(cat $info | grep -a ^banho | cut -d':' -f2)
+descri=$(cat $info | grep -a ^descri | cut -d':' -f2)
 local=$(cat $info | grep -a ^local | cut -d':' -f2)
 
 if [ -z ${locacao} ]; then
