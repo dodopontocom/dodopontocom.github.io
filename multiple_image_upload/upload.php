@@ -48,58 +48,58 @@ if (isset($_POST['submit'])) {
     fwrite($infotxt, "\ntitulo:" . $titulo);
 
     $descri = $_POST['descri'];
-    fwrite($infotxt, "\ndescri" . $descri);
+    fwrite($infotxt, "\ndescri:" . $descri);
 
     $contato1 = $_POST['contato1'];
-    fwrite($infotxt, "\ncontato1" . $contato1);
+    fwrite($infotxt, "\ncontato1:" . $contato1);
 
     $telefone1 = $_POST['telefone1'];
-    fwrite($infotxt, "\ntelefone1" . $telefone1);
+    fwrite($infotxt, "\ntelefone1:" . $telefone1);
 
     $contato2 = $_POST['contato2'];
-    fwrite($infotxt, "\ncontato2" . $contato2);
+    fwrite($infotxt, "\ncontato2:" . $contato2);
 
     $telefone2 = $_POST['telefone2'];
-    fwrite($infotxt, "\ntelefone2" . $telefone2);
+    fwrite($infotxt, "\ntelefone2:" . $telefone2);
 
     $financiamento = $_POST['financiamento'];
-    fwrite($infotxt, "\nfinanciamento" . $financiamento);
+    fwrite($infotxt, "\nfinanciamento:" . $financiamento);
 
     $mconstru = $_POST['mconstru'];
-    fwrite($infotxt, "\nmconstru" . $mconstru);
+    fwrite($infotxt, "\nmconstru:" . $mconstru);
 
     $item1 = $_POST['item1'];
-    fwrite($infotxt, "\nitem1" . $item1);
+    fwrite($infotxt, "\nitem1:" . $item1);
 
     $item2 = $_POST['item2'];
-    fwrite($infotxt, "\nitem2" . $item2);
+    fwrite($infotxt, "\nitem2:" . $item2);
 
     $item3 = $_POST['item3'];
-    fwrite($infotxt, "\nitem3" . $item3);
+    fwrite($infotxt, "\nitem3:" . $item3);
 
     $item4 = $_POST['item4'];
-    fwrite($infotxt, "\nitem4" . $item4);
+    fwrite($infotxt, "\nitem4:" . $item4);
 
     $item5 = $_POST['item5'];
-    fwrite($infotxt, "\nitem5" . $item5);
+    fwrite($infotxt, "\nitem5:" . $item5);
 
     $item6 = $_POST['item6'];
-    fwrite($infotxt, "\nitem6" . $item6);
+    fwrite($infotxt, "\nitem6:" . $item6);
 
     $destaque = $_POST['destaque'];
-    fwrite($infotxt, "\ndestaque" . $destaque);
+    fwrite($infotxt, "\ndestaque:" . $destaque);
 
     $locacao = $_POST['locacao'];
-    fwrite($infotxt, "\nlocacao" . $locacao);
+    fwrite($infotxt, "\nlocacao:" . $locacao);
 
     $captacao = $_POST['captacao'];
-    fwrite($infotxt, "\ncaptacao" . $captacao);
+    fwrite($infotxt, "\ncaptacao:" . $captacao);
 
     $prop = $_POST['prop'];
-    fwrite($infotxt, "\nprop" . $prop);
+    fwrite($infotxt, "\nprop:" . $prop);
 
     $local = $_POST['local'];
-    fwrite($infotxt, "\nlocal" . $local);
+    fwrite($infotxt, "\nlocal:" . $local);
 
     fwrite($infotxt, "\n");
     fclose($infotxt);
