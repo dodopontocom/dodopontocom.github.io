@@ -18,7 +18,7 @@ new_imovel=${thisscript}/../refs/ref${imovel}.html
 imovel_bkp=${timestamp}_ref${imovel}_individual_bkp
 
 ref=$(cat $info | grep -a ^ref | cut -d':' -f2)
-refupper=${ref^^}
+refupper=$(echo "${ref}" | tr a-z A-Z)
 eref=$(cat $info | grep -a ^eref | cut -d':' -f2)
 preco=$(cat $info | grep -a ^preco | cut -d':' -f2)
 metro=$(cat $info | grep -a ^metro | cut -d':' -f2)
