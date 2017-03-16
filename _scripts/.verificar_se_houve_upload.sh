@@ -2,6 +2,10 @@
 
 IFS=$(echo -e "\t\n")
 
+cd ${HOME}/dodopontocom.github.io
+git pull
+cd -
+
 timestamp=$(date -u "+%Y-%d-%m-%H-%M")
 uploadfolder=${HOME}/public_html/multiple_image_upload/uploads
 bkpfolder=${HOME}/uploads_site
