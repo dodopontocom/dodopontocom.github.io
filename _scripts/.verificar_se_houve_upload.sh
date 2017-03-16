@@ -44,8 +44,8 @@ else
 		echo "${timestamp} - algo deu errado... saindo"
 		exit 0
 	fi
-	cp ${repo}/info.txt ${novofullpath}
-	sed -i "s/^ref:/ref:${novolower}/g" ${novofullpath}/info.txt
+	#cp ${repo}/info.txt ${novofullpath}
+	#sed -i "s/^ref:/ref:${novolower}/g" ${novofullpath}/info.txt
 fi
 
 #########
@@ -54,6 +54,9 @@ fi
 #mudar os nomes das imagens
 
 mv ${newfolder}/* ${novofullpath}/
+#poe o novo ref no newinfo e depois renomeia para info.txt
+sed -i "s/^ref:/ref:${novolower}/g" ${novofullpath}/newinfo.txt
+mv ${novofullpath}/newinfo.txt ${novofullpath}/info.txt
 
 count=1
 
