@@ -13,7 +13,7 @@ if [ $(ls -1A ${uploadfolder} | wc -l) -gt 0 ]; then
 	mkdir ${newfolder}
 	mv ${uploadfolder}/* ${newfolder}/
 else
-	echo "nada de uploads no momento, volte mais tarde..."
+	echo "${timestamp} - nada de uploads no momento, volte mais tarde..."
 	exit 0
 fi
 
@@ -24,17 +24,17 @@ novo=REF0${sum}
 novolower=ref0${sum}
 novofullpath=${HOME}/dodopontocom.github.io/images/${novo}
 repo=${HOME}/dodopontocom.github.io
-echo "caminho do novo anuncio: $novofullpath"
+echo "${timestamp - }caminho do novo anuncio: $novofullpath"
 
 if [ -d ${novofullpath} ]; then
-	echo "novo anuncio ja foi adicionado..."
+	echo "${timestamp - }novo anuncio ja foi adicionado..."
 	exit 0
 else
 	mkdir ${novofullpath}
 	if [ "$?" -eq 0 ]; then
-		echo "${novo} foi criado em ${novofullpath}"
+		echo "${timestamp} - ${novo} foi criado em ${novofullpath}"
 	else
-		echo "algo deu errado... saindo"
+		echo "${timestamp} - algo deu errado... saindo"
 		exit 0
 	fi
 	cp ${repo}/info.txt ${novofullpath}
@@ -59,7 +59,7 @@ done
 # comitar no repo mas sem dar push
 cd ${HOME}/dodopontocom.github.io/
 git add --all
-git commit -m "automatico do verificar se houve uploads ${timestamp}"
+git commit -m "${timestamp} - automatico do verificar se houve uploads"
 
 
 
