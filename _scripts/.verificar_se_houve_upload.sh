@@ -18,12 +18,12 @@ else
 fi
 
 #cria nova pasta do anuncio no repositorio
-
 num=$(ls -1A ${HOME}/dodopontocom.github.io/refs/ref*.html | wc -l)
 sum=$((num+1))
 novo=REF0${sum}
 novolower=ref0${sum}
-novofullpath=${HOME}/dodopontocom.github.io/images/${novo}/
+novofullpath=${HOME}/dodopontocom.github.io/images/${novo}
+repo=${HOME}/dodopontocom.github.io
 echo "caminho do novo anuncio: $novofullpath"
 
 if [ -d ${novofullpath} ]; then
@@ -37,8 +37,8 @@ else
 		echo "algo deu errado... saindo"
 		exit 0
 	fi
-	cp ${novofullpath}/../../info.txt ${novofullpath}
-	sed -i "s/^ref:/ref:${novolower}/g" ${novofullpath}info.txt
+	cp ${repo}/info.txt ${novofullpath}
+	sed -i "s/^ref:/ref:${novolower}/g" ${novofullpath}/info.txt
 fi
 
 #########
