@@ -53,7 +53,10 @@ do
 	count=$((count+1))
 done
 
-
+# comitar no repo mas sem dar push
+cd ${HOME}/dodopontocom.github.io/
+git add --all
+git commit -m "automatico do verificar se houve uploads ${timestamp}"
 
 
 
