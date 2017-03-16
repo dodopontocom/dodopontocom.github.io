@@ -8,10 +8,13 @@ bkpfolder=${HOME}/uploads_site
 newfolder=${bkpfolder}/pasta-${timestamp}
 
 
-#verifica se ha novos uploads
+#verifica se ha novos uploads na pasta ${uploadfolder}
 if [ $(ls -1A ${uploadfolder} | wc -l) -gt 0 ]; then
 	mkdir ${newfolder}
 	mv ${uploadfolder}/* ${newfolder}/
+else
+	echo "nada de uploads no momento, volte mais tarde..."
+	exit 0
 fi
 
 #cria nova pasta do anuncio no repositorio
