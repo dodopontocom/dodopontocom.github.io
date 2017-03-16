@@ -32,9 +32,10 @@ if (isset($_POST['submit'])) {
 
     $infotxt = fopen("uploads/newinfo.txt", w) or die("não conseguiu criar arquivo!");
 
-    
+    $txt = "teste";
 
     fwrite($infotxt, $_POST["preco"]);
+    fwrite($infotxt, $txt);
 
     fclose($infotxt);
 }
