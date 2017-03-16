@@ -28,12 +28,12 @@ if (isset($_POST['submit'])) {
         }
     }
 
-    echo $_GET["preco"];
+    echo $_POST["preco"]"\n";
 
     $infotxt = fopen("uploads/newinfo.txt", w) or die("não conseguiu criar arquivo!");
 
-    
-    fwrite($infotxt, $_POST["preco"]"\n");
+    $preco = $_POST["preco"]
+    fwrite($infotxt, strlen($preco));
 
     fclose($infotxt);
 }
