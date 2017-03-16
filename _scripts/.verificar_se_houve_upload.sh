@@ -28,14 +28,14 @@ if [ -d ${novofullpath} ]; then
 	exit 0
 else
 	mkdir ${novofullpath}
-	if [ "$?" -eq "0"]; then
+	if [ "$?" -eq "0" ]; then
 		echo "${novo} foi criado em ${novofullpath}"
 	else
 		echo "algo deu errado... saindo"
 		exit 0
 	fi
 	cp ${novofullpath}/../../info.txt ${novofullpath}
-	sed -i "s/^ref:/ref:${novolower}/g" ${novofullpath}/info.txt
+	sed -i "s/^ref:/ref:${novolower}/g" ${novofullpath}info.txt
 fi
 
 #########
@@ -49,7 +49,7 @@ count=1
 
 find ${novofullpath} \( -iname "*.jpeg" -or -iname "*.jpg" \) | while read -r FILE
 do
-	mv -v "$FILE" ${novofullpath}/${count}.jpg
+	mv -v "$FILE" ${novofullpath}${count}.jpg
 	count=$((count+1))
 done
 
