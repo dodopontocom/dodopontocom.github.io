@@ -38,9 +38,68 @@ if (isset($_POST['submit'])) {
     $metro = $_POST['metro'];
     fwrite($infotxt, "\n" . $metro);
 
+    $dormi = $_POST['dormi'];
+    fwrite($infotxt, "\n" . $dormi);
 
+    $banho = $_POST['banho'];
+    fwrite($infotxt, "\n" . $banho);
 
+    $titulo = $_POST['titulo'];
+    fwrite($infotxt, "\n" . $titulo);
 
+    $descri = $_POST['descri'];
+    fwrite($infotxt, "\n" . $descri);
+
+    $contato1 = $_POST['contato1'];
+    fwrite($infotxt, "\n" . $contato1);
+
+    $telefone1 = $_POST['telefone1'];
+    fwrite($infotxt, "\n" . $telefone1);
+
+    $contato2 = $_POST['contato2'];
+    fwrite($infotxt, "\n" . $contato2);
+
+    $financiamento = $_POST['financiamento'];
+    fwrite($infotxt, "\n" . $financiamento);
+
+    $mconstru = $_POST['mconstru'];
+    fwrite($infotxt, "\n" . $mconstru);
+
+    $item1 = $_POST['item1'];
+    fwrite($infotxt, "\n" . $item1);
+
+    $item2 = $_POST['item2'];
+    fwrite($infotxt, "\n" . $item2);
+
+    $item3 = $_POST['item3'];
+    fwrite($infotxt, "\n" . $item3);
+
+    $item4 = $_POST['item4'];
+    fwrite($infotxt, "\n" . $item4);
+
+    $item5 = $_POST['item5'];
+    fwrite($infotxt, "\n" . $item5);
+
+    $item6 = $_POST['item6'];
+    fwrite($infotxt, "\n" . $item6);
+
+    $destaque = $_POST['destaque'];
+    fwrite($infotxt, "\n" . $destaque);
+
+    $destaque = $_POST['destaque'];
+    fwrite($infotxt, "\n" . $destaque);
+
+    $locacao = $_POST['locacao'];
+    fwrite($infotxt, "\n" . $locacao);
+
+    $captacao = $_POST['captacao'];
+    fwrite($infotxt, "\n" . $captacao);
+
+    $prop = $_POST['prop'];
+    fwrite($infotxt, "\n" . $prop);
+
+    $local = $_POST['local'];
+    fwrite($infotxt, "\n" . $local);
 
     fwrite($infotxt, "\n");
     fclose($infotxt);
