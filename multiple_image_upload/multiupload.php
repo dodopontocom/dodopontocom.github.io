@@ -29,6 +29,25 @@
 
         <script src="../sweetalert-master/dist/sweetalert.min.js"></script>
 
+        <script>
+            $(function() {
+                $('.hello').bind('blur', function(e) {
+                    if(!isValid($(this).val())) {
+                        e.preventDefault();
+                        $(this).focus().select();
+                        }
+                });
+            });
+
+                function isValid(str) {
+                    if(str != "") {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                }
+        </script>
+
 
     <body>
 
@@ -72,14 +91,14 @@
                             <!-- <input placeholder="Placeholder" id="first_name" type="text" data-required class="validate">
                             <label for="first_name">First Name</label> -->
 
-                            <p>Preço*: <input name="preco" type="text" class="validate" placeholder="1.500.000,00"></p>
-                            <p >Metragem total*: <input name="metro" type="text" required placeholder="1.450"></p>
-                            <p >Número de dormitórios*: <input name="dormi" type="number" required></p>
-                            <p >Número de banheiros*: <input name="banho" type="number" required></p>
-                            <p >Título para o anúncio*: <input name="titulo" type="text" required></p>
-                            <p >Descrição para o anúncio*: <textarea name="descri" type="text" required></textarea></p>
-                            <p >Nome para contato 01*: <input name="contato1" type="text" required></p>
-                            <p >Telefone 01 (sem espaços)*: <input name="telefone1" type="number" required placeholder="15990564699"></p>
+                            <p>Preço*: <input name="preco" type="text" class="hello" placeholder="1.500.000,00"></p>
+                            <p >Metragem total*: <input name="metro" type="text" class="hello" placeholder="1.450"></p>
+                            <p >Número de dormitórios*: <input name="dormi" type="number" class="hello"></p>
+                            <p >Número de banheiros*: <input name="banho" type="number" class="hello"></p>
+                            <p >Título para o anúncio*: <input name="titulo" type="text" class="hello"></p>
+                            <p >Descrição para o anúncio*: <textarea name="descri" type="text" class="hello"></textarea></p>
+                            <p >Nome para contato 01*: <input name="contato1" type="text" class="hello"></p>
+                            <p >Telefone 01 (sem espaços)*: <input name="telefone1" type="number" class="hello" placeholder="15990564699"></p>
                             <p >Nome para contato 02: <input name="contato2" type="text"></p>
                             <p >Telefone 02 (sem espaços):<input name="telefone2" type="number" placeholder="15990564699"></p>
 
@@ -91,7 +110,7 @@
                                 </select>
                             </p>
                             
-                            <p >Metragem total da área construída*: <input name="mconstru" type="text" required placeholder="132,50"></p>
+                            <p >Metragem total da área construída*: <input name="mconstru" type="text" class="hello" placeholder="132,50"></p>
                             <p >Item 01: <input name="item1" type="text" placeholder="informação relevante"></p>
                             <p >Item 02: <input name="item2" type="text" placeholder="informação relevante"></p>
                             <p >Item 03: <input name="item3" type="text" placeholder="informação relevante"></p>
@@ -110,8 +129,8 @@
                             <p >Se for para locação qual o valor: (deixar em branco caso não seja para alugar)<input name="locacao" type="text" placeholder="5.000,00"></p>
                             <p >Contato do captador do imóvel: <input name="captacao" type="text"></p>
                             <p >Nome do proprietário: <input name="prop" type="text"></p>
-                            <p >Bairro/condomínio - cidade/ESTADO*: <input name="local" type="text" required placeholder="Porta do Sol - Mairinque / SP"></p>
-                            <p ><b>Música do desenvolvedor*:</b> <input name="codigod" id="codigod" type="text" required></p>
+                            <p >Bairro/condomínio - cidade/ESTADO*: <input name="local" type="text" class="hello" placeholder="Porta do Sol - Mairinque / SP"></p>
+                            <p ><b>Música do desenvolvedor*:</b> <input name="codigod" id="codigod" type="text" class="hello"></p>
                             <hr/>
 
                             <div class="carousel-fixed-item center">
