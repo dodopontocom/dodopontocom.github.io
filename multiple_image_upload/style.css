@@ -3,14 +3,14 @@ form{
     background-color:white;
 }
 #maindiv{
-    width:960px; 
+    width:auto; 
     margin:10px auto; 
     padding:10px;
     font-family: 'Droid Sans', sans-serif;
 }
 #formdiv{
-    width:500px; 
-    float:left; 
+    width:auto; 
+    float:; 
     text-align: center;
 }
 form{
