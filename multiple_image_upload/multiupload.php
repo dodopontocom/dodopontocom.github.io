@@ -18,7 +18,7 @@
             <div id="formdiv">
                 <h2>Subir informações do novo imóvel a ser cadastrado</h2>
                 <form enctype="multipart/form-data" action="" method="post">
-                    Upload de arquivos apenas nesses formatos jpeg,jpg,png,txt
+                    Upload de arquivos apenas nesses formatos jpeg,jpg
                     <hr/>
                     <div id="filediv"><input name="file[]" type="file" multiple="multiple" id="file"/>
                         
