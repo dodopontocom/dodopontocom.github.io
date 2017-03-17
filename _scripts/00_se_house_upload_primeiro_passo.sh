@@ -18,7 +18,7 @@ cd ${HOME}/dodopontocom.github.io
 git pull
 cd -
 
-newfolder=$1
+newfolder=${HOME}/uploads_site/$1
 
 # uploadfolder=${HOME}/public_html/multiple_image_upload/uploads
 # bkpfolder=${HOME}/uploads_site
