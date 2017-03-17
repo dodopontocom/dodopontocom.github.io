@@ -35,14 +35,14 @@
                     <div class="container-fluid">
                         <h2>Informações (obrigatório *)</h2>
 
-                        <p class="text-right">Preço*: <input name="preco" type="number" required="true" placeholder="1.500.000,00"></p>
-                        <p class="text-right">Metragem total: <input name="metro" type="number" placeholder="1.450"></p>
-                        <p class="text-right">Número de dormitórios*: <input name="dormi" type="number"></p>
-                        <p class="text-right">Número de banheiros*: <input name="banho" type="number"></p>
-                        <p class="text-right">Título para o anúncio*: <input name="titulo" type="text"></p>
-                        <p class="text-right">Descrição para o anúncio*: <textarea name="descri" type="text"></textarea></p>
-                        <p class="text-right">Nome para contato 01*: <input name="contato1" type="text"></p>
-                        <p class="text-right">Telefone 01* (sem espaços): <input name="telefone1" type="number" placeholder="15990564699"></p>
+                        <p class="text-right">Preço*: <input name="preco" type="number" required="true" placeholder="1.500.000"></p>
+                        <p class="text-right">Metragem total*: <input name="metro" type="number" required="true" placeholder="1.450"></p>
+                        <p class="text-right">Número de dormitórios*: <input name="dormi" type="number" required="true"></p>
+                        <p class="text-right">Número de banheiros*: <input name="banho" type="number" required="true"></p>
+                        <p class="text-right">Título para o anúncio*: <input name="titulo" type="text" required="true"></p>
+                        <p class="text-right">Descrição para o anúncio*: <textarea name="descri" type="text" required="true"></textarea></p>
+                        <p class="text-right">Nome para contato 01*: <input name="contato1" type="text" required="true"></p>
+                        <p class="text-right">Telefone 01* (sem espaços): <input name="telefone1" type="number" required="true"placeholder="15999999999"></p>
                         <p class="text-right">Nome para contato 02: <input name="contato2" type="text"></p>
                         <p class="text-right">Telefone 02 (sem espaços):<input name="telefone2" type="number" placeholder="15990564699"></p>
 
@@ -70,11 +70,11 @@
                             </select>
                         </p>
 
-                        <p class="text-right">Se for para locação qual o valor: (deixar em branco caso não seja para alugar)<input name="locacao" type="number" placeholder="500,00"></p>
+                        <p class="text-right">Se for para locação qual o valor: (deixar em branco caso não seja para alugar)<input name="locacao" type="number" placeholder="500"></p>
                         <p class="text-right">Contato do captador do imóvel: <input name="captacao" type="text"></p>
                         <p class="text-right">Nome do proprietário: <input name="prop" type="text"></p>
-                        <p class="text-right">Bairro/condomínio - cidade/ESTADO*: <input name="local" type="text" placeholder="Porta do Sol - Mairinque / SP"></p>
-                        <p class="text-right"><b>Música do desenvolvedor*:</b> <input name="codigod" id="codigod" type="text"></p>
+                        <p class="text-right">Bairro/condomínio - cidade/ESTADO*: <input name="local" type="text" required="true"placeholder="Porta do Sol - Mairinque / SP"></p>
+                        <p class="text-right"><b>Música do desenvolvedor*:</b> <input name="codigod" id="codigod" type="text" required="true"></p>
                         <hr/>
                         <input type="submit" value="Submeter!!!" name="submit" id="upload" class="upload"/>
                     </div>
