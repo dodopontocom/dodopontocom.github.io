@@ -37,8 +37,18 @@ $('body').on('change', '#file', function(){
 
     $('#upload').click(function(e) {
 
+        var name = $(":file").val();
+        if (!name)
+        {
+            swal("Oops...","Pelo menos uma imagem deve ser escolhida","error");
+            e.preventDefault();
+        }
+
         if($('#codigod').val() == "redemptionsong")
         {
+
+            swal("Ótimo!","Música correta!", "success");
+
             swal({
                 title: "Está tudo correto?",
                     text: "Podemos enviar todas as informações?!",
@@ -58,7 +68,7 @@ $('body').on('change', '#file', function(){
                     }
             });
 
-            swal("Ótimo!","Música correta!", "success");
+            
 
         }else {
             swal("Oops...","Música inválida!", "error");
@@ -66,12 +76,7 @@ $('body').on('change', '#file', function(){
         }
 
 
-        var name = $(":file").val();
-        if (!name)
-        {
-            swal("Oops...","Pelo menos uma imagem deve ser escolhida","error");
-            e.preventDefault();
-        }
+
 
 
 

@@ -69,8 +69,8 @@
                             <p style="color:red;">* campo obrigatório</p>
 
 
-                            <input placeholder="Placeholder" id="first_name" type="text" data-required class="validate">
-                            <label for="first_name">First Name</label>
+                            <!-- <input placeholder="Placeholder" id="first_name" type="text" data-required class="validate">
+                            <label for="first_name">First Name</label> -->
 
                             <p>Preço*: <input name="preco" type="text" class="validate" placeholder="1.500.000,00"></p>
                             <p >Metragem total*: <input name="metro" type="text" required placeholder="1.450"></p>
