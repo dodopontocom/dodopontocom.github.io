@@ -2,6 +2,8 @@ var abc = 0; //Declaring and defining global increement variable
 
 $(document).ready(function() {
 
+
+
 //To add new input file field dynamically, on click of "Add More Files" button below function will be executed
     $('#add_more').click(function() {
         $(this).before($("<div/>", {id: 'filediv'}).fadeIn('slow').append(
@@ -39,17 +41,35 @@ $('body').on('change', '#file', function(){
         var name = $(":file").val();
         if (!name)
         {
-            alert("Pelo menos uma imagem deve ser escolhida");
+            swal("Pelo menos uma imagem deve ser escolhida");
             e.preventDefault();
         }
 
         if($('#codigod').val() == "redemptionsong")
         {
-            alert("Música correta!");
+            swal("Música correta!");
         }else {
-            alert("Música inválida");
+            swal("Música inválida");
             e.preventDefault();
         }
+
+        swal({
+            title: "Está tudo correto?",
+                text: "Podemos enviar todas as informações?!",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "Sim, Pode!",
+                cancelButtonText: "Não, vou revisar!",
+                closeOnConfirm: false,
+                closeOnCancel: false },
+                function(isConfirm){
+                    if (isConfirm) {
+                        swal("Enviado!", "As informações foram enviadas.", "success");
+                    } else {
+                        swal("Cancelado!", " :)", "error");
+                    }
+        });
 
     });
     

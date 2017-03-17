@@ -18,11 +18,16 @@
         <link rel="stylesheet" href="icons/material.css">
         <link rel="stylesheet" href="css/materialize.min.css">
         <link rel="stylesheet" href="css/estilo.css"/>
+
+        <link rel="stylesheet" type="text/css" href="../sweetalert-master/dist/sweetalert.css">
+
         <script src="js/jquery.min.js"></script>
         <script src="js/materialize.min.js"></script>
         <script src="js/app.js"></script>
 
         <script src="script.js"></script>
+
+        <script src="../sweetalert-master/dist/sweetalert.min.js"></script>
 
 
     <body>
@@ -107,12 +112,15 @@
                             <div class="carousel-fixed-item center">
                                 <input type="submit" value="Submeter!!!" name="submit" id="upload" class="btn waves-light waves-light darken-text-2"/>
                                 <!-- <a class="btn waves-light waves-light darken-text-2" onclick="hideHome()">comece agora<i class="large material-icons">play_for_work</i></a> -->
+
                             </div>
+
                             
                         </div>
 
 
                     </form>
+                    <button class="btn btn-message waves-effect waves-light">Try me!</button>
 
 
     				<!-------Including PHP Script here------>
