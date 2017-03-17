@@ -2,6 +2,14 @@
 
 IFS=$(echo -e "\t\n")
 
+#validando argumentos
+if [[ "$#" -eq 0 || "$#" -gt 1 ]]; then
+	echo "precisa de 1 e somente 1 argumento!"
+	echo "os argumentos são um deses abaixo: (sem barra no final)"
+	ls -1A ${HOME}/uploads_site/a*
+	exit -1
+fi
+
 timestamp=$(date -u "+%Y-%d-%m-%H-%M")
 
 echo "======${timestamp}========"
@@ -10,19 +18,20 @@ cd ${HOME}/dodopontocom.github.io
 git pull
 cd -
 
+newfolder=$1
 
-uploadfolder=${HOME}/public_html/multiple_image_upload/uploads
-bkpfolder=${HOME}/uploads_site
-newfolder=${bkpfolder}/pasta-${timestamp}
+# uploadfolder=${HOME}/public_html/multiple_image_upload/uploads
+# bkpfolder=${HOME}/uploads_site
+# newfolder=${bkpfolder}/pasta-${timestamp}
 
-#verifica se ha novos uploads na pasta ${uploadfolder}
-if [ $(ls -1A ${uploadfolder} | wc -l) -gt 0 ]; then
-	mkdir ${newfolder}
-	mv ${uploadfolder}/* ${newfolder}/
-else
-	echo "${timestamp} - nada de uploads no momento, volte mais tarde..."
-	exit 0
-fi
+# #verifica se ha novos uploads na pasta ${uploadfolder}
+# if [ $(ls -1A ${uploadfolder} | wc -l) -gt 0 ]; then
+# 	mkdir ${newfolder}
+# 	mv ${uploadfolder}/* ${newfolder}/
+# else
+# 	echo "${timestamp} - nada de uploads no momento, volte mais tarde..."
+# 	exit 0
+# fi
 
 #cria nova pasta do anuncio no repositorio
 num=$(ls -1A ${HOME}/dodopontocom.github.io/refs/ref*.html | wc -l)

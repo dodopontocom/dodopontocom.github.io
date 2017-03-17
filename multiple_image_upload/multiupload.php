@@ -42,7 +42,7 @@
                 <form enctype="multipart/form-data" action="" method="post">
                     <h5>
                         <p>Subir informações do novo imóvel a ser cadastrado</p>
-                        <p>Upload de arquivos apenas nesses formatos jpeg,jpg,png,txt</p>
+                        <p>Upload de arquivos apenas nesses formatos jpeg,jpg</p>
                     </h5>
                     <hr/>
                     <div id="filediv"><input name="file[]" type="file" multiple="multiple" id="file"/>
