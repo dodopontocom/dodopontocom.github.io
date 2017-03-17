@@ -40,7 +40,7 @@ $('body').on('change', '#file', function(){
 
     $('#upload').click(function(e) {
 
-        var name = $(":file").val();
+        /*var name = $(":file").val();
         if (!name)
         {
             swal("Oops...","Pelo menos uma imagem deve ser escolhida","error");
@@ -55,7 +55,7 @@ $('body').on('change', '#file', function(){
             swal("Oops...","Música inválida!", "error");
             e.preventDefault();
         }
-
+*/
         swal({
             title: "Está tudo correto?",
                 text: "Podemos enviar todas as informações?!",

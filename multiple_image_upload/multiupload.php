@@ -72,7 +72,7 @@
                             <p>Upload de arquivos apenas nesses formatos jpeg,jpg</p>
                         </h5>
                         <hr/>
-                        <div id="filediv"><input name="file[]" type="file" multiple="multiple" id="file"/>
+                        <div id="filediv"><input name="file[]" type="file" multiple="multiple" id="file" required />
                             
                         </div>
                         
