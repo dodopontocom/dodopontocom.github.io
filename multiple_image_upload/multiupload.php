@@ -28,7 +28,7 @@
     <body>
 
         <!--header tabs inicio-->
-        <div class=" z-depth-2 topo-fixo r">
+        <div class="z-depth-2 topo-fixo r">
             <ul class="tabs red darken-1">
                 <li class="tab waves-effect waves-light">
                     <font class="white-text" size="1.8em">Cadastrar um novo anúncio</font>
@@ -36,91 +36,92 @@
             </ul>
         </div>
         <!--header tabs fim -->
+        <div class="col-md-1">
+            <div class="container" id="maindiv">
 
-        <div class="col-md-1 container" id="maindiv">
-
-            <div class="section" id="formdiv">
-                <h2></h2>
-                <form enctype="multipart/form-data" action="" method="post">
-                    <h5>
-                        <p>Subir informações do novo imóvel a ser cadastrado</p>
-                        <p>Upload de arquivos apenas nesses formatos jpeg,jpg</p>
-                    </h5>
-                    <hr/>
-                    <div id="filediv"><input name="file[]" type="file" multiple="multiple" id="file"/>
-                        
-                    </div>
-                    
-                    <hr/>
-                    <!-- <input type="button" id="add_more" class="upload" value="Adicione mais"/> -->
-                
-                    <!-- 
-                    <p><b>Informações do imóvel</b></p>
-                    <p >número referência: <input name="ref" type="text"></p>
-                    <p >número alternativo de referência: <input name="eref" type="text"></p> -->
-
-                    <div class="container-fluid">
-                        <h2>Informações do Anúncio</h2>
-                        <p style="color:red;">* campo obrigatório</p>
-                        <p>Preço*: <input name="preco" type="text" required="true" placeholder="1.500.000,00"></p>
-                        <p >Metragem total*: <input name="metro" type="text" required="true" placeholder="1.450"></p>
-                        <p >Número de dormitórios*: <input name="dormi" type="number" required="true"></p>
-                        <p >Número de banheiros*: <input name="banho" type="number" required="true"></p>
-                        <p >Título para o anúncio*: <input name="titulo" type="text" required="true"></p>
-                        <p >Descrição para o anúncio*: <textarea name="descri" type="text" required="true"></textarea></p>
-                        <p >Nome para contato 01*: <input name="contato1" type="text" required="true"></p>
-                        <p >Telefone 01 (sem espaços)*: <input name="telefone1" type="number" required="true" placeholder="15990564699"></p>
-                        <p >Nome para contato 02: <input name="contato2" type="text"></p>
-                        <p >Telefone 02 (sem espaços):<input name="telefone2" type="number" placeholder="15990564699"></p>
-
-                        <p >Pode financiamento:
-                            <select name="financiamento">
-                                <option value=""></option>
-                                <option value="sim">sim</option>
-                                <option value="nao">não</option>
-                            </select>
-                        </p>
-                        
-                        <p >Metragem total da área construída*: <input name="mconstru" type="text" required="true" placeholder="132,50"></p>
-                        <p >Item 01: <input name="item1" type="text" placeholder="informação relevante"></p>
-                        <p >Item 02: <input name="item2" type="text" placeholder="informação relevante"></p>
-                        <p >Item 03: <input name="item3" type="text" placeholder="informação relevante"></p>
-                        <p >Item 04: <input name="item4" type="text" placeholder="informação relevante"></p>
-                        <p >Item 05: <input name="item5" type="text" placeholder="informação relevante"></p>
-                        <p >Item 06: <input name="item6" type="text" placeholder="informação relevante"></p>
-
-                        <p >Deseja que o anúncio vá para os destaques da página:
-                            <select name="destaque">
-                                <option value=""></option>
-                                <option value="sim">sim</option>
-                                <option value="nao">não</option>
-                            </select>
-                        </p>
-
-                        <p >Se for para locação qual o valor: (deixar em branco caso não seja para alugar)<input name="locacao" type="text" placeholder="5.000,00"></p>
-                        <p >Contato do captador do imóvel: <input name="captacao" type="text"></p>
-                        <p >Nome do proprietário: <input name="prop" type="text"></p>
-                        <p >Bairro/condomínio - cidade/ESTADO*: <input name="local" type="text" required="true" placeholder="Porta do Sol - Mairinque / SP"></p>
-                        <p ><b>Música do desenvolvedor*:</b> <input name="codigod" id="codigod" type="text" required="true"></p>
+                <div class="col-md-12section" id="formdiv">
+                    <h2></h2>
+                    <form enctype="multipart/form-data" action="" method="post">
+                        <h5>
+                            <p>Subir informações do novo imóvel a ser cadastrado</p>
+                            <p>Upload de arquivos apenas nesses formatos jpeg,jpg</p>
+                        </h5>
                         <hr/>
-
-                        <div class="carousel-fixed-item center">
-                            <input type="submit" value="Submeter!!!" name="submit" id="upload" class="btn waves-light waves-light darken-text-2"/>
-                            <!-- <a class="btn waves-light waves-light darken-text-2" onclick="hideHome()">comece agora<i class="large material-icons">play_for_work</i></a> -->
+                        <div id="filediv"><input name="file[]" type="file" multiple="multiple" id="file"/>
+                            
                         </div>
                         
-                    </div>
+                        <hr/>
+                        <!-- <input type="button" id="add_more" class="upload" value="Adicione mais"/> -->
+                    
+                        <!-- 
+                        <p><b>Informações do imóvel</b></p>
+                        <p >número referência: <input name="ref" type="text"></p>
+                        <p >número alternativo de referência: <input name="eref" type="text"></p> -->
+
+                        <div class="container-fluid">
+                            <h2>Informações do Anúncio</h2>
+                            <p style="color:red;">* campo obrigatório</p>
+                            <p>Preço*: <input name="preco" type="text" required="true" placeholder="1.500.000,00"></p>
+                            <p >Metragem total*: <input name="metro" type="text" required="true" placeholder="1.450"></p>
+                            <p >Número de dormitórios*: <input name="dormi" type="number" required="true"></p>
+                            <p >Número de banheiros*: <input name="banho" type="number" required="true"></p>
+                            <p >Título para o anúncio*: <input name="titulo" type="text" required="true"></p>
+                            <p >Descrição para o anúncio*: <textarea name="descri" type="text" required="true"></textarea></p>
+                            <p >Nome para contato 01*: <input name="contato1" type="text" required="true"></p>
+                            <p >Telefone 01 (sem espaços)*: <input name="telefone1" type="number" required="true" placeholder="15990564699"></p>
+                            <p >Nome para contato 02: <input name="contato2" type="text"></p>
+                            <p >Telefone 02 (sem espaços):<input name="telefone2" type="number" placeholder="15990564699"></p>
+
+                            <p >Pode financiamento:
+                                <select name="financiamento">
+                                    <option value=""></option>
+                                    <option value="sim">sim</option>
+                                    <option value="nao">não</option>
+                                </select>
+                            </p>
+                            
+                            <p >Metragem total da área construída*: <input name="mconstru" type="text" required="true" placeholder="132,50"></p>
+                            <p >Item 01: <input name="item1" type="text" placeholder="informação relevante"></p>
+                            <p >Item 02: <input name="item2" type="text" placeholder="informação relevante"></p>
+                            <p >Item 03: <input name="item3" type="text" placeholder="informação relevante"></p>
+                            <p >Item 04: <input name="item4" type="text" placeholder="informação relevante"></p>
+                            <p >Item 05: <input name="item5" type="text" placeholder="informação relevante"></p>
+                            <p >Item 06: <input name="item6" type="text" placeholder="informação relevante"></p>
+
+                            <p >Deseja que o anúncio vá para os destaques da página:
+                                <select name="destaque">
+                                    <option value=""></option>
+                                    <option value="sim">sim</option>
+                                    <option value="nao">não</option>
+                                </select>
+                            </p>
+
+                            <p >Se for para locação qual o valor: (deixar em branco caso não seja para alugar)<input name="locacao" type="text" placeholder="5.000,00"></p>
+                            <p >Contato do captador do imóvel: <input name="captacao" type="text"></p>
+                            <p >Nome do proprietário: <input name="prop" type="text"></p>
+                            <p >Bairro/condomínio - cidade/ESTADO*: <input name="local" type="text" required="true" placeholder="Porta do Sol - Mairinque / SP"></p>
+                            <p ><b>Música do desenvolvedor*:</b> <input name="codigod" id="codigod" type="text" required="true"></p>
+                            <hr/>
+
+                            <div class="carousel-fixed-item center">
+                                <input type="submit" value="Submeter!!!" name="submit" id="upload" class="btn waves-light waves-light darken-text-2"/>
+                                <!-- <a class="btn waves-light waves-light darken-text-2" onclick="hideHome()">comece agora<i class="large material-icons">play_for_work</i></a> -->
+                            </div>
+                            
+                        </div>
 
 
-                </form>
+                    </form>
 
 
-				<!-------Including PHP Script here------>
-                <?php include "upload.php"; ?>
-            </div>
-           
-		   <!-- Right side div -->
-           <!-- <div id="formget"><a href=http://www.construtoracarvalhopereira.com.br><img src="../images/logo_menor.png" alt="Nosso Site"/></a> -->
+    				<!-------Including PHP Script here------>
+                    <?php include "upload.php"; ?>
+                </div>
+               
+    		   <!-- Right side div -->
+               <!-- <div id="formget"><a href=http://www.construtoracarvalhopereira.com.br><img src="../images/logo_menor.png" alt="Nosso Site"/></a> -->
+                </div>
             </div>
         </div>
 
