@@ -3,7 +3,7 @@ form{
     background-color:white;
 }
 #maindiv{
-    width:960px; 
+    width:absolute; 
     margin:10px auto; 
     padding:10px;
     font-family: 'Droid Sans', sans-serif;
