@@ -105,8 +105,8 @@
                             <hr/>
 
                             <div class="carousel-fixed-item center">
-                                <!-- <input type="submit" value="Submeter!!!" name="submit" id="upload" class="btn waves-light waves-light darken-text-2"/> -->
-                                <a class="btn waves-light waves-light darken-text-2" type="submit" name="submit" id="upload">comece agora<i class="large material-icons">play_for_work</i></a>
+                                <input type="submit" value="Submeter!!!" name="submit" id="upload" class="btn waves-light waves-light darken-text-2"/>
+                                <!-- <a class="btn waves-light waves-light darken-text-2" onclick="hideHome()">comece agora<i class="large material-icons">play_for_work</i></a> -->
                             </div>
                             
                         </div>
