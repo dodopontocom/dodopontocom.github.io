@@ -6,7 +6,7 @@ IFS=$(echo -e "\t\n")
 if [[ "$#" -eq 0 || "$#" -gt 1 ]]; then
 	echo "precisa de 1 e somente 1 argumento!"
 	echo "os argumentos são um deses abaixo: (sem barra no final)"
-	ls -1A ${HOME}/uploads_site/a*
+	ls -1A ${HOME}/uploads_site/
 	exit -1
 fi
 
