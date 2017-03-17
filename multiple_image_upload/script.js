@@ -33,43 +33,50 @@ $('body').on('change', '#file', function(){
         });
 
 //To preview image     
-    function imageIsLoaded(e) {
+    /*function imageIsLoaded(e) {
         $('#previewimg' + abc).attr('src', e.target.result);
-    }
+    }*/
 
     $('#upload').click(function(e) {
-        var name = $(":file").val();
-        if (!name)
-        {
-            swal("Pelo menos uma imagem deve ser escolhida");
-            e.preventDefault();
-        }
 
         if($('#codigod').val() == "redemptionsong")
         {
-            swal("Música correta!");
-        }else {
-            swal("Música inválida");
-            e.preventDefault();
-        }
-
-        swal({
-            title: "Está tudo correto?",
-                text: "Podemos enviar todas as informações?!",
-                type: "warning",
-                showCancelButton: true,
-                confirmButtonColor: "#DD6B55",
-                confirmButtonText: "Sim, Pode!",
-                cancelButtonText: "Não, vou revisar!",
-                closeOnConfirm: false,
-                closeOnCancel: false },
+            swal({
+                title: "Está tudo correto?",
+                    text: "Podemos enviar todas as informações?!",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "Sim, Pode!",
+                    cancelButtonText: "Não, vou revisar!",
+                    closeOnConfirm: false,
+                    closeOnCancel: false
+                },
                 function(isConfirm){
                     if (isConfirm) {
                         swal("Enviado!", "As informações foram enviadas.", "success");
                     } else {
                         swal("Cancelado!", " :)", "error");
                     }
-        });
+            });
+
+            swal("Ótimo!","Música correta!", "success");
+            
+        }else {
+            swal("Oops...","Música inválida!", "error");
+            e.preventDefault();
+        }
+
+
+        var name = $(":file").val();
+        if (!name)
+        {
+            swal("Oops...","Pelo menos uma imagem deve ser escolhida","error");
+            e.preventDefault();
+        }
+
+
+
 
     });
     
