@@ -2,6 +2,9 @@ var abc = 0; //Declaring and defining global increement variable
 
 $(document).ready(function() {
 
+
+
+
 //To add new input file field dynamically, on click of "Add More Files" button below function will be executed
     $('#add_more').click(function() {
         $(this).before($("<div/>", {id: 'filediv'}).fadeIn('slow').append(
@@ -37,7 +40,7 @@ $('body').on('change', '#file', function(){
 
     $('#upload').click(function(e) {
 
-        var name = $(":file").val();
+        /*var name = $(":file").val();
         if (!name)
         {
             swal("Oops...","Pelo menos uma imagem deve ser escolhida","error");
@@ -52,7 +55,7 @@ $('body').on('change', '#file', function(){
             swal("Oops...","Música inválida!", "error");
             e.preventDefault();
         }
-
+*/
         swal({
             title: "Está tudo correto?",
                 text: "Podemos enviar todas as informações?!",

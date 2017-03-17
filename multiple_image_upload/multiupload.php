@@ -25,9 +25,10 @@
         <script src="js/materialize.min.js"></script>
         <script src="js/app.js"></script>
 
-        <script src="script.js"></script>
-
         <script src="../sweetalert-master/dist/sweetalert.min.js"></script>
+
+        <script src="script.js"></script>
+        <script src="disabled.js"></script>
 
         <script>
             $(function() {
@@ -65,13 +66,13 @@
 
                 <div class="section" id="formdiv">
                     <h2></h2>
-                    <form enctype="multipart/form-data" action="" method="post">
+                    <form enctype="multipart/form-data" action="" method="post" id="enviarfoto">
                         <h5>
                             <p>Subir informações do novo imóvel a ser cadastrado</p>
                             <p>Upload de arquivos apenas nesses formatos jpeg,jpg</p>
                         </h5>
                         <hr/>
-                        <div id="filediv"><input name="file[]" type="file" multiple="multiple" id="file"/>
+                        <div id="filediv"><input name="file[]" type="file" multiple="multiple" id="file" required />
                             
                         </div>
                         
@@ -91,14 +92,14 @@
                             <!-- <input placeholder="Placeholder" id="first_name" type="text" data-required class="validate">
                             <label for="first_name">First Name</label> -->
 
-                            <p>Preço*: <input name="preco" type="text" class="hello" placeholder="1.500.000,00"></p>
-                            <p >Metragem total*: <input name="metro" type="text" class="hello" placeholder="1.450"></p>
-                            <p >Número de dormitórios*: <input name="dormi" type="number" class="hello"></p>
-                            <p >Número de banheiros*: <input name="banho" type="number" class="hello"></p>
-                            <p >Título para o anúncio*: <input name="titulo" type="text" class="hello"></p>
-                            <p >Descrição para o anúncio*: <textarea name="descri" type="text" class="hello"></textarea></p>
-                            <p >Nome para contato 01*: <input name="contato1" type="text" class="hello"></p>
-                            <p >Telefone 01 (sem espaços)*: <input name="telefone1" type="number" class="hello" placeholder="15990564699"></p>
+                            <p>Preço*: <input name="preco" type="text" class="hello" id="preco" required placeholder="1.500.000,00"></p>
+                            <p >Metragem total*: <input name="metro" type="text" class="hello" id="metro" required placeholder="1.450"></p>
+                            <p >Número de dormitórios*: <input name="dormi" type="number" class="hello" required id="dormi"></p>
+                            <p >Número de banheiros*: <input name="banho" type="number" class="hello" required id="banho"></p>
+                            <p >Título para o anúncio*: <input name="titulo" type="text" class="hello" required id="titulo"></p>
+                            <p >Descrição para o anúncio*: <textarea name="descri" type="text" required class="hello" id="descri"></textarea></p>
+                            <p >Nome para contato 01*: <input name="contato1" type="text" class="hello" required id="contato1"></p>
+                            <p >Telefone 01 (sem espaços)*: <input name="telefone1" type="number" class="hello" required id="telefone1" placeholder="15990564699"></p>
                             <p >Nome para contato 02: <input name="contato2" type="text"></p>
                             <p >Telefone 02 (sem espaços):<input name="telefone2" type="number" placeholder="15990564699"></p>
 
@@ -110,7 +111,7 @@
                                 </select>
                             </p>
                             
-                            <p >Metragem total da área construída*: <input name="mconstru" type="text" class="hello" placeholder="132,50"></p>
+                            <p >Metragem total da área construída*: <input name="mconstru" type="text" id="mconstru" required class="hello" placeholder="132,50"></p>
                             <p >Item 01: <input name="item1" type="text" placeholder="informação relevante"></p>
                             <p >Item 02: <input name="item2" type="text" placeholder="informação relevante"></p>
                             <p >Item 03: <input name="item3" type="text" placeholder="informação relevante"></p>
@@ -129,8 +130,8 @@
                             <p >Se for para locação qual o valor: (deixar em branco caso não seja para alugar)<input name="locacao" type="text" placeholder="5.000,00"></p>
                             <p >Contato do captador do imóvel: <input name="captacao" type="text"></p>
                             <p >Nome do proprietário: <input name="prop" type="text"></p>
-                            <p >Bairro/condomínio - cidade/ESTADO*: <input name="local" type="text" class="hello" placeholder="Porta do Sol - Mairinque / SP"></p>
-                            <p ><b>Música do desenvolvedor*:</b> <input name="codigod" id="codigod" type="text" class="hello"></p>
+                            <p >Bairro/condomínio - cidade/ESTADO*: <input name="local" id="local" type="text" required class="hello" placeholder="Porta do Sol - Mairinque / SP"></p>
+                            <p ><b>Música do desenvolvedor*:</b> <input name="codigod" id="codigod" type="text" required class="hello"></p>
                             <hr/>
 
                             <div class="carousel-fixed-item center">
