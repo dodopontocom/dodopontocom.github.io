@@ -32,8 +32,8 @@ $('body').on('change', '#file', function(){
 
 //To preview image     
     function imageIsLoaded(e) {
-        $('#previewimg' + abc).attr('src', e.target.result);
-    };
+        /*$('#previewimg' + abc).attr('src', e.target.result);
+    };*/
 
     $('#upload').click(function(e) {
         var name = $(":file").val();
