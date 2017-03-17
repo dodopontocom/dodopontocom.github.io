@@ -1,0 +1,25 @@
+
+ref:ref020
+preco:320.000,00
+metro:3000
+dormi:0
+banho:0
+titulo:Terreno - Porta do Sol
+descri:Ótimo terreno no Condomínio Porta do Sol, próximo à portaria principal. Laterais muradas. Documentação OK.
+contato1:Pedro Henrique
+telefone1:15998183001
+contato2:Alcides
+telefone2:11995915356
+financiamento:nao
+mconstru:0
+item1:Excelente localização
+item2:Terreno murado
+item3:Aceita Financiamento
+item4:Rua Asfaltada
+item5:
+item6:
+destaque:nao
+locacao:
+captacao:Erinaldo
+prop:
+local:Porta do Sol - Mairinque/SP
