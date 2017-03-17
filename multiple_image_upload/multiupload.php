@@ -36,10 +36,10 @@
             </ul>
         </div>
         <!--header tabs fim -->
-        <div class="col-md-1">
+        <div class="container-fluid">
             <div class="container" id="maindiv">
 
-                <div class="col-md-1 col-md-12section" id="formdiv">
+                <div class="section" id="formdiv">
                     <h2></h2>
                     <form enctype="multipart/form-data" action="" method="post">
                         <h5>
