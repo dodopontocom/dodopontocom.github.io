@@ -48,38 +48,30 @@ $('body').on('change', '#file', function(){
         {
 
             swal("Ótimo!","Música correta!", "success");
-
-            swal({
-                title: "Está tudo correto?",
-                    text: "Podemos enviar todas as informações?!",
-                    type: "warning",
-                    showCancelButton: true,
-                    confirmButtonColor: "#DD6B55",
-                    confirmButtonText: "Sim, Pode!",
-                    cancelButtonText: "Não, vou revisar!",
-                    closeOnConfirm: false,
-                    closeOnCancel: false
-                },
-                function(isConfirm){
-                    if (isConfirm) {
-                        swal("Enviado!", "As informações foram enviadas.", "success");
-                    } else {
-                        swal("Cancelado!", " :)", "error");
-                    }
-            });
-
-            
-
         }else {
             swal("Oops...","Música inválida!", "error");
             e.preventDefault();
         }
 
-
-
-
-
-
+        swal({
+            title: "Está tudo correto?",
+                text: "Podemos enviar todas as informações?!",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "Sim, Pode!",
+                cancelButtonText: "Não, vou revisar!",
+                closeOnConfirm: false,
+                closeOnCancel: false
+            },
+            function(isConfirm){
+                if (isConfirm) {
+                    swal("Enviado!", "As informações foram enviadas.", "success");
+                } else {
+                    swal("Cancelado!", " :)", "error");
+                    e.preventDefault();
+                }
+        });
 
     });
     
