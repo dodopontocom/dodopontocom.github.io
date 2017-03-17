@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
                 echo $j. ').<span id="error">Tente novamente!.</span><br/><br/>';
             }
         } else {//if file size and file type was incorrect.
-            echo $j. ').<span id="error">***O tipo ou tamanho das imagens são inválidos***</span><br/><br/>';
+            echo $j. ').<span id="error">***Tipo ou tamanho das imagens são inválidos***</span><br/><br/>';
         }
     }
 

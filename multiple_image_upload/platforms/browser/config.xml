@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="org.fernandobelem.clientapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Todeschini Americana</name>
+    <description>
+        Aplicativo Todeschini Americana
+    </description>
+    <author email="fernando.abelem@gmail.com" href="http://cordova.io">
+        Fernando Belém
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <icon density="hdpi" src="resources\android\icon\drawable-hdpi-icon.png" />
+    <icon src="resources\android\icon\drawable-xhdpi-icon.png" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="3000" />
+</widget>
