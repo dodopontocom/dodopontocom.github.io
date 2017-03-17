@@ -37,7 +37,7 @@
         </div>
         <!--header tabs fim -->
 
-        <div class="container" id="maindiv">
+        <div class="col-md-1 container" id="maindiv">
 
             <div class="section" id="formdiv">
                 <h2></h2>
