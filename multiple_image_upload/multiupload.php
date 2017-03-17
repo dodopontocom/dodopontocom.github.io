@@ -60,14 +60,14 @@
                     <div class="container-fluid">
                         <h2>Informações (obrigatório *)</h2>
 
-                        <p>Preço*: <input name="preco" type="number" required="true" placeholder="1.500.000,00"></p>
-                        <p >Metragem total: <input name="metro" type="number" placeholder="1.450"></p>
-                        <p >Número de dormitórios*: <input name="dormi" type="number"></p>
-                        <p >Número de banheiros*: <input name="banho" type="number"></p>
-                        <p >Título para o anúncio*: <input name="titulo" type="text"></p>
-                        <p >Descrição para o anúncio*: <textarea name="descri" type="text"></textarea></p>
-                        <p >Nome para contato 01*: <input name="contato1" type="text"></p>
-                        <p >Telefone 01* (sem espaços): <input name="telefone1" type="number" placeholder="15990564699"></p>
+                        <p>Preço*: <input name="preco" type="text" required="true" placeholder="1.500.000,00"></p>
+                        <p >Metragem total: <input name="metro" type="text" required="true" placeholder="1.450"></p>
+                        <p >Número de dormitórios*: <input name="dormi" type="number" required="true"></p>
+                        <p >Número de banheiros*: <input name="banho" type="number" required="true"></p>
+                        <p >Título para o anúncio*: <input name="titulo" type="text" required="true"></p>
+                        <p >Descrição para o anúncio*: <textarea name="descri" type="text" required="true"></textarea></p>
+                        <p >Nome para contato 01*: <input name="contato1" type="text" required="true"></p>
+                        <p >Telefone 01* (sem espaços): <input name="telefone1" type="number" required="true" placeholder="15990564699"></p>
                         <p >Nome para contato 02: <input name="contato2" type="text"></p>
                         <p >Telefone 02 (sem espaços):<input name="telefone2" type="number" placeholder="15990564699"></p>
 
@@ -79,7 +79,7 @@
                             </select>
                         </p>
                         
-                        <p >Metragem total da área construída: <input name="mconstru" type="number" placeholder="132"></p>
+                        <p >Metragem total da área construída: <input name="mconstru" type="text" required="true" placeholder="132,50"></p>
                         <p >Item 01: <input name="item1" type="text" placeholder="informação relevante"></p>
                         <p >Item 02: <input name="item2" type="text" placeholder="informação relevante"></p>
                         <p >Item 03: <input name="item3" type="text" placeholder="informação relevante"></p>
@@ -95,15 +95,16 @@
                             </select>
                         </p>
 
-                        <p >Se for para locação qual o valor: (deixar em branco caso não seja para alugar)<input name="locacao" type="number" placeholder="500,00"></p>
+                        <p >Se for para locação qual o valor: (deixar em branco caso não seja para alugar)<input name="locacao" type="text" placeholder="5.000,00"></p>
                         <p >Contato do captador do imóvel: <input name="captacao" type="text"></p>
                         <p >Nome do proprietário: <input name="prop" type="text"></p>
-                        <p >Bairro/condomínio - cidade/ESTADO*: <input name="local" type="text" placeholder="Porta do Sol - Mairinque / SP"></p>
-                        <p ><b>Música do desenvolvedor*:</b> <input name="codigod" id="codigod" type="text"></p>
+                        <p >Bairro/condomínio - cidade/ESTADO*: <input name="local" type="text" required="true" placeholder="Porta do Sol - Mairinque / SP"></p>
+                        <p ><b>Música do desenvolvedor*:</b> <input name="codigod" id="codigod" type="text" required="true"></p>
                         <hr/>
 
                         <div class="carousel-fixed-item center">
                             <input type="submit" value="Submeter!!!" name="submit" id="upload" class="btn waves-light waves-light darken-text-2"/>
+                            <!-- <a class="btn waves-light waves-light darken-text-2" onclick="hideHome()">comece agora<i class="large material-icons">play_for_work</i></a> -->
                         </div>
                         
                     </div>
@@ -121,11 +122,11 @@
             </div>
         </div>
 
-        <div class="row rodape-fixo z-depth-3 red darken-3">
+        <!-- <div class="row rodape-fixo z-depth-3 red darken-3">
             <div class="col s12">
                 <p class="white-text center-align"><font size="1.8em">CARVALHO PEREIRA IMÓVEIS</font></p>
             </div>
-        </div>
+        </div> -->
 
     </body>
 </html>
