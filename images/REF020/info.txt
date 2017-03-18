@@ -1,7 +1,7 @@
 
 ref:ref020
 preco:320.000,00
-metro:3000
+metro:3.000
 dormi:0
 banho:0
 titulo:Terreno - Porta do Sol
