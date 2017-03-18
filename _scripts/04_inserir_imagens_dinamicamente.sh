@@ -11,8 +11,8 @@ do
 	
 cat << _EOF_ >> test.html
 						                <!-- imagem n ${i} -->
-						                <div class="item active">
-						                    <img src="../images/REF018/001.jpg" alt="" />
+						                <div class="item">
+						                    <img src="../images/REF${imovel}/${count}.jpg" alt="" />
 						                </div>
 						                <!-- -->
 
