@@ -1,0 +1,25 @@
+
+ref:ref021
+preco:215.000
+metro:125
+dormi:5
+banho:3
+titulo:Sobrado no Parque São Bento
+descri:Terreno com duas casas independentes com garagem para 1 carro. Casa térrea com 3 quartos, sala, cozinha e 1 banheiro e sobrado com 2 quartos, sala, cozinha e 1 banheiro. 
+contato1:Alcides
+telefone1:11995915356
+contato2:
+telefone2:
+financiamento:nao
+mconstru:170
+item1:Aceita Chácara como parte do pagamento
+item2:Possibilidade de renda com locação
+item3:
+item4:
+item5:
+item6:
+destaque:
+locacao:
+captacao:
+prop:
+local:Parque São Bento - Sorocaba/SP
