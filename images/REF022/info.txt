@@ -1,0 +1,25 @@
+
+ref:ref022
+preco:320.000,00
+metro:1.500
+dormi:0
+banho:0
+titulo:Terreno em Condomínio
+descri:Ótimo terreno em condomínio, Village Castelo no quilômetro 80 da Rodovia Castelo Branco.
+contato1:Alcides
+telefone1:11995915356
+contato2:
+telefone2:
+financiamento:nao
+mconstru:0
+item1:Ótima Localização
+item2:
+item3:
+item4:
+item5:
+item6:
+destaque:nao
+locacao:
+captacao:Alcides
+prop:Parceiro Gilmar
+local:Village Castelo - Itu / SP
