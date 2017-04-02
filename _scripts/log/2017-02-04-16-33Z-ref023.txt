@@ -1,0 +1,24 @@
+					<!-- item imovel-->
+						<div class="w3l_services_grid">
+							<ul>
+								<li class="square">4.500 m²</li>
+								<li class="bath">3</li>
+								<li class="bed">4</li>
+							</ul>
+							<div class="hover15 column">
+							<div>
+							<a href="ref023.html">
+								<figure>
+									<img src="../images/REF023/1.jpg" alt="" class="img-responsive" />
+									<h5 class="cima"><span class="refspan">REF023</span></h5>
+									<h5 class="local"><span class="refspan">Porta do Sol - Mairinque/SP</span></h5>
+								</figure>
+							</a>
+							</div>
+							</div>
+							<h4><a href="ref023.html">R$ 650.000,00</a></h4>
+							<p>Casa em Condomínio, excelente localização, próximo à portaria principal da Rodovia Castelo Branco. Próximo do Mercado do condomínio.Área total de 4500 m², sendo 200 m² de área construída. Casa com cozinha americana, sala de Jantar e TV, banheiro, 4 quartos sendo 2 suítes e uma delas com Hidro. Campo de Futebol, piscina, churrasqueira, salão de festas, um belo pomar com pé de banana, jaca, acerola, laranja, seriguela, jabuticaba, abacate, mexerica, Horta com várias verduras e mandioca.<a class="bake" href="ref023.html">Detalhes...</a></p>
+						</div>
+						<p class="dolor"></p>
+					<!-- item imovel-->
+					<!-- 24062017i -->
