@@ -1,0 +1,25 @@
+
+ref:ref024
+preco:565.000,00
+metro:1.000
+dormi:7
+banho:3
+titulo:Chácara com 7 quartos à venda
+descri:Chácara com 1000 m² de área construída. Imóvel com 7 dormitórios (sendo 4 suítes), sala com lareira, piscina, sauna, salão e lindo jardim. Condomínio com segurança 24 horas, estrutura de lazer completa contendo campo de futebol, playground, churrasqueira, salão de jogos, piscina, quadras de tênis e poliesportiva. Fácil acesso pela Rodovia Castelo Branco, próximo ao Outlet Catarina. Com pequena reforma, a avaliação do imóvel passa de R$ 1.000.000,00. 
+contato1:Pedro Henrique
+telefone1:15998183001
+contato2:Alcides 
+telefone2:11995915356
+financiamento:
+mconstru:1.000
+item1:
+item2:
+item3:
+item4:
+item5:
+item6:
+destaque:
+locacao:
+captacao:
+prop:
+local:Porta do Sol - Mairinque/SP
