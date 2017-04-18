@@ -1,0 +1,24 @@
+					<!-- item imovel-->
+						<div class="w3l_services_grid">
+							<ul>
+								<li class="square">1.000 m²</li>
+								<li class="bath">3</li>
+								<li class="bed">7</li>
+							</ul>
+							<div class="hover15 column">
+							<div>
+							<a href="ref024.html">
+								<figure>
+									<img src="../images/REF024/1.jpg" alt="" class="img-responsive" />
+									<h5 class="cima"><span class="refspan">REF024</span></h5>
+									<h5 class="local"><span class="refspan">Porta do Sol - Mairinque/SP</span></h5>
+								</figure>
+							</a>
+							</div>
+							</div>
+							<h4><a href="ref024.html">R$ 565.000,00</a></h4>
+							<p>Chácara com 1000 m² de área construída. Imóvel com 7 dormitórios (sendo 4 suítes), sala com lareira, piscina, sauna, salão e lindo jardim.<a class="bake" href="ref024.html">Detalhes...</a></p>
+						</div>
+						<p class="dolor"></p>
+					<!-- item imovel-->
+					<!-- 24062017i -->
