@@ -1,0 +1,25 @@
+
+ref:ref025
+preco:690.000,00
+metro:2.800
+dormi:4
+banho:4
+titulo:Casa em construção 
+descri:Casa em construção , com 4 Dorm sendo 1 suíte salão de festas salão churrasqueira , piscina , área da construção 300 m2 preço 690 mil  no porta do sol terreno com 2800 m2
+contato1:Alcides 
+telefone1:11995915356
+contato2:
+telefone2:
+financiamento:sim
+mconstru:300
+item1:Salão festas
+item2:Piscina
+item3:
+item4:
+item5:
+item6:
+destaque:sim
+locacao:
+captacao:
+prop:
+local:Porta do Sol - Mairinque /SP
