@@ -1,0 +1,25 @@
+
+ref:ref026
+preco:370.000,00
+metro:400
+dormi:3
+banho:2
+titulo:Casa na Zona Norte de Sorocaba / SP
+descri:Ótimo imóvel na região que mais cresce da cidade. Terreno de esquina com muito espaço. Área construída de 162m². Uma suíte, um banheiro social.
+contato1:Alcides
+telefone1:11995915356
+contato2:Patrícia
+telefone2:15998117508
+financiamento:nao
+mconstru:162
+item1:Terreno de esquina
+item2:Quintal amplo
+item3:Garagem para 5 carros
+item4:
+item5:
+item6:
+destaque:nao
+locacao:
+captacao:
+prop:
+local:Jd. Nova Ipanema - Sorocaba/SP
