@@ -16,6 +16,7 @@ jobs:
             gcloud config set project dynamic-nomad-223612
             gcloud --quiet components update
             gcloud --quiet components install beta
+            gcloud --quiet config configurations list
             
   
 workflows:
