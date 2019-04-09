@@ -16,6 +16,8 @@ jobs:
             gcloud config set project dynamic-nomad-223612
             #gcloud components update
             gcloud config configurations list
+            echo ${GCP_KEY} > ${HOME}/gcp-key.json
+            gcloud auth activate-service-account --key-file ${HOME}/gcp-key.json
             
   
 workflows:
