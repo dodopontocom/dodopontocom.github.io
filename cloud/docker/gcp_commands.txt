@@ -1,0 +1,2 @@
+gcloud auth login constru-carvalho@dynamic-nomad-223612.iam.gserviceaccount.com
+gcloud app deploy app.yaml
