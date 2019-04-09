@@ -8,3 +8,10 @@ jobs:
       - run:
         name: "test"
         command: gcloud --version
+        
+workflows:
+  version: 2.1
+  
+  flutter_workflow:
+    jobs:
+      - test
