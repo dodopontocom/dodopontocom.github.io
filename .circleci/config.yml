@@ -1,17 +1,17 @@
 version: 2.1
-jobs:
-  test:
-    docker:
-      - image: google/cloud-sdk
-    steps:
-      - checkout
-      - run:
-        name: "test"
-        command: gcloud --version
-        
-workflows:
-  version: 2.1
-  
-  flutter_workflow:
     jobs:
-      - test
+        test:
+            docker:
+                - image: google/cloud-sdk
+            steps:
+                - checkout
+                - run:
+                    name: "test"
+                    command: gcloud --version
+
+workflows:
+    version: 2.1
+
+    flutter_workflow:
+        jobs:
+            - test
