@@ -12,7 +12,7 @@ jobs:
           command: |
             echo PROJECT_TEST
             gcloud --version
-            gcloud auth activate-service-account --key-file ./del.json
+            echo $GCP_KEY | gcloud auth activate-service-account constru-carvalho@dynamic-nomad-223612.iam.gserviceaccount.com --key-file=-
             gcloud config set project dynamic-nomad-223612
             
   
