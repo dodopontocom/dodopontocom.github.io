@@ -12,6 +12,9 @@ jobs:
           command: |
             echo PROJECT_TEST
             gcloud --version
+            gcloud auth login constru-carvalho@dynamic-nomad-223612.iam.gserviceaccount.com
+            gcloud config set project dynamic-nomad-223612
+            
   
 workflows:
   version: 2.1
