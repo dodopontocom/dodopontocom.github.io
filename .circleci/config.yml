@@ -1,0 +1,8 @@
+version: 2
+jobs:
+  deploy:
+    docker:
+      - image: google/cloud-sdk
+    steps:
+      - run: 
+      command: gcloud --version
