@@ -14,9 +14,9 @@ jobs:
             #echo ${GCP_KEY} > ${HOME}/gcp-key.json
             #gcloud auth activate-service-account --key-file ${HOME}/gcp-key.json
             gcloud config set project dynamic-nomad-223612
-            gcloud --quiet components update
-            gcloud --quiet components install beta
-            gcloud --quiet config configurations list
+            gcloud quiet components update
+            gcloud quiet components install beta
+            gcloud quiet config configurations list
             
   
 workflows:
