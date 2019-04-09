@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "dynamic-nomad-223612",
+  "private_key_id": "798c423387e21c8aa7e714847ceeceb69eb43134",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCuzFhp/PLIYMnu\njXcqLF7dIb/MSsyc+2S1b4K9VUwxam0Oi6pZrja3G80JFUklihGyCijeP+ruilkw\nMqHtZ9iwDe0WdU24b/TKrxPQxHD/AdzVb0nwiz22g0nVDT8lq1rCn4XGgFFAAoOc\n96p08eSKcgaxWsJWMq9ooX9sCcb+GETLO2Agi9BHsOJ0oSD1HWxPo6jvUaeRJPp+\nTwSk9rH0y0pB+PRVyKVXQ71KME4HRYLP3cyczwbj4m+o5f8HGx+vbQjiAHZNs6L4\n1zwWlYiyGqUa1PtFOAyIN7In8+QQAjjaFBijh1G5ylIl9RrFY7WhdMnZ4VKLBPYM\nfjS63iKtAgMBAAECggEAA4KO8/HkXimzZFrq3anubbpTw6Js4Woa55nJokuoMAXX\nEsezMAHTj3G7eEc5JMvU9yJFF9Fowkl86P7bSY0gSMi+zgik+uMkoz1IxJRtQHGl\nIZQOhAoHvzZ7sQ+HCRabx/S0FvxUpVhnlCtU/OwujqkjgUQ1Ss3Rv+QeTukTWd7S\nUxvoVH3na8xX0kdmqfw2yv6VJdfuRiY9g2XJFNc/xrgpnkk+MM9UnTXXaJf+mKMF\nDTPjGPBdOlWmnTrEsnQNwF+c1lZwHq523e2U+/cx1YZV55gOoRPqVBpuQRU0LjKu\n9XuTDr9vjup16/mAR1F3r2M9P8vkRsgSq3SgNnQOgQKBgQDvjIRwR9tc1PXeJS98\n9uvyNTQbJhy/PcVHjNv3ZhQpEeuDLjKXPw2rhnJ6jghUgFVHsePYjVOLyfOx3DYg\n5/Ap+zQMP1oRHmn4P2PyfKGkXLJkl6mY9f+Qpch5+D1+u4Q7mqJkUTRFCCdeOkVH\nZtIz9nIifUV30BaNRtDdEV9upQKBgQC6zXQgyj+kI2icT5hc6i42j6nihIXPBXZU\nePpZxKgOVtNDGXF0z6A+L0UUWjrOm6IXR8/gcmhidGl/xKMLA8mnzzD4XYnnsLr4\ndaq+y7egf2R48ICLVCwmScawHF1x5XFQeU9cuIz1q8wHrYzC3p4mdk7JAiAerzEL\nfXMMXS/taQKBgEjUSuusHRhTMtEwMwjmNYP1AvuCEdle2VzQiYvlABogdZ7za7Qq\nGmjcvm9eQVAXmFXs0p3jEdR9ONcJYXeNrKnG0uMqW6K6wXMVKrjthWNoP2Bv78Mu\nf12l2Zajj2a5chGBCQBA5Ahc20M9qhR0QVJFChxMQ9OSc1jOf+/GOWJ1AoGBAKh0\ndnDLcjC2rbOoI6JGnH4fd/gJwhE6v8bVgg5JxbOIoOM1opbQVZU+U3FTHQ0MVFPi\nMpgZFAEVMb5CuTVJqSRnN6YB1EbXnQRKODvuwh0+RIC7gXAj69xrU32lVq9LVbBY\ndTUMSDGTR171Jqbk0oGk1s911zlUi0ntSz6vGnVhAoGAK4tsbO1+rsSiba5klyz4\nXHlbcMy6PGkqYP96KxTy/NXE5Obs4QNzdS20hilnAUU9zCHjbMxAThghNa0QjCDo\nwHKJMoBU6x4gkTpNnKxjIsBVXqod3nSNJByeirb2K1eyCNhJLuUvqoRnCwCoiGEJ\n/LmRVkiFkVtS2GKHMtA8ctw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "constru-carvalho@dynamic-nomad-223612.iam.gserviceaccount.com",
+  "client_id": "104976874424168085517",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/constru-carvalho%40dynamic-nomad-223612.iam.gserviceaccount.com"
+}
