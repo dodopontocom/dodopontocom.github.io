@@ -11,8 +11,8 @@ jobs:
           name: "Test"
           command: |
             echo PROJECT_TEST
-            echo ${GCP_KEY}
-            #gcloud auth activate-service-account --key-file ${HOME}/gcp-key.json
+            echo ${GCP_KEY} | tee del.json
+            gcloud auth -q activate-service-account --key-file del.json
             #gcloud config set project dynamic-nomad-223612
             #gcloud components update
             #gcloud config configurations list
