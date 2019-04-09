@@ -4,5 +4,6 @@ jobs:
     docker:
       - image: google/cloud-sdk
     steps:
-      - run: 
-      command: gcloud --version
+      - run:
+        name: "test"
+        command: gcloud --version
