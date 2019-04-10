@@ -9,7 +9,7 @@ only-releasable: &only-releasable
         - master
 jobs:
   Deploy:
-  <<: *defaults
+    <<: *defaults
     docker:
       - image: google/cloud-sdk
     working_directory: ~/PROJECT_TEST
