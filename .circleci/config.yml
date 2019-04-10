@@ -18,6 +18,7 @@ jobs:
       - run:
           name: "Google App Engine Deploy"
           command: |
+            export
             echo ${GCP_KEY} > del.json
             gcloud auth -q activate-service-account --key-file del.json
             gcloud config -q set project dynamic-nomad-223612
