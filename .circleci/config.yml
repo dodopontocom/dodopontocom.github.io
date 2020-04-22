@@ -54,7 +54,7 @@ workflows:
   
   gcloud_workflow:
     jobs:
-      - Prepare:
+      - Prepare
       - Staging:
           <<: *non-releasable
           requires:
