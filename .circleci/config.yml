@@ -6,6 +6,7 @@ only-releasable: &only-releasable
     branches:
       only:
         - release/gcp
+        - master
 non-releasable: &non-releasable
   filters:
     branches:
