@@ -9,9 +9,8 @@ only-releasable: &only-releasable
 non-releasable: &non-releasable
   filters:
     branches:
-      only:
-        - develop
-        - feature/rsync
+      ignore:
+        - master
 jobs:
   Prepare:
     <<: *defaults
@@ -56,8 +55,6 @@ workflows:
   gcloud_workflow:
     jobs:
       - Prepare:
-          <<: *only-releasable
-          <<: *non-releasable
       - Staging:
           <<: *non-releasable
           requires:
