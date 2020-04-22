@@ -12,6 +12,7 @@ non-releasable: &non-releasable
     branches:
       ignore:
         - release/gcp
+        - master
 jobs:
   Deploy:
     <<: *defaults
