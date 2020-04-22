@@ -9,8 +9,9 @@ only-releasable: &only-releasable
 non-releasable: &non-releasable
   filters:
     branches:
-      ignore:
-        - master
+      only:
+        - develop
+        - feature/rsync
 jobs:
   Prepare:
     <<: *defaults
