@@ -1,19 +1,21 @@
 version: 2.1
 defaults: &defaults
-  environment:
-    PROJECT_TEST: odroidfeeder
+  working_directory: /root/app
 only-releasable: &only-releasable
   filters:
     branches:
       only:
-        - master
-        - develop
+        - release/gcp
+non-releasable: &non-releasable
+  filters:
+    branches:
+      ignore:
+        - release/gcp
 jobs:
   Deploy:
     <<: *defaults
     docker:
       - image: google/cloud-sdk
-    working_directory: /root/app
     steps:
       - checkout
       - run:
@@ -25,7 +27,7 @@ jobs:
             gcloud auth activate-service-account --key-file=${GCLOUD_JSON_KEY_PATH}
             gcloud config set project ${GCLOUD_PROJECT_ID}
             
-            gsutil -m rsync -c -x '^.*git.*$|^.*circleci.*$' -r ./ gs://${GCLOUD_PROJECT_BUCKET_NAME}/
+            #gsutil -m rsync -c -x '^.*git.*$|^.*circleci.*$' -r ./ gs://${GCLOUD_PROJECT_BUCKET_NAME}/
             
             echo "Checking if GCP Bucket is created..."
             echo "bucket must be named as: ${GCLOUD_PROJECT_BUCKET_NAME}"

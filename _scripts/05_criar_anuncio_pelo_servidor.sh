@@ -1,10 +1,5 @@
 #!/bin/bash
 
-
-
-
-
-
 num=$(ls -1A ${home}/dodopontocom.github.io/refs/ref*.html | wc -l)
 sum=$((num+1))
 novo=REF0${sum}

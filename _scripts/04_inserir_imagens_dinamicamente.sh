@@ -21,8 +21,3 @@ _EOF_
 	count=$((count+1))
 	
 done
-
-
-
-#reset
-exit 0
