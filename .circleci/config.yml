@@ -12,7 +12,7 @@ jobs:
     <<: *defaults
     docker:
       - image: google/cloud-sdk
-    working_directory: ~/PROJECT_TEST
+    working_directory: /root/app
     steps:
       - checkout
       - run:
