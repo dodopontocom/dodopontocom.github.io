@@ -5,12 +5,12 @@ only-releasable: &only-releasable
   filters:
     branches:
       only:
-        - master
+        - release/gcp
 non-releasable: &non-releasable
   filters:
     branches:
       ignore:
-        - master
+        - release/gcp
 jobs:
   Prepare Credentials:
     <<: *defaults
