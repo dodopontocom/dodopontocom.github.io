@@ -5,23 +5,21 @@ only-releasable: &only-releasable
   filters:
     branches:
       only:
-        - release/gcp
         - master
 non-releasable: &non-releasable
   filters:
     branches:
       ignore:
-        - release/gcp
         - master
 jobs:
-  Deploy:
+  Prepare:
     <<: *defaults
     docker:
       - image: google/cloud-sdk
     steps:
       - checkout
       - run:
-          name: "Google App Engine Deploy"
+          name: "Google verify Authentication"
           command: |
            
             source .circleci/cicd-definitions.sh
@@ -31,19 +29,33 @@ jobs:
             
             #gsutil -m rsync -c -x '^.*git.*$|^.*circleci.*$' -r ./ gs://${GCLOUD_PROJECT_BUCKET_NAME}/
             
-            echo "Checking if GCP Bucket is created..."
-            echo "bucket must be named as: ${GCLOUD_PROJECT_BUCKET_NAME}"
-            if [[ ! -z ${GCLOUD_PROJECT_BUCKET_NAME} ]]; then
-              gsutil ls gs://${GCLOUD_PROJECT_BUCKET_NAME}/ || gsutil mb -c standard -p ${GCLOUD_PROJECT_ID} -l ${GCLOUD_PROJECT_REGION} gs://${GCLOUD_PROJECT_BUCKET_NAME}/
-              #gsutil -m rsync -c -x '^.*git.*$|^.*circleci.*$' -r ./ gs://${GCLOUD_PROJECT_BUCKET_NAME}/
-            else
-              exit -1
-            fi
-  
+            #echo "Checking if GCP Bucket is created..."
+            #echo "bucket must be named as: ${GCLOUD_PROJECT_BUCKET_NAME}"
+            #if [[ ! -z ${GCLOUD_PROJECT_BUCKET_NAME} ]]; then
+            ##  gsutil ls gs://${GCLOUD_PROJECT_BUCKET_NAME}/ || gsutil mb -c standard -p ${GCLOUD_PROJECT_ID} -l ${GCLOUD_PROJECT_REGION} gs://${GCLOUD_PROJECT_BUCKET_NAME}/
+            #  #gsutil -m rsync -c -x '^.*git.*$|^.*circleci.*$' -r ./ gs://${GCLOUD_PROJECT_BUCKET_NAME}/
+            #else
+            ##  exit -1
+            #fi
+  Staging:
+    <<: *defaults
+    docker:
+      - image: google/cloud-sdk
+    steps:
+      - checkout
+      - run:
+          name: "Publish to Staging"
+          command: |
+            source .circleci/cicd-definitions.sh
+            gsutil ls gs://${GCLOUD_PROJECT_BUCKET_NAME}/
+
 workflows:
   version: 2.1
   
   gcloud_workflow:
     jobs:
-      - Deploy:
+      - Prepare:
           <<: *only-releasable
+          <<: *non-releasable
+      - Staging:
+          <<: *non-releasable
