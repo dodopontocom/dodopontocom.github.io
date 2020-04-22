@@ -1,27 +1,42 @@
 version: 2.1
 defaults: &defaults
-  environment:
-    PROJECT_TEST: odroidfeeder
+  working_directory: /root/app
 only-releasable: &only-releasable
   filters:
     branches:
       only:
-        - master
+        - release/gcp
+non-releasable: &non-releasable
+  filters:
+    branches:
+      ignore:
+        - release/gcp
 jobs:
   Deploy:
     <<: *defaults
     docker:
       - image: google/cloud-sdk
-    working_directory: ~/PROJECT_TEST
     steps:
       - checkout
       - run:
           name: "Google App Engine Deploy"
           command: |
-            echo ${GCP_KEY} > del.json
-            gcloud auth -q activate-service-account --key-file del.json
-            gcloud config -q set project dynamic-nomad-223612
-            gcloud app deploy -q app.yaml
+           
+            source .circleci/cicd-definitions.sh
+            echo ${DODRONES_GCP_MY_LABS_SA} > ${GCLOUD_JSON_KEY_PATH}
+            gcloud auth activate-service-account --key-file=${GCLOUD_JSON_KEY_PATH}
+            gcloud config set project ${GCLOUD_PROJECT_ID}
+            
+            #gsutil -m rsync -c -x '^.*git.*$|^.*circleci.*$' -r ./ gs://${GCLOUD_PROJECT_BUCKET_NAME}/
+            
+            echo "Checking if GCP Bucket is created..."
+            echo "bucket must be named as: ${GCLOUD_PROJECT_BUCKET_NAME}"
+            if [[ ! -z ${GCLOUD_PROJECT_BUCKET_NAME} ]]; then
+              gsutil ls gs://${GCLOUD_PROJECT_BUCKET_NAME}/ || gsutil mb -c standard -p ${GCLOUD_PROJECT_ID} -l ${GCLOUD_PROJECT_REGION} gs://${GCLOUD_PROJECT_BUCKET_NAME}/
+              #gsutil -m rsync -c -x '^.*git.*$|^.*circleci.*$' -r ./ gs://${GCLOUD_PROJECT_BUCKET_NAME}/
+            else
+              exit -1
+            fi
   
 workflows:
   version: 2.1

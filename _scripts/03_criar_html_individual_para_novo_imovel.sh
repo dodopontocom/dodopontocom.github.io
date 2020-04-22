@@ -508,7 +508,3 @@ _EOF_
 
 ####
 cp -v ${new_imovel} ${thisscript}/log/${imovel_bkp}
-
-exit 0
-
-
