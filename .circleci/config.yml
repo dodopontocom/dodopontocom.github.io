@@ -18,11 +18,16 @@ jobs:
       - run:
           name: "Google App Engine Deploy"
           command: |
-            export
-            echo ${GCP_KEY} > del.json
-            gcloud auth -q activate-service-account --key-file del.json
-            gcloud config -q set project dynamic-nomad-223612
-            gcloud app deploy -q app.yaml
+            #export
+            #echo ${GCP_KEY} > del.json
+            #gcloud auth -q activate-service-account --key-file del.json
+            #gcloud config -q set project dynamic-nomad-223612
+            #gcloud app deploy -q app.yaml
+            
+            source .circleci/cicd-definitions.sh
+            echo ${DODRONES_GCP_MY_LABS_SA} > ${GCLOUD_JSON_KEY_PATH}
+            gcloud auth activate-service-account --key-file=${GCLOUD_JSON_KEY_PATH}
+            gcloud config set project ${GCLOUD_PROJECT_ID}
   
 workflows:
   version: 2.1
