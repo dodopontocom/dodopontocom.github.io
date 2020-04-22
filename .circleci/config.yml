@@ -6,11 +6,13 @@ only-releasable: &only-releasable
     branches:
       only:
         - release/gcp
+        - master
 non-releasable: &non-releasable
   filters:
     branches:
       ignore:
         - release/gcp
+        - master
 jobs:
   Deploy:
     <<: *defaults
