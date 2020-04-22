@@ -12,7 +12,7 @@ non-releasable: &non-releasable
       ignore:
         - master
 jobs:
-  Prepare:
+  Prepare Credentials:
     <<: *defaults
     docker:
       - image: google/cloud-sdk
@@ -26,36 +26,56 @@ jobs:
             echo ${DODRONES_GCP_MY_LABS_SA} > ${GCLOUD_JSON_KEY_PATH}
             gcloud auth activate-service-account --key-file=${GCLOUD_JSON_KEY_PATH}
             gcloud config set project ${GCLOUD_PROJECT_ID}
-            
-            #gsutil -m rsync -c -x '^.*git.*$|^.*circleci.*$' -r ./ gs://${GCLOUD_PROJECT_BUCKET_NAME}/
-            
-            #echo "Checking if GCP Bucket is created..."
-            #echo "bucket must be named as: ${GCLOUD_PROJECT_BUCKET_NAME}"
-            #if [[ ! -z ${GCLOUD_PROJECT_BUCKET_NAME} ]]; then
-            ##  gsutil ls gs://${GCLOUD_PROJECT_BUCKET_NAME}/ || gsutil mb -c standard -p ${GCLOUD_PROJECT_ID} -l ${GCLOUD_PROJECT_REGION} gs://${GCLOUD_PROJECT_BUCKET_NAME}/
-            #  #gsutil -m rsync -c -x '^.*git.*$|^.*circleci.*$' -r ./ gs://${GCLOUD_PROJECT_BUCKET_NAME}/
-            #else
-            ##  exit -1
-            #fi
-  Staging:
+
+  GCP Sync:
     <<: *defaults
     docker:
       - image: google/cloud-sdk
     steps:
       - checkout
       - run:
-          name: "Publish to Staging"
+          name: "GCP Sync to Bucket"
           command: |
-            source .circleci/cicd-definitions.sh
-            gsutil ls gs://${GCLOUD_PROJECT_BUCKET_NAME}/
+            gsutil -m rsync -c -x '^.*git.*$|^.*circleci.*$' -r ./ gs://${GCLOUD_PROJECT_BUCKET_NAME}/
+  
+  GCP Bucket Update:
+    <<: *defaults
+    docker:
+      - image: google/cloud-sdk
+    steps:
+      - checkout
+      - run:
+          name: "GCP Bucket Update"
+          command: |
+            gsutil acl ch -u AllUsers:R gs://${GCLOUD_PROJECT_BUCKET_NAME}/index.html
+            gsutil acl ch -u AllUsers:R gs://${GCLOUD_PROJECT_BUCKET_NAME}/refs/*
+  
+  GCP Publish Site:
+    <<: *defaults
+    docker:
+      - image: google/cloud-sdk
+    steps:
+      - checkout
+      - run:
+          name: "GCP Publish Site"
+          command: |
+            gsutil web set -m index.html gs://${GCLOUD_PROJECT_BUCKET_NAME}/
 
 workflows:
   version: 2.1
   
   gcloud_workflow:
     jobs:
-      - Prepare
-      - Staging:
-          <<: *non-releasable
+      - Prepare Credentials
+      - GCP Sync:
+          <<: *only-releasable
           requires:
-            - Prepare
+            - Prepare Credentials
+      - GCP Bucket Update:
+          <<: *only-releasable
+          requires:
+            - GCP Sync
+      - GCP Publish Site:
+          <<: *only-releasable
+          requires:
+            - GCP Bucket Update
