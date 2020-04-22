@@ -29,7 +29,7 @@ jobs:
             echo "bucket must be named as: ${GCLOUD_PROJECT_BUCKET_NAME}"
             if [[ ! -z ${GCLOUD_PROJECT_BUCKET_NAME} ]]; then
               gsutil ls gs://${GCLOUD_PROJECT_BUCKET_NAME}/ || gsutil mb -c standard -p ${GCLOUD_PROJECT_ID} -l ${GCLOUD_PROJECT_REGION} gs://${GCLOUD_PROJECT_BUCKET_NAME}/
-              gsutil rsync -x '^.*git.*$|^.*circleci.*$' -r ./ gs://${GCLOUD_PROJECT_BUCKET_NAME}/
+              gsutil -m rsync -x '^.*git.*$|^.*circleci.*$' -r ./ gs://${GCLOUD_PROJECT_BUCKET_NAME}/
             else
               exit -1
             fi
