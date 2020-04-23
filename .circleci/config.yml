@@ -112,9 +112,6 @@ workflows:
           <<: *only-releasable
           requires:
             - GCP Bucket Update
-      #- GCP Revoke Credentials:
-      #    requires:
-      #      - Prepare Credentials
-  gcloud_revoke:
-    jobs:
-      - GCP Revoke Credentials
+      - GCP Revoke Credentials:
+          requires:
+            - Prepare Credentials
