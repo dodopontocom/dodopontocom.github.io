@@ -16,8 +16,8 @@ revoke-sa: &revoke-sa
       command: |
         source .circleci/cicd-definitions.sh
         echo ${DODRONES_GCP_MY_LABS_SA} > ${GCLOUD_JSON_KEY_PATH}
-        client_email=$(< "${GCLOUD_JSON_KEY_PATH}" grep "client_email" | awk '{print $2}' | grep -o '".*"' | sed 's/"//g')
-        gcloud auth revoke ${client_email}
+        echo "${GCLOUD_JSON_KEY_PATH}" grep "client_email" | awk '{print $2}' | grep -o '".*"' | sed 's/"//g'
+        gcloud auth revoke devops-sa@construtora-2020.iam.gserviceaccount.com
 
 only-releasable: &only-releasable
   filters:
