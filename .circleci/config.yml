@@ -38,6 +38,10 @@ jobs:
     steps:
       - checkout
       - <<: *activate-sa
+      - run:
+          name: Testando
+          command: |
+            echo test
 
   GCP Sync:
     <<: *defaults
@@ -111,6 +115,3 @@ workflows:
           <<: *only-releasable
           requires:
             - GCP Bucket Update
-      - GCP Revoke Credentials:
-          requires:
-            - Prepare Credentials
