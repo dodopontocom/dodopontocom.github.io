@@ -36,6 +36,7 @@ jobs:
       - run:
           name: "GCP Sync to Bucket"
           command: |
+            source .circleci/cicd-definitions.sh
             gsutil -m rsync -c -x '^.*git.*$|^.*circleci.*$' -r ./ gs://${GCLOUD_PROJECT_BUCKET_NAME}/
   
   GCP Bucket Update:
@@ -47,6 +48,7 @@ jobs:
       - run:
           name: "GCP Bucket Update"
           command: |
+            source .circleci/cicd-definitions.sh
             gsutil acl ch -u AllUsers:R gs://${GCLOUD_PROJECT_BUCKET_NAME}/index.html
             gsutil acl ch -u AllUsers:R gs://${GCLOUD_PROJECT_BUCKET_NAME}/refs/*
   
@@ -59,6 +61,7 @@ jobs:
       - run:
           name: "GCP Publish Site"
           command: |
+            source .circleci/cicd-definitions.sh
             gsutil web set -m index.html gs://${GCLOUD_PROJECT_BUCKET_NAME}/
 
 workflows:
