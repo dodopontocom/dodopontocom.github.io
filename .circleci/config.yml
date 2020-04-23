@@ -37,8 +37,8 @@ jobs:
       - image: google/cloud-sdk
     steps:
       - checkout
-      <<: *activate-sa
-      
+      - <<: *activate-sa
+
   GCP Sync:
     <<: *defaults
     docker:
