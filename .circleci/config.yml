@@ -1,6 +1,24 @@
 version: 2.1
 defaults: &defaults
   working_directory: /root/app
+
+activate-sa: &activate-sa
+  - run:
+      name: "Activate SA to the Project"
+      command: |
+        source .circleci/cicd-definitions.sh
+        echo ${DODRONES_GCP_MY_LABS_SA} > ${GCLOUD_JSON_KEY_PATH}
+        gcloud auth activate-service-account --key-file=${GCLOUD_JSON_KEY_PATH}
+        gcloud config set project ${GCLOUD_PROJECT_ID}
+revoke-sa: &revoke-sa
+  - run:
+      name: "Revoke SA"
+      command: |
+        source .circleci/cicd-definitions.sh
+        echo ${DODRONES_GCP_MY_LABS_SA} > ${GCLOUD_JSON_KEY_PATH}
+        echo "${GCLOUD_JSON_KEY_PATH}" grep "client_email" | awk '{print $2}' | grep -o '".*"' | sed 's/"//g'
+        gcloud auth revoke devops-sa@construtora-2020.iam.gserviceaccount.com
+
 only-releasable: &only-releasable
   filters:
     branches:
@@ -11,6 +29,7 @@ non-releasable: &non-releasable
     branches:
       ignore:
         - release/gcp
+
 jobs:
   Prepare Credentials:
     <<: *defaults
@@ -18,13 +37,7 @@ jobs:
       - image: google/cloud-sdk
     steps:
       - checkout
-      - run:
-          name: "Google verify Authentication"
-          command: |
-            source .circleci/cicd-definitions.sh
-            echo ${DODRONES_GCP_MY_LABS_SA} > ${GCLOUD_JSON_KEY_PATH}
-            gcloud auth activate-service-account --key-file=${GCLOUD_JSON_KEY_PATH}
-            gcloud config set project ${GCLOUD_PROJECT_ID}
+      - <<: *activate-sa
 
   GCP Sync:
     <<: *defaults
@@ -32,13 +45,10 @@ jobs:
       - image: google/cloud-sdk
     steps:
       - checkout
+      - <<: *activate-sa
       - run:
           name: "GCP Sync to Bucket"
           command: |
-            source .circleci/cicd-definitions.sh
-            echo ${DODRONES_GCP_MY_LABS_SA} > ${GCLOUD_JSON_KEY_PATH}
-            gcloud auth activate-service-account --key-file=${GCLOUD_JSON_KEY_PATH}
-            gcloud config set project ${GCLOUD_PROJECT_ID}
             gsutil -m rsync -c -x '^.*git.*$|^.*circleci.*$' -r ./ gs://${GCLOUD_PROJECT_BUCKET_NAME}/
   
   GCP Bucket Update:
@@ -47,13 +57,10 @@ jobs:
       - image: google/cloud-sdk
     steps:
       - checkout
+      - <<: *activate-sa
       - run:
           name: "GCP Bucket Update"
           command: |
-            source .circleci/cicd-definitions.sh
-            echo ${DODRONES_GCP_MY_LABS_SA} > ${GCLOUD_JSON_KEY_PATH}
-            gcloud auth activate-service-account --key-file=${GCLOUD_JSON_KEY_PATH}
-            gcloud config set project ${GCLOUD_PROJECT_ID}
             gsutil acl ch -u AllUsers:R gs://${GCLOUD_PROJECT_BUCKET_NAME}/index.html
             gsutil acl ch -u AllUsers:R gs://${GCLOUD_PROJECT_BUCKET_NAME}/refs/*
   
@@ -63,14 +70,19 @@ jobs:
       - image: google/cloud-sdk
     steps:
       - checkout
+      - <<: *activate-sa
       - run:
           name: "GCP Publish Site"
           command: |
-            source .circleci/cicd-definitions.sh
-            echo ${DODRONES_GCP_MY_LABS_SA} > ${GCLOUD_JSON_KEY_PATH}
-            gcloud auth activate-service-account --key-file=${GCLOUD_JSON_KEY_PATH}
-            gcloud config set project ${GCLOUD_PROJECT_ID}
             gsutil web set -m index.html gs://${GCLOUD_PROJECT_BUCKET_NAME}
+
+  GCP Revoke Credentials:
+    <<: *defaults
+    docker:
+      - image: google/cloud-sdk
+    steps:
+      - checkout
+      - <<: *revoke-sa
 
 workflows:
   version: 2.1
