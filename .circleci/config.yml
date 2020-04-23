@@ -1,6 +1,24 @@
 version: 2.1
 defaults: &defaults
   working_directory: /root/app
+
+activate-sa: &activate-sa
+  - run:
+      name: "Activate SA to the Project"
+      command: |
+        source .circleci/cicd-definitions.sh
+        echo ${DODRONES_GCP_MY_LABS_SA} > ${GCLOUD_JSON_KEY_PATH}
+        gcloud auth activate-service-account --key-file=${GCLOUD_JSON_KEY_PATH}
+        gcloud config set project ${GCLOUD_PROJECT_ID}
+revoke-sa: &revoke-sa
+  - run:
+      name: "Revoke SA"
+      command: |
+        source .circleci/cicd-definitions.sh
+        echo ${DODRONES_GCP_MY_LABS_SA} > ${GCLOUD_JSON_KEY_PATH}
+        client_email=$(cat ${GCLOUD_JSON_KEY_PATH} | grep "client_email" | awk '{print $2}' | grep -o '".*"' | sed 's/"//g')
+        gcloud auth revoke ${client_email}
+
 only-releasable: &only-releasable
   filters:
     branches:
@@ -11,6 +29,7 @@ non-releasable: &non-releasable
     branches:
       ignore:
         - release/gcp
+
 jobs:
   Prepare Credentials:
     <<: *defaults
@@ -18,14 +37,8 @@ jobs:
       - image: google/cloud-sdk
     steps:
       - checkout
-      - run:
-          name: "Google verify Authentication"
-          command: |
-            source .circleci/cicd-definitions.sh
-            echo ${DODRONES_GCP_MY_LABS_SA} > ${GCLOUD_JSON_KEY_PATH}
-            gcloud auth activate-service-account --key-file=${GCLOUD_JSON_KEY_PATH}
-            gcloud config set project ${GCLOUD_PROJECT_ID}
-
+      <<: *activate-sa
+      
   GCP Sync:
     <<: *defaults
     docker:
