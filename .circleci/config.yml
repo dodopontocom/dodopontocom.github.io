@@ -85,6 +85,14 @@ jobs:
             gcloud config set project ${GCLOUD_PROJECT_ID}
             gsutil web set -m index.html gs://${GCLOUD_PROJECT_BUCKET_NAME}
 
+  GCP Revoke Credentials:
+    <<: *defaults
+    docker:
+      - image: google/cloud-sdk
+    steps:
+      - checkout
+      - <<: *revoke-sa
+
 workflows:
   version: 2.1
   
@@ -103,3 +111,4 @@ workflows:
           <<: *only-releasable
           requires:
             - GCP Bucket Update
+      - GCP Revoke Credentials
