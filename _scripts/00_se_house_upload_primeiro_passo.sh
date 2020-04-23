@@ -85,8 +85,3 @@ git commit -m "${timestamp} - automatico do verificar se houve uploads"
 echo "========${timestamp}================"
 git log origin/master..HEAD
 echo "========${timestamp}================"
-
-
-
-
-exit 0

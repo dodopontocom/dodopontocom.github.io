@@ -187,8 +187,3 @@ sed -i "${inserir}d" ${vendas}
 #git checkout master
 
 #git merge shell
-
-####
-##
-#script exit
-exit 0
