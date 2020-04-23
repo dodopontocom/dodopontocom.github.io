@@ -64,7 +64,7 @@ jobs:
           command: |
             source .circleci/cicd-definitions.sh
             gsutil acl ch -u AllUsers:R gs://${GCLOUD_PROJECT_BUCKET_NAME}/index.html
-            gsutil acl ch -u AllUsers:R gs://${GCLOUD_PROJECT_BUCKET_NAME}/refs/*
+            gsutil acl ch -u AllUsers:R gs://${GCLOUD_PROJECT_BUCKET_NAME}/site/refs/*
   
   GCP Publish Site:
     <<: *defaults
