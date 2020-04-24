@@ -1,7 +1,8 @@
 version: 2.1
 defaults: &defaults
   working_directory: /root/app
-
+  docker:
+    - image: google/cloud-sdk
 activate-sa: &activate-sa
   - run:
       name: "Activate SA to the Project"
@@ -33,16 +34,12 @@ non-releasable: &non-releasable
 jobs:
   Prepare Credentials:
     <<: *defaults
-    docker:
-      - image: google/cloud-sdk
     steps:
       - checkout
       - <<: *activate-sa
 
   GCP Sync:
     <<: *defaults
-    docker:
-      - image: google/cloud-sdk
     steps:
       - checkout
       - <<: *activate-sa
@@ -54,8 +51,6 @@ jobs:
   
   GCP Bucket Update:
     <<: *defaults
-    docker:
-      - image: google/cloud-sdk
     steps:
       - checkout
       - <<: *activate-sa
@@ -67,8 +62,6 @@ jobs:
   
   GCP Publish Site:
     <<: *defaults
-    docker:
-      - image: google/cloud-sdk
     steps:
       - checkout
       - <<: *activate-sa
@@ -80,8 +73,6 @@ jobs:
 
   GCP Revoke Credentials:
     <<: *defaults
-    docker:
-      - image: google/cloud-sdk
     steps:
       - checkout
       - <<: *revoke-sa
