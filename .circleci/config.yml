@@ -40,8 +40,6 @@ jobs:
 
   GCP Sync:
     <<: *defaults
-    docker:
-      - image: google/cloud-sdk
     steps:
       - checkout
       - <<: *activate-sa
@@ -53,8 +51,6 @@ jobs:
   
   GCP Bucket Update:
     <<: *defaults
-    docker:
-      - image: google/cloud-sdk
     steps:
       - checkout
       - <<: *activate-sa
@@ -66,8 +62,6 @@ jobs:
   
   GCP Publish Site:
     <<: *defaults
-    docker:
-      - image: google/cloud-sdk
     steps:
       - checkout
       - <<: *activate-sa
@@ -79,8 +73,6 @@ jobs:
 
   GCP Revoke Credentials:
     <<: *defaults
-    docker:
-      - image: google/cloud-sdk
     steps:
       - checkout
       - <<: *revoke-sa
