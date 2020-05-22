@@ -1,0 +1,25 @@
+
+ref:ref027
+preco:510.000,00
+metro:1000m²
+dormi:2
+banho:1
+titulo:Imóvel em construção no Bairro Dona Catarina (Doninha)
+descri:***IMÓVEL EM CONSTRUÇÃO*** Linda residência de estilo clássico, com grandes janelas de vidro que trazem integração entre a casa e a área de lazer. Uma fachada elegante e imponente contando com 3 dormitórios sendo 1 suite, sala de estar, cozinha, banheiro social, lavanderia, lavabo e uma linda área gourmet. Terreno já conta com uma linda piscina. Localizado no Km 68 da Castelo Branco Bairro Dona Catarina Condomínio Veneza.
+contato1:Alcides
+telefone1:(11)995915356
+contato2:Patrícia
+telefone2:(15)998117508
+financiamento:nao
+mconstru:142m²
+item1:Tereno c/ Piscina
+item2:Quintal amplo
+item3:Garagem para 5 carros
+item4:Área gourmet
+item5:Otima localização
+item6:
+destaque:nao
+locacao:
+captacao:
+prop:
+local:Dona Catarina Condomínio Veneza
