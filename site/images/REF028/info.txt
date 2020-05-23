@@ -1,0 +1,24 @@
+ref:ref28
+preco:590.000,00
+mconst:206m²
+dormi:2
+banho:2
+titulo:OPORTUNIDADE - Chácara em Fase de Construção no Porta do Sol
+descri:Imóvel em construção, casa moderna e espaçosa, localizada no Condomínio Porta do Sol. Possui ampla sala com pé direto alto com vista para mata, 03 dormitórios sendo 01 suite, cozinha americana, sala de jantar, banheiro social, salão com churrasqueira, piscina e campo de futebol . Imóvel com excelente localização, próximo a portaria 1 que dá acesso ao Shopping Catarina Outlet, Quinta do Marquês e outros serviços.
+contato1:Alcides
+telefone1:(11)995915356
+contato2:Patrícia
+telefone2:(15)998117508
+financiamento:nao
+mterre:1470m²
+item1:Tereno com Piscina
+item2:Campo de futebol
+item3:Garagem para 4 carros
+item4:Área gourmet
+item5:Otima localização
+item6:
+destaque:nao
+locacao:
+captacao:
+prop:
+local:Mairinque/Condominio Porta do Sol
