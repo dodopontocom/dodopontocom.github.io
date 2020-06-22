@@ -123,7 +123,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<div class="w3l_header_left">
 				<ul>
-					<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:contato@construtoracarvalhopereira.com.br">contato@construtoracarvalhopereira.com.br</a></li>
+					<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:construtoracarvalhopereira@gmail.com">construtoracarvalhopereira@gmail.com</a></li>
 					<!--<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> (15) 99801 6412</li> -->
 					<li><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i><a href="intent://send/11995915356#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end"> 11 995915356</a></li>
 					<li><a href="intent://send/15998183001#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end">15 998183001</a></li>
