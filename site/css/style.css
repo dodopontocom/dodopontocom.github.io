@@ -244,8 +244,9 @@ ul.social-icons li {
     padding: 0 0 0 1em;
     line-height: 48px;
     font-size: 1.5em;
-    background: url(../images/img-sp.png) no-repeat 0px -61px;
-    height: 65px;
+	background: url(../images/img-sp.png) no-repeat 0px -61px;
+	height: 65px;
+	width: 69px;
 }
 /*-- agileits --*/
 .navbar-brand span {
@@ -2232,6 +2233,7 @@ a.pa_italic:focus {
 	.navbar-brand {
 		padding: 0 0 0 1.2em;
 		line-height: 45px;
+		width: 69px;
 		font-size:1.2em;
 		background: url(../images/img-sp.png) no-repeat -1px -61px;
 	}
@@ -2483,6 +2485,7 @@ a.pa_italic:focus {
 		background: url(../images/img-sp.png) no-repeat -1px -48px;
 		background-size: 127%;
 		height: 52px;
+		width: 69px;
 	}
 	.header-bottom {
 		padding: .5em 0;
@@ -2518,6 +2521,7 @@ a.pa_italic:focus {
 		background-size:120%;
 		height: 44px;
 		padding: 0 0 0 1.1em;
+		width: 69px;
 	}
 	.footer-logo h2 a {
 		background: url(../images/img-sp.png) no-repeat 0px -154px;
@@ -2909,6 +2913,7 @@ a.pa_italic:focus {
 		font-size: .9em;
 		background: url(../images/img-sp.png) no-repeat -1px -34px;
 		background-size: 125%;
+		width: 69px;
 	}
 	.navbar-toggle .icon-bar {
 		width: 18px;
